@@ -32,4 +32,8 @@ public class Registration : MonoBehaviour
     public void VerifyInputs(){
         singUpButton.interactable = (usernameField.text.Length >= 8 &&  passwordField.text.Length >= 8);
     }
+
+    public void goToLogin(){
+        SceneManager.LoadScene(0);
+    }
 }
