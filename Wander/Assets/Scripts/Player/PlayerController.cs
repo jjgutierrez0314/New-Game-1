@@ -7,6 +7,10 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb2D;
     public Animator animator;
+    BasicAttack basicAttackScript;
+
+    [SerializeField] LayerMask ground = default;
+    [SerializeField] Transform groundCheck = default;
 
     public float moveSpeed = 16f;
     public float sprintSpeed = 24f;
@@ -17,17 +21,16 @@ public class PlayerController : MonoBehaviour
     public float lowJumpMultiplier = 2f;
     Vector3 velocity = Vector3.zero;
 
-    bool isGrounded;
+    public bool isGrounded;
     bool facingRight = true;
 
-    [SerializeField] LayerMask ground = default;
-    [SerializeField] Transform groundCheck = default;
 
     public UnityEvent OnLandEvent;
 
     void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
+        basicAttackScript = GetComponent<BasicAttack>();
 
         if (OnLandEvent == null)
             OnLandEvent = new UnityEvent();
