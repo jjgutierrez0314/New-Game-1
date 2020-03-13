@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb2D;
     public Animator animator;
-    BasicAttack basicAttackScript;
+    BasicAttack basicAttack;
 
     [SerializeField] LayerMask ground = default;
     [SerializeField] Transform groundCheck = default;
@@ -30,7 +30,7 @@ public class PlayerController : MonoBehaviour
     void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
-        basicAttackScript = GetComponent<BasicAttack>();
+        basicAttack = GetComponentInChildren<BasicAttack>();
 
         if (OnLandEvent == null)
             OnLandEvent = new UnityEvent();
@@ -39,23 +39,29 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Set horizontal movement
-        if (Input.GetButton("Shift"))
-            xMove = Input.GetAxisRaw("Horizontal") * sprintSpeed;
-        else
-            xMove = Input.GetAxisRaw("Horizontal") * moveSpeed;
 
-        animator.SetFloat("Speed", Mathf.Abs(xMove));
+        if (!basicAttack.attacking || !isGrounded)
+        {
+            // Set horizontal movement
+            if (Input.GetButton("Shift"))
+                xMove = Input.GetAxisRaw("Horizontal") * sprintSpeed;
+            else
+                xMove = Input.GetAxisRaw("Horizontal") * moveSpeed;
+
+            animator.SetFloat("Speed", Mathf.Abs(xMove));
+
+            if (Input.GetButtonDown("Jump") && isGrounded)
+            {
+                rb2D.velocity = Vector2.up * jumpVelocity;
+                animator.SetBool("isJumping", true);
+            }
+        }
+        else
+            xMove = 0;
 
         // Flip the player
         if ((xMove > 0 && !facingRight) || (xMove < 0 && facingRight))
-            Flip();
-
-        if (Input.GetButtonDown("Jump") && isGrounded)
-        {
-            rb2D.velocity = Vector2.up * jumpVelocity;
-            animator.SetBool("isJumping", true);
-        }
+                Flip();
     }
 
     void FixedUpdate()
@@ -86,7 +92,7 @@ public class PlayerController : MonoBehaviour
         rb2D.velocity = Vector3.SmoothDamp(rb2D.velocity, targetVelocity, ref velocity, 0.05f);
     }
 
-    public void onLanding()
+    public void OnLanding()
     {
         animator.SetBool("isJumping", false);
     }
@@ -97,5 +103,15 @@ public class PlayerController : MonoBehaviour
         Vector3 scale = transform.localScale;
         scale.x *= -1;
         transform.localScale = scale;
+    }
+
+    void EnableHitbox()
+    {
+        basicAttack.EnableHitbox();
+    }
+
+    void DisableHitbox()
+    {
+        basicAttack.DisableHitbox();
     }
 }

@@ -9,7 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1325028055}
-  - component: {fileID: 1325028056}
+  - component: {fileID: 1697318454268896753}
+  - component: {fileID: 282351648609556595}
   m_Layer: 0
   m_Name: BasicAttack
   m_TagString: Untagged
@@ -31,19 +32,45 @@ Transform:
   m_Father: {fileID: 5024305371183947771}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1325028056
-BoxCollider:
+--- !u!61 &1697318454268896753
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325028054}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.265459, y: 0.037277978}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2510855, y: 0.14734422, z: 0.4599719}
-  m_Center: {x: 0.2638765, y: 0.014391291, z: 0}
+  m_Size: {x: 0.24963593, y: 0.087414555}
+  m_EdgeRadius: 0
+--- !u!114 &282351648609556595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325028054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 703da41dbf7e75d469359dabda322c3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attacking: 0
 --- !u!1 &5024305370051837859
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,7 +116,6 @@ GameObject:
   - component: {fileID: 5024305371183947772}
   - component: {fileID: 5024305371183947760}
   - component: {fileID: 5024305371183947775}
-  - component: {fileID: 2006154521}
   m_Layer: 0
   m_Name: Warrior
   m_TagString: Player
@@ -213,7 +239,7 @@ Rigidbody2D:
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!95 &5024305371183947760
@@ -262,7 +288,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5024305371183947775}
-        m_MethodName: onLanding
+        m_MethodName: OnLanding
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -272,16 +298,3 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2006154521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5024305371183947769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 703da41dbf7e75d469359dabda322c3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attacking: 0

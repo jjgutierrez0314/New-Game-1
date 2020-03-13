@@ -5,22 +5,23 @@ using UnityEngine;
 public class BasicAttack : MonoBehaviour
 {
     Animator animator;
-    PlayerController playerControllerScript;
 
     BoxCollider2D hitbox;
 
-    public bool attacking = false;
+    public bool attacking;
 
     void Awake()
     {
-        animator = gameObject.GetComponent<Animator>();
-        playerControllerScript = GetComponent<PlayerController>();
+        animator = GetComponentInParent<Animator>();
+        hitbox = GetComponent<BoxCollider2D>();
+        hitbox.enabled = false;
+        attacking = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Attack"))
+        if (Input.GetButtonDown("Attack") && !attacking)
         {
             attacking = true;
             animator.SetTrigger("attack");
@@ -29,11 +30,33 @@ public class BasicAttack : MonoBehaviour
 
     void FixedUpdate()
     {
+        // Wait for attacking animation to finish
+        if (attacking && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
+            attacking = false;
+    }
+    
+    // Hitbox enabled on specific frame of animation
+    public void EnableHitbox()
+    {
+        hitbox.enabled = true;
+    }
 
-        //if (attacking && animator.GetCurrentAnimatorStateInfo(0).IsName("Warrior_Attack"))
-        //{
-        //    if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
-        //        attacking = false;
-        //}
+    public void DisableHitbox()
+    {
+        hitbox.enabled = false;
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy"))
+        {
+            // Need to set isHit since entities have more than one collider which could cause multiple collisions on the same object simultaneously
+            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+            if (!enemy.isHit)
+            {
+                enemy.isHit = true;
+                Debug.Log("Enemy hit!");
+            }
+        }
     }
 }
