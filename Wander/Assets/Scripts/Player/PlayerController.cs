@@ -39,7 +39,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (!basicAttack.attacking || !isGrounded)
         {
             // Set horizontal movement
@@ -61,7 +60,7 @@ public class PlayerController : MonoBehaviour
 
         // Flip the player
         if ((xMove > 0 && !facingRight) || (xMove < 0 && facingRight))
-                Flip();
+            Flip();
     }
 
     void FixedUpdate()
@@ -97,6 +96,7 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("isJumping", false);
     }
 
+    // Flips the sprite
     void Flip()
     {
         facingRight = !facingRight;
@@ -113,5 +113,21 @@ public class PlayerController : MonoBehaviour
     void DisableHitbox()
     {
         basicAttack.DisableHitbox();
+    }
+
+    // Used for moving forward on warrior bassic attack
+    void MoveOnAttack()
+    {
+        float xMove;
+        if (facingRight)
+            xMove = 500;
+        else
+            xMove = -500;
+
+        if (isGrounded)
+        {
+            Vector3 targetVelocity = new Vector2(xMove * 25f * Time.fixedDeltaTime, 0);
+            rb2D.velocity = Vector3.SmoothDamp(rb2D.velocity, targetVelocity, ref velocity, 0.05f);
+        }
     }
 }
