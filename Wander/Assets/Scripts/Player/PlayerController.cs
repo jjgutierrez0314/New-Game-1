@@ -76,9 +76,14 @@ public class PlayerController : MonoBehaviour
         bool wasGrounded = isGrounded;
         isGrounded = false;
 
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheck.position, .2f, ground);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheck.position, .1f, ground);
         for (int i = 0; i < colliders.Length; i++)
         {
+            // Ignore one-way platforms if currentlyjumping up (not falling)
+            if (colliders[i].CompareTag("One-way"))
+                // Using > 0 instead of > 0.2 causes some issues with jumping even when standing still on platform
+                if (rb2D.velocity.y > 0.2)
+                    continue;
             if (colliders[i].gameObject != gameObject)
             {
                 isGrounded = true;
@@ -94,6 +99,7 @@ public class PlayerController : MonoBehaviour
     public void OnLanding()
     {
         animator.SetBool("isJumping", false);
+        animator.SetFloat("yVelocity", 0);
     }
 
     // Flips the sprite
