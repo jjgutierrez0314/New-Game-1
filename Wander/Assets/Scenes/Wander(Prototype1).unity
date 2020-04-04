@@ -270,7 +270,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 9035287829898132973, guid: c5cdfb8ec13218c40a47d972dbead44b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -315,7 +315,7 @@ EdgeCollider2D:
   m_EdgeRadius: 0
   m_Points:
   - {x: -4.75101, y: 0.11317968}
-  - {x: 4.615197, y: 0.06790638}
+  - {x: 4.5018816, y: 0.113232136}
 --- !u!61 &92781972
 BoxCollider2D:
   m_ObjectHideFlags: 0
