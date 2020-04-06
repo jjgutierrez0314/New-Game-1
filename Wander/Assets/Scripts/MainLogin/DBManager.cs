@@ -6,6 +6,8 @@ public class DBManager : MonoBehaviour
 {
     public static string username;
 
+    public static int id;
+
     public static bool LoggedIn{
         get {
             return username != null;

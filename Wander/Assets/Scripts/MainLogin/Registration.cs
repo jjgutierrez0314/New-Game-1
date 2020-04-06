@@ -26,20 +26,6 @@ public class Registration : MonoBehaviour
 		msgQueue = mainObject.GetComponent<MessageQueue> ();
 		msgQueue.AddCallback(Constants.SMSG_REG, ResponseRegistration);
 	}
-    
-    IEnumerator Register(){
-        WWWForm form = new WWWForm();
-        form.AddField("name", usernameField.text);
-        form.AddField("password", passwordField.text);
-        WWW www = new WWW("http://localhost/sqlconnect/register.php", form);
-        yield return www;
-        if(www.text == "0"){
-            Debug.Log("User Created successfully");
-            SceneManager.LoadScene(0);
-        } else {
-            Debug.Log("User creation failed. Error #" + www.text);
-        }
-    }
 
     public void Submit(){
         username = usernameField.text;
@@ -62,7 +48,7 @@ public class Registration : MonoBehaviour
     }
 
     public void ResponseRegistration(ExtendedEventArgs eventArgs) {
-		ResponseLoginEventArgs args = eventArgs as ResponseLoginEventArgs;
+		ResponseRegistrationEventArgs args = eventArgs as ResponseRegistrationEventArgs;
 		if (args.status == 0) {
 			Constants.USER_ID = args.user_id;
 			Debug.Log ("Successful Registration response : " + args.ToString());

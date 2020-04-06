@@ -73,6 +73,7 @@ public class Login : MonoBehaviour
 			Constants.USER_ID = args.user_id;
 			Debug.Log ("Successful Login response : " + args.ToString());
 			DBManager.username = username;
+			DBManager.id = Constants.USER_ID;
             SceneManager.LoadScene("KeyToContinue");
 		} else {
 			Debug.Log("Login Failed");

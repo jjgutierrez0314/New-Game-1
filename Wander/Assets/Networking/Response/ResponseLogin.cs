@@ -37,6 +37,9 @@ public class ResponseLogin : NetworkResponse {
 			args.status = status;
 			args.user_id = user_id;
 			args.username = username;
+		} else {
+			args = new ResponseLoginEventArgs();
+			args.status = status;
 		}
 
 		return args;
