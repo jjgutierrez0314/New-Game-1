@@ -79,7 +79,7 @@ public class PlayerController : MonoBehaviour
         Collider2D[] colliders = Physics2D.OverlapCircleAll(groundCheck.position, .1f, ground);
         for (int i = 0; i < colliders.Length; i++)
         {
-            // Ignore one-way platforms if currentlyjumping up (not falling)
+            // Ignore one-way platforms if currently jumping up (not falling)
             if (colliders[i].CompareTag("One-way"))
                 // Using > 0 instead of > 0.2 causes some issues with jumping even when standing still on platform
                 if (rb2D.velocity.y > 0.2)
