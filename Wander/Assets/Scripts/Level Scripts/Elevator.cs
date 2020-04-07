@@ -84,10 +84,12 @@ public class Elevator : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D (Collider2D other) {
+        Debug.Log("player entered elevator");
         other.transform.parent = transform;
     }
 
     private void OnTriggerExit2D (Collider2D other) {
+        Debug.Log("player exit elevator");
         other.transform.parent = null;
     }
 
