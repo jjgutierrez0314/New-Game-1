@@ -317,6 +317,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8335234539746959193, guid: 113a352293e2954418ced5aa2fab38d1,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: -8335234539746959193, guid: 113a352293e2954418ced5aa2fab38d1,
+        type: 3}
+      propertyPath: m_SleepingMode
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3509787738307564485, guid: 113a352293e2954418ced5aa2fab38d1,
         type: 3}
       propertyPath: m_Name
@@ -380,6 +390,11 @@ PrefabInstance:
     - target: {fileID: 3509787738307564487, guid: 113a352293e2954418ced5aa2fab38d1,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5632917735875763119, guid: 113a352293e2954418ced5aa2fab38d1,
+        type: 3}
+      propertyPath: facingRight
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -556,6 +571,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5024305371183947772, guid: 11defc884e70ded43964934b5c9ac8dd,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2467584758857095216, guid: 11defc884e70ded43964934b5c9ac8dd, type: 3}
