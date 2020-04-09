@@ -5,7 +5,6 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 [System.Serializable]
-
 class LobbyInformation{
 
 	public string lobbyID;
@@ -31,8 +30,6 @@ public class Lobby : MonoBehaviour
     private MessageQueue msgQueue;
 
 	private ConnectionManager cManager;
-
-	private float period = 0f;
 
 	private LobbyInformationList list;
 
@@ -72,18 +69,17 @@ public class Lobby : MonoBehaviour
 				Text[] ButtonTexts = listButton.GetComponentsInChildren<Text>();
 				ButtonTexts[0].text = list.LobbyInformation[i].lobbyID;
 				ButtonTexts[1].text = list.LobbyInformation[i].lobbyName;
-				
-				ButtonTexts[2].text = "" + numberOfplayers(list.LobbyInformation[i].playersId);
+				ButtonTexts[2].text = numberOfplayers(list.LobbyInformation[i].playersId) + "/3";
 			}
 		} 
 	}
 	public static int numberOfplayers(string s){
 		int counter = 0;
 		for(int i = 0; i < s.Length; i++){
-			if(s[i] != ','){
+			if(s[i] == ','){
 				counter++;
 			}
 		}
-		return counter;
+		return counter + 1;
 	}
 }
