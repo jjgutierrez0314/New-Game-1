@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb2D;
     public Animator animator;
     BasicAttack basicAttack;
+    Abilities abilities;
 
     [SerializeField] LayerMask ground = default;
     [SerializeField] Transform groundCheck = default;
@@ -31,6 +32,7 @@ public class PlayerController : MonoBehaviour
     {
         rb2D = GetComponent<Rigidbody2D>();
         basicAttack = GetComponentInChildren<BasicAttack>();
+        abilities = GetComponent<Abilities>();
 
         if (OnLandEvent == null)
             OnLandEvent = new UnityEvent();
@@ -39,7 +41,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!basicAttack.attacking || !isGrounded)
+        if ((!basicAttack.attacking && !abilities.actionActive) || !isGrounded)
         {
             // Set horizontal movement
             if (Input.GetButton("Shift"))
