@@ -16,7 +16,6 @@ public class Registration : MonoBehaviour
 
     private MessageQueue msgQueue;
 	private ConnectionManager cManager;
-    // public TMP_InputField confirmField;
 
     public Button singUpButton;
     

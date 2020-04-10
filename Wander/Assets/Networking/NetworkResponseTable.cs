@@ -15,6 +15,7 @@ public class NetworkResponseTable {
 		add(Constants.SMSG_REG, "ResponseRegistration");//205
 		add(Constants.SMSG_MOVE, "ResponseMovement");//206
 		add(Constants.SMSG_SPAWN, "ResponseSpawn");//207
+		add(Constants.SMSG_LOBBY, "ResponseLobbies");//207
 	}
 	
 	public static void add(short response_id, string name) {

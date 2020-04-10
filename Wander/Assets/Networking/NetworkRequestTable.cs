@@ -16,6 +16,7 @@ public class NetworkRequestTable {
 		add(Constants.CMSG_REG, "RequestRegistration");
 		add(Constants.CMSG_MOVE, "RequestMovement");
 		add(Constants.CMSG_SPAWN, "RequestSpawn");
+		add(Constants.CMSG_LOBBY, "RequestLobbies");
 	}
 	
 	public static void add(short request_id, string name) {

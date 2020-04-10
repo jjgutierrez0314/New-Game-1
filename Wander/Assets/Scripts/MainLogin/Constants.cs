@@ -20,6 +20,8 @@ public class Constants {
 	public static readonly short SMSG_MOVE = 206;
 	public static readonly short CMSG_SPAWN = 107;
 	public static readonly short SMSG_SPAWN = 207;
+	public static readonly short CMSG_LOBBY = 108;
+	public static readonly short SMSG_LOBBY = 208;
 	// Other
 	public static readonly string IMAGE_RESOURCES_PATH = "Images/";
 	public static readonly string PREFAB_RESOURCES_PATH = "Prefabs/";
