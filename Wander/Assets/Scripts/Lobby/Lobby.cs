@@ -82,4 +82,7 @@ public class Lobby : MonoBehaviour
 		}
 		return counter + 1;
 	}
+	public void goToKey(){
+		SceneManager.LoadScene(2);
+	}
 }
