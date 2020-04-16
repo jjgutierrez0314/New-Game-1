@@ -13,7 +13,6 @@ public class Player : MonoBehaviour
         health = 100;
         cManager = gameObject.GetComponent<ConnectionManager>();
         msgQueue = gameObject.GetComponent<MessageQueue>();
-        msgQueue.AddCallback(Constants.SMSG_PLAYERHIT, responsePlayerHit);
     }
 
     // Update is called once per frame
@@ -26,19 +25,5 @@ public class Player : MonoBehaviour
     {
         health -= damage;
         Debug.Log("health : " + health);
-        cManager.send(requestPlayerHit(health));
-    }
-
-    public RequestPlayerHit requestPlayerHit(int health)
-    {
-        RequestPlayerHit request = new RequestPlayerHit();
-        request.send(health);
-        return request;
-    }
-
-    public void responsePlayerHit(ExtendedEventArgs eventArgs)
-    {
-        ResponsePlayerHitEventArgs args = eventArgs as ResponsePlayerHitEventArgs;
-        Debug.Log("Player health: " + args.ToString());
     }
 }
