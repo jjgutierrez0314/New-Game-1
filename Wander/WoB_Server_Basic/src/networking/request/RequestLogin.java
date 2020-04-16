@@ -64,7 +64,7 @@ public class RequestLogin extends GameRequest {
                     System.out.println("FAILURE! Failed to make connection!");
                 }
                 Log.printf("User '%s' entered passwd '%s'", username, password);
-                String query = "SELECT * FROM Users WHERE username = '" + username + "'";
+                String query = "SELECT * FROM Players WHERE username = '" + username + "'";
                 Statement st = connection.createStatement();
                 ResultSet rs = st.executeQuery(query);
                 if(rs.next()){

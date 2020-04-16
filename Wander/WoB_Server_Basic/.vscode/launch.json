@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - GameServer",
+            "request": "launch",
+            "mainClass": "core.GameServer",
+            "projectName": "WoB_Server_Basic_6f0167bc"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"

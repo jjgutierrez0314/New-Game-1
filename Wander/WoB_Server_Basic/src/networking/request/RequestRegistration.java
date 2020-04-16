@@ -60,14 +60,14 @@ public class RequestRegistration extends GameRequest {
 
         Log.printf("User '%s' is registering...", username);
         if (version.compareTo(Constants.CLIENT_VERSION) >= 0) {
-            String query = "SELECT * FROM Users WHERE username = '" + username + "';";
+            String query = "SELECT * FROM Players WHERE username = '" + username + "';";
             Statement st = connection.createStatement();
             ResultSet rs = st.executeQuery(query);
             if(!rs.next()){
                 if (!username.isEmpty() && password.equals(confirmedPassword)) {
                     Log.printf("User '%s' entered passwd '%s' and confirmed = '%s'", username, password, confirmedPassword);
                     Log.printf("Password matches");
-                    query = "INSERT INTO Users (username,password) values('" + username + "','" + password + "');";
+                    query = "INSERT INTO Players (username,password) values('" + username + "','" + password + "');";
                     st.executeUpdate(query);
                     connection.close();
                     responseRegistration.setStatus((short) 0); // Registration Success

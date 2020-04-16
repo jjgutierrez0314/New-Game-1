@@ -18,6 +18,7 @@ public class PlayerMovementLocation : MonoBehaviour
 		cManager = mainObject.GetComponent<ConnectionManager>();
 		msgQueue = mainObject.GetComponent<MessageQueue> ();
 		msgQueue.AddCallback(Constants.SMSG_MOVE, ResponseMovement);
+        username = DBManager.username;
     }
     void Update()
     {   
