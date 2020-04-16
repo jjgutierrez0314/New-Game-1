@@ -11,6 +11,16 @@ public class Enemy : MonoBehaviour
         isHit = false;
     }
 
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Player player = collision.gameObject.GetComponent<Player>();
+            player.playerHit(5); // Hit for 5 damage
+            Debug.Log("Player hit!");
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
