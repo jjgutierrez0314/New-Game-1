@@ -164,9 +164,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 446fd386c098d9f408d0746e966f4666, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  warriorPrefab: {fileID: 350896370863479201, guid: ce8aefa399b24fc4c9c0856afc48ed0b,
+  warriorPrefab: {fileID: 9192666748458293416, guid: 209f377859db01d4fbdcebfebba45d4a,
     type: 3}
-  location: {fileID: 0}
+  location: {fileID: 158184276}
 --- !u!1 &394228777
 GameObject:
   m_ObjectHideFlags: 0
