@@ -74,7 +74,7 @@ public class Login : MonoBehaviour
 			Debug.Log ("Successful Login response : " + args.ToString());
 			DBManager.username = username;
 			DBManager.id = Constants.USER_ID;
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene("KeyToContinue");
 		} else {
 			Debug.Log("Login Failed");
 		}
@@ -118,7 +118,7 @@ public class Login : MonoBehaviour
     // }
 
     public void goToRegister(){
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Registration");
     }
     
     

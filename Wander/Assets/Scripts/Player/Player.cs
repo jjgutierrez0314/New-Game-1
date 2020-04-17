@@ -5,8 +5,6 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private int health;
-    private ConnectionManager cManager;
-    private MessageQueue msgQueue;
 
     void Awake()
     {
