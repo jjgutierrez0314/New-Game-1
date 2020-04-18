@@ -9,8 +9,8 @@ public class Player : MonoBehaviour
     void Awake()
     {
         health = 100;
-        cManager = gameObject.GetComponent<ConnectionManager>();
-        msgQueue = gameObject.GetComponent<MessageQueue>();
+        // cManager = gameObject.GetComponent<ConnectionManager>();
+        // msgQueue = gameObject.GetComponent<MessageQueue>();
     }
 
     // Update is called once per frame
