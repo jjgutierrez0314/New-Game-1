@@ -467,9 +467,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 514c14a029ad78345b9de1991105a9d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  usernameField: {fileID: 233152489}
-  passwordField: {fileID: 1921990409}
-  loginButton: {fileID: 320819442}
+  usernameField: {fileID: 0}
+  passwordField: {fileID: 0}
+  loginButton: {fileID: 0}
 --- !u!1 &299933370
 GameObject:
   m_ObjectHideFlags: 0
@@ -1860,7 +1860,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 43.15
+  m_fontSize: 85.2
   m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2866,6 +2866,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 1981752152}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b4375321ca9d415ebc7107cbf79cb80, type: 3}
+  m_Script: {fileID: 11500000, guid: 5e7350a936a47df4e86dd314e308436e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
