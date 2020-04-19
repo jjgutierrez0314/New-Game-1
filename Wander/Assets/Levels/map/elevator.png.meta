@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ddac0df0cb15e6744a153ae1e1190077
+guid: f287c7da411c7964183a5cc94d591e9f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -41,16 +41,16 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 1
-  spriteExtrude: 1
+  spriteExtrude: 2
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 9}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -63,7 +63,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -87,7 +87,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -99,7 +99,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -111,7 +111,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -123,7 +123,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -133,7 +133,15 @@ TextureImporter:
   spriteSheet:
     serializedVersion: 2
     sprites: []
-    outline: []
+    outline:
+    - - {x: -35.5, y: 12.5}
+      - {x: -35.5, y: -12.5}
+      - {x: 35.5, y: -12.5}
+      - {x: 35.5, y: 12.5}
+    - - {x: -35.5, y: 3.5}
+      - {x: 35.5, y: 3.5}
+      - {x: 35.5, y: -12.5}
+      - {x: -35.5, y: -12.5}
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
