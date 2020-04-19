@@ -69,6 +69,7 @@ public class RequestLogin extends GameRequest {
                 ResultSet rs = st.executeQuery(query);
                 if(rs.next()){
                     if(username.equals(rs.getString(2)) && password.equals(rs.getString(3))){
+                        Log.printf("-------------------");
                         player = new Player(rs.getInt(1), rs.getString(2), rs.getString(3));
                     } else {
                         player = null;
@@ -108,6 +109,7 @@ public class RequestLogin extends GameRequest {
             responseLogin.setStatus((short) 3); // Client version not compatible
             Log.printf("User '%s' has failed to log in. (v%s)", player.getUsername(), version);
         }
+        Log.printf("'%s'", GameServer.getInstance().getActiveThreads().size());
     }
 
 
