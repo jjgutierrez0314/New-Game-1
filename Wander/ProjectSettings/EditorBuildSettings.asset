@@ -21,6 +21,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Lobby Select.unity
     guid: e59675f5769a7c745aa3a45ebaad55dd
   - enabled: 1
-    path: Assets/Scenes/Wander(Prototype2).unity
-    guid: b47046c1af8d1f6478196894f4e9ccef
+    path: Assets/Scenes/Wander(Prototype1).unity
+    guid: 2c0328d71af3e514b826d4edf6be7162
   m_configObjects: {}
