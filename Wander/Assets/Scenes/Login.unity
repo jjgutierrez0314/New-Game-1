@@ -467,9 +467,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 514c14a029ad78345b9de1991105a9d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  usernameField: {fileID: 0}
-  passwordField: {fileID: 0}
-  loginButton: {fileID: 0}
+  usernameField: {fileID: 233152489}
+  passwordField: {fileID: 1921990409}
+  loginButton: {fileID: 320819442}
 --- !u!1 &299933370
 GameObject:
   m_ObjectHideFlags: 0
@@ -1860,7 +1860,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 85.2
+  m_fontSize: 63.35
   m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 1
