@@ -28,7 +28,7 @@ public class RequestMovement extends GameRequest {
 
     @Override
     public void doBusiness() throws Exception {
-        Log.printf("Username '%s' moved to the X: '%s' Y: '%s'",username, locationX, locationY);
+        // Log.printf("Username '%s' moved to the X: '%s' Y: '%s'",username, locationX, locationY);
         responseMovement.setUsername(username);
         responseMovement.setLocationX(locationX);
         responseMovement.setLocationY(locationY);

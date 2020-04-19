@@ -42,9 +42,7 @@ public class RequestSpawn extends GameRequest {
         responseSpawn.setStatus((short) 0); // User succesfully spawned
         responseSpawn.setUsername(username);
         responseSpawn.setId(id);
-        for(GameClient player : GameServer.getInstance().getActiveThreads().values()){
-            player.addResponseForUpdate(responseSpawn);
-        }
+        Log.printf("'%s'", GameServer.getInstance().getActiveThreads().size());
         Log.printf("User Successfully Spawned");
     }
 }

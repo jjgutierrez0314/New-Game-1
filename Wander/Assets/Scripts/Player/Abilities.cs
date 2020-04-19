@@ -7,7 +7,7 @@ public class Abilities : MonoBehaviour
     Animator animator;
 
     public bool actionActive;
-    public bool ability3, ability3Held;
+    public bool ability2, ability3, ability3Held;
 
     void Awake()
     {
@@ -18,18 +18,30 @@ public class Abilities : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Ability3") && !actionActive)
+        if (!actionActive)
         {
-            actionActive = ability3 = ability3Held = true;
+            actionActive = true;
+            if (Input.GetButtonDown("Ability2"))
+            {
+                ability2 = true;
+                animator.SetTrigger("ability2");
+            }
+            else if (Input.GetButtonDown("Ability3"))
+            {
+                ability3 = ability3Held = true;
+                animator.SetBool("actionActive", actionActive);
+                animator.SetTrigger("ability3");
+            }
+            else
+                actionActive = false;
             animator.SetBool("actionActive", actionActive);
-            animator.SetTrigger("ability3");
         }
-
-        if (actionActive)
+        else
         {
             if (ability3 && !Input.GetButton("Ability3"))
             {
-                ability3Held = false;
+                actionActive = ability3 = ability3Held = false;
+                animator.SetBool("actionActive", actionActive);
                 animator.SetBool("ability3Held", false);
             }
         }
@@ -37,6 +49,11 @@ public class Abilities : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (ability2 && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
+        {
+            actionActive = ability2 = false;
+            animator.SetBool("actionActive", actionActive);
+        }
         // Check if animation for first part of ability 3 is done to check if the button is still being held
         if (ability3 && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
             if (ability3Held)
