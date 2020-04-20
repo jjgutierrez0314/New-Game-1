@@ -20,11 +20,13 @@ public class Registration : MonoBehaviour
     public Button singUpButton;
     
     void Start() {
-		mainObject = GameObject.Find("MainObject");
-		cManager = mainObject.GetComponent<ConnectionManager>();
-		msgQueue = mainObject.GetComponent<MessageQueue> ();
-		msgQueue.AddCallback(Constants.SMSG_REG, ResponseRegistration);
-	}
+        mainObject = GameObject.Find("MainObject");
+        cManager = mainObject.GetComponent<ConnectionManager>();
+        msgQueue = mainObject.GetComponent<MessageQueue>();
+        if(!msgQueue.callbackList.ContainsKey(Constants.SMSG_REG)){
+			msgQueue.AddCallback(Constants.SMSG_REG, ResponseRegistration);
+		}
+    }
 
     public void Submit(){
         username = usernameField.text;
@@ -51,6 +53,7 @@ public class Registration : MonoBehaviour
 		if (args.status == 0) {
 			Constants.USER_ID = args.user_id;
 			Debug.Log ("Successful Registration response : " + args.ToString());
+            Debug.Log("----------------------------");
             SceneManager.LoadScene("Login");
 		} else {
 			Debug.Log("Registration Failed");

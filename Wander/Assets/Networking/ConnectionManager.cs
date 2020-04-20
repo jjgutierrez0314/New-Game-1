@@ -29,7 +29,7 @@ public class ConnectionManager : MonoBehaviour {
 			return;
 		}
 		try {
-			mySocket = new TcpClient (Constants.REMOTE_HOST, Constants.REMOTE_PORT);
+			mySocket = TCPClientSingleton.getTCPClient();
 			theStream = mySocket.GetStream();
 			socketReady = true;
 			Debug.Log("Connected");

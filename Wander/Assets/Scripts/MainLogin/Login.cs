@@ -15,37 +15,18 @@ public class Login : MonoBehaviour
     public Button loginButton;
     private string username = "";
 	private string password = "";
-    private bool isHidden;
+
 	private MessageQueue msgQueue;
 	private ConnectionManager cManager;
-
     
-	void Start() {
+	void Awake() {
 		mainObject = GameObject.Find("MainObject");
 		cManager = mainObject.GetComponent<ConnectionManager>();
 		msgQueue = mainObject.GetComponent<MessageQueue> ();
-		msgQueue.AddCallback(Constants.SMSG_AUTH, ResponseLogin);
-		msgQueue.AddCallback(Constants.SMSG_PLAYERS, responsePlayers);
-		msgQueue.AddCallback (Constants.SMSG_TEST, responseTest);
+		if(!msgQueue.callbackList.ContainsKey(Constants.SMSG_AUTH)){
+			msgQueue.AddCallback(Constants.SMSG_AUTH, ResponseLogin);
+		}
 	}
-
-    // public void CallLogin(){
-    //     StartCoroutine(LoginNow());
-    // }
-
-    // IEnumerator LoginNow(){
-    //     WWWForm form = new WWWForm();
-    //     form.AddField("name", usernameField.text);
-    //     form.AddField("password", passwordField.text);
-    //     WWW www = new WWW("http://localhost/sqlconnect/login.php", form);
-    //     yield return www;
-    //     if(www.text[0] == '0'){
-    //         DBManager.username = usernameField.text;
-    //         SceneManager.LoadScene(2);
-    //     } else {
-    //         Debug.Log("User login failed. Error # " + www.text);
-    //     }
-    // }
 
     public void Submit() {
         username = usernameField.text;
@@ -80,46 +61,7 @@ public class Login : MonoBehaviour
 		}
 	}
 	
-	public RequestPlayers requestPlayers() {
-		RequestPlayers request = new RequestPlayers();
-		request.send ();
-		return request;
-	}
-
-	public void responsePlayers(ExtendedEventArgs eventArgs) {
-		ResponsePlayersEventArgs args = eventArgs as ResponsePlayersEventArgs;
-		int numActivePlayers = args.numActivePlayers;
-		Debug.Log ("Number of Connected Players : " + numActivePlayers);
-	}
-
-		public RequestTest requestTest(string arithmeticOperator, int testNum) {
-		RequestTest requestTest = new RequestTest ();
-		requestTest.send (arithmeticOperator, testNum);
-		return requestTest;
-	}
-	
-	public void responseTest(ExtendedEventArgs eventArgs) {
-		ResponseTestEventArgs args = eventArgs as ResponseTestEventArgs;
-		Debug.Log ("newTestVar updated on server!!!");
-	}
-
-	public void Show() {
-		isHidden = false;
-	}
-	
-	public void Hide() {
-		isHidden = true;
-	}
-
-
-
-    // public void VerifyInputs(){
-    //     loginButton.interactable = (usernameField.text.Length >= 8 &&  passwordField.text.Length >= 8);
-    // }
-
     public void goToRegister(){
         SceneManager.LoadScene("Registration");
     }
-    
-    
 }
