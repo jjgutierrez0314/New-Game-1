@@ -80,8 +80,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5024305370051837860}
-  - component: {fileID: 2467584758857095216}
-  - component: {fileID: 5958710137802657708}
   m_Layer: 0
   m_Name: GroundCheck
   m_TagString: Untagged
@@ -103,30 +101,6 @@ Transform:
   m_Father: {fileID: 5024305371183947771}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2467584758857095216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5024305370051837859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 117f1a22db5322b4a9ce987b5e6dc4cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &5958710137802657708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5024305370051837859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 117f1a22db5322b4a9ce987b5e6dc4cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &5024305371183947769
 GameObject:
   m_ObjectHideFlags: 0
@@ -137,12 +111,11 @@ GameObject:
   m_Component:
   - component: {fileID: 5024305371183947771}
   - component: {fileID: 5024305371183947770}
-  - component: {fileID: 5024305371183947774}
   - component: {fileID: 5024305371183947773}
   - component: {fileID: 5024305371183947772}
   - component: {fileID: 5024305371183947760}
-  - component: {fileID: 2451028595216425309}
   - component: {fileID: 5024305371183947775}
+  - component: {fileID: 2451028595216425309}
   - component: {fileID: 1401598659180679924}
   m_Layer: 0
   m_Name: Warrior
@@ -217,22 +190,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!58 &5024305371183947774
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5024305371183947769}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.08}
-  serializedVersion: 2
-  m_Radius: 0.040825654
 --- !u!70 &5024305371183947773
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -246,8 +203,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0053253653, y: -0.05553758}
-  m_Size: {x: 0.1342103, y: 0.24893765}
+  m_Offset: {x: 0.00039250852, y: -0.030459119}
+  m_Size: {x: 0.1284924, y: 0.2990946}
   m_Direction: 0
 --- !u!50 &5024305371183947772
 Rigidbody2D:
@@ -289,18 +246,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2451028595216425309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5024305371183947769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 117f1a22db5322b4a9ce987b5e6dc4cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5024305371183947775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -338,6 +283,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &2451028595216425309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5024305371183947769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 117f1a22db5322b4a9ce987b5e6dc4cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1401598659180679924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -351,5 +308,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actionActive: 0
+  ability1: 0
+  ability2: 0
   ability3: 0
   ability3Held: 0
