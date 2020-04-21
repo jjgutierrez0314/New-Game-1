@@ -15,7 +15,7 @@ public class SpawnPlayer : MonoBehaviour
 
     bool once = true;
     public void spawnWarrior(){
-        location = GameObject.Find("spawner").transform;
+        location = GameObject.Find("Spawner").transform;
         GameObject warrior = Instantiate(warriorPrefab, location, true) as GameObject;
     }
     // Start is called before the first frame update
