@@ -7,7 +7,7 @@ public class Abilities : MonoBehaviour
     Animator animator;
 
     public bool actionActive;
-    public bool ability2, ability3, ability3Held;
+    public bool ability1, ability2, ability3, ability3Held;
 
     void Awake()
     {
@@ -21,7 +21,12 @@ public class Abilities : MonoBehaviour
         if (!actionActive)
         {
             actionActive = true;
-            if (Input.GetButtonDown("Ability2"))
+            if (Input.GetButtonDown("Ability1"))
+            {
+                ability1 = true;
+                animator.SetTrigger("ability1");
+            }
+            else if (Input.GetButtonDown("Ability2"))
             {
                 ability2 = true;
                 animator.SetTrigger("ability2");
@@ -49,19 +54,18 @@ public class Abilities : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (ability2 && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
+        if (ability1 || ability2 || ability3)
         {
-            actionActive = ability2 = false;
-            animator.SetBool("actionActive", actionActive);
-        }
-        // Check if animation for first part of ability 3 is done to check if the button is still being held
-        if (ability3 && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
-            if (ability3Held)
-                animator.SetBool("ability3Held", true);
-            else
+            if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
             {
-                actionActive = ability3 = false;
-                animator.SetBool("actionActive", actionActive);
+                if (ability3Held)
+                    animator.SetBool("ability3Held", true);
+                else
+                {
+                    actionActive = ability1 = ability2 = ability3 = false;
+                    animator.SetBool("actionActive", actionActive);
+                }
             }
+        }
     }
 }
