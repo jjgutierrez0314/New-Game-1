@@ -39,6 +39,7 @@ public class Spawn : MonoBehaviour
         go.name = "Player: " + id;
         if(isMyPlayer){
             go.AddComponent<PlayerController>();
+            go.AddComponent<Camera>();
         }
         GameManager.instance.playerList.Add(id, go);
     }

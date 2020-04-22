@@ -7,8 +7,6 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb2D;
     private Animator animator;
-    public Camera camera;
-    public AudioListener audioListener;
     BasicAttack basicAttack;
     Abilities abilities;
 
@@ -33,8 +31,6 @@ public class PlayerController : MonoBehaviour
     void Awake()
     {
         animator = GetComponent<Animator>();
-        camera = GetComponentInChildren<Camera>();
-        audioListener = camera.GetComponent<AudioListener>();
         rb2D = GetComponent<Rigidbody2D>();
         basicAttack = GetComponentInChildren<BasicAttack>();
         abilities = GetComponent<Abilities>();
