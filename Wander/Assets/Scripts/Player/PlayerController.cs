@@ -33,7 +33,6 @@ public class PlayerController : MonoBehaviour
         rb2D = GetComponent<Rigidbody2D>();
         basicAttack = GetComponentInChildren<BasicAttack>();
         abilities = GetComponent<Abilities>();
-
         if (OnLandEvent == null)
             OnLandEvent = new UnityEvent();
     }

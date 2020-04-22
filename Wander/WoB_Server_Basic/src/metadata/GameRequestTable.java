@@ -28,6 +28,7 @@ public class GameRequestTable {
         add(Constants.CMSG_MOVE, "RequestMovement");
         add(Constants.CMSG_SPAWN, "RequestSpawn");
         add(Constants.CMSG_LOBBY, "RequestLobbies");
+        add(Constants.CMSG_KEY, "RequestKeyInput");
     }
 
     /**
