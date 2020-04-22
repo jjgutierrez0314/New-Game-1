@@ -6,12 +6,12 @@ using UnityEngine.Networking;
 public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb2D;
-    private Animator animator;
+    public Animator animator;
     BasicAttack basicAttack;
     Abilities abilities;
 
-    public LayerMask ground = default;
-    private Transform groundCheck;
+    [SerializeField] LayerMask ground = default;
+    [SerializeField] Transform groundCheck = default;
 
     public float moveSpeed = 16f;
     public float sprintSpeed = 24f;
@@ -30,11 +30,9 @@ public class PlayerController : MonoBehaviour
 
     void Awake()
     {
-        animator = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
         basicAttack = GetComponentInChildren<BasicAttack>();
         abilities = GetComponent<Abilities>();
-        groundCheck = gameObject.transform.GetChild(0);
 
         if (OnLandEvent == null)
             OnLandEvent = new UnityEvent();
