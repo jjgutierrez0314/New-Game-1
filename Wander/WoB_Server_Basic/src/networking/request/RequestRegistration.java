@@ -48,7 +48,12 @@ public class RequestRegistration extends GameRequest {
         }
         Connection connection = null;
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://" + "wanderdb.c4p7z07xl4sc.us-east-1.rds.amazonaws.com" + ":" + "3306" + "/" + "wander", "root", "awesomeganbold");
+            connection = DriverManager.getConnection("jdbc:mysql://" + 
+            "---" + 
+            ":" + "---" + "/" + 
+            "---", 
+            "---", 
+            "---");
         } catch (SQLException e) {
             System.out.println("Connection Failed!:\n" + e.getMessage());
         }

@@ -35,7 +35,6 @@ public class PlayerController : MonoBehaviour
         basicAttack = GetComponentInChildren<BasicAttack>();
         abilities = GetComponent<Abilities>();
         groundCheck = transform.GetChild(0);
-
         if (OnLandEvent == null)
             OnLandEvent = new UnityEvent();
     }
