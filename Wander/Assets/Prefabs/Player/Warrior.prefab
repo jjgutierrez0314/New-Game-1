@@ -197,6 +197,7 @@ GameObject:
   - component: {fileID: 5024305371183947773}
   - component: {fileID: 5024305371183947772}
   - component: {fileID: 5024305371183947760}
+  - component: {fileID: 4573050226628154131}
   - component: {fileID: 2451028595216425309}
   - component: {fileID: 1401598659180679924}
   m_Layer: 0
@@ -329,6 +330,30 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4573050226628154131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5024305371183947769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa12272fa180a134886964c33e989d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ground:
+    serializedVersion: 2
+    m_Bits: 256
+  moveSpeed: 16
+  sprintSpeed: 24
+  jumpVelocity: 7
+  fallMultiplier: 2
+  lowJumpMultiplier: 2
+  isGrounded: 0
+  OnLandEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &2451028595216425309
 MonoBehaviour:
   m_ObjectHideFlags: 0
