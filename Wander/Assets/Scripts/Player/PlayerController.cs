@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     public bool isGrounded;
     bool facingRight = true;
 
+    bool isTired = false;
 
     public UnityEvent OnLandEvent;
 
@@ -45,7 +46,7 @@ public class PlayerController : MonoBehaviour
         if ((!basicAttack.attacking && !abilities.actionActive) || !isGrounded)
         {
             // Set horizontal movement
-            if (Input.GetButton("Shift"))
+            if (Input.GetButton("Shift") && !isTired)
                 xMove = Input.GetAxisRaw("Horizontal") * sprintSpeed;
             else
                 xMove = Input.GetAxisRaw("Horizontal") * moveSpeed;
@@ -129,14 +130,19 @@ public class PlayerController : MonoBehaviour
     {
         float xMove;
         if (facingRight)
-            xMove = 110;
+            xMove = 60;
         else
-            xMove = -110;
+            xMove = -60;
 
         if (isGrounded)
         {
             Vector3 targetVelocity = new Vector2(xMove * 25f * Time.fixedDeltaTime, 0);
             rb2D.velocity = Vector3.SmoothDamp(rb2D.velocity, targetVelocity, ref velocity, 0.05f);
         }
+    }
+
+    public void setTired(bool val)
+    {
+        isTired = val;
     }
 }

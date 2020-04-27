@@ -6,19 +6,23 @@ public class Player : MonoBehaviour
 {
     private int health;
     private WaitForSeconds regenTick = new WaitForSeconds(0.1f);
+    private Coroutine regen;
 
     // Variables for HP & Stamina bars
     public int maxHealth = 100;
     public int currentHealth;
     public HealthBar healthBar;
 
-    public float maxStamina = 400;
+    public float maxStamina = 100;
     public float currentStamina;
     public StaminaBar staminaBar;
+
+    public PlayerController player;
 
     void Awake()
     {
         health = 100;
+        player = GetComponent<PlayerController>();
         // cManager = gameObject.GetComponent<ConnectionManager>();
         // msgQueue = gameObject.GetComponent<MessageQueue>();
     }
@@ -37,12 +41,17 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            playerRun(1);
-            StartCoroutine(RegenStamina());
-        }
-        else
-        {
-            Debug.Log("Out of stamina");
+            player.setTired(false);
+            playerRun(0.2f);
+
+            if (regen != null) { StopCoroutine(regen); }
+            regen = StartCoroutine(RegenStamina());
+
+            if (currentStamina <= 0)
+            {
+                player.setTired(true);
+                Debug.Log("Out of stamina");
+            }
         }
     }
 
@@ -67,9 +76,10 @@ public class Player : MonoBehaviour
 
         while (currentStamina < maxStamina)
         {
-            currentStamina += 0.5f;
+            currentStamina += 1.8f;
             staminaBar.SetStamina(currentStamina);
             yield return regenTick;
         }
+        regen = null;
     }
 }
