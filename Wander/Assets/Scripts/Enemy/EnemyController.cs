@@ -5,12 +5,12 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour
 {
     Rigidbody2D rb2D;
-    public Animator animator;
+    private Animator animator;
     Enemy enemy;
     BasicAttack basicAttack;
 
-    [SerializeField] LayerMask ground = default;
-    [SerializeField] Transform groundCheck = default;
+    public LayerMask ground;
+    private Transform groundCheck;
 
     public float moveSpeed = 16f;
     float xMove = 0f;
@@ -26,6 +26,7 @@ public class EnemyController : MonoBehaviour
     void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         enemy = GetComponent<Enemy>();
     }
 
@@ -41,7 +42,6 @@ public class EnemyController : MonoBehaviour
 
     void FixedUpdate()
     {
-
     }
 
     // Flips the sprite

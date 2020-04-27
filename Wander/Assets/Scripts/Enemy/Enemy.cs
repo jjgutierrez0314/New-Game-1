@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    private Animator animator;
     public bool isHit;
 
     void Awake()
     {
+        animator = gameObject.GetComponent<Animator>();
         isHit = false;
     }
 
@@ -29,6 +31,18 @@ public class Enemy : MonoBehaviour
 
     void FixedUpdate()
     {
-        isHit = false;
+        if (isHit && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
+        {
+            Debug.Log("ishit is false");
+            isHit = false;
+            animator.SetBool("isHit", isHit);
+        }
+    }
+
+    public void hit()
+    {
+        isHit = true;
+        animator.SetBool("isHit", isHit);
+        animator.SetTrigger("hit");
     }
 }

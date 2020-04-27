@@ -8,10 +8,9 @@ public class RequestSpawn : NetworkRequest
         request_id = Constants.CMSG_SPAWN;
     }
 
-    public void send(string username, int id){
+    public void send(int id){
         packet = new GamePacket(request_id);
-        packet.addString(username);
-		packet.addInt32(id);
+        packet.addInt32(id);
     }
     
 }
