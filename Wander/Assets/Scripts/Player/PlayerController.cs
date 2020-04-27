@@ -129,9 +129,9 @@ public class PlayerController : MonoBehaviour
     {
         float xMove;
         if (facingRight)
-            xMove = 500;
+            xMove = 110;
         else
-            xMove = -500;
+            xMove = -110;
 
         if (isGrounded)
         {
