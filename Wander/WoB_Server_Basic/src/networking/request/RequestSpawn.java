@@ -6,12 +6,9 @@ import java.io.IOException;
 // Other Imports
 import core.GameClient;
 import core.GameServer;
-import metadata.Constants;
-import model.Player;
 import networking.response.ResponseSpawn;
 import utility.DataReader;
 import utility.Log;
-import java.sql.*;
 /**
  * The RequestLogin class authenticates the user information to log in. Other
  * tasks as part of the login process lies here as well.
@@ -21,7 +18,6 @@ public class RequestSpawn extends GameRequest {
 
     // Data
     private int id;
-    private String username;
 
     // Responses
     private ResponseSpawn responseSpawn;
@@ -32,18 +28,22 @@ public class RequestSpawn extends GameRequest {
 
     @Override
     public void parse() throws IOException {
-        username = DataReader.readString(dataInput).trim();
         id = DataReader.readInt(dataInput);
     }
 
     @Override
     public void doBusiness() throws Exception {
-        Log.printf("User: '%s' with '%d' is requsting to spawn...", username, id);
-        responseSpawn.setStatus((short) 0); // User succesfully spawned
-        responseSpawn.setUsername(username);
+        responseSpawn.setStatus((short) 0);
         responseSpawn.setId(id);
-        Log.printf("'%s'", GameServer.getInstance().getActiveThreads().size());
-        Log.printf("User Successfully Spawned");
+        for(GameClient player : GameServer.getInstance().getActiveThreads().values()){
+            if(player != this.client){
+                ResponseSpawn otherPlayerInfo = new ResponseSpawn();
+                otherPlayerInfo.setStatus((short) 0);
+                otherPlayerInfo.setId(player.getUserID());
+                Log.printf(player.getID());
+                client.addResponseForUpdate(otherPlayerInfo);
+            }
+        }
         for(GameClient player : GameServer.getInstance().getActiveThreads().values()){
             if(player != this.client){
                 player.addResponseForUpdate(responseSpawn);

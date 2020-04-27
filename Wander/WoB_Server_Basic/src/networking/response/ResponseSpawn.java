@@ -11,7 +11,6 @@ import utility.GamePacket;
 public class ResponseSpawn extends GameResponse {
 
     private short status;
-    private String username;
     private int id;
     public ResponseSpawn() {
         responseCode = Constants.SMSG_SPAWN;
@@ -22,7 +21,6 @@ public class ResponseSpawn extends GameResponse {
         GamePacket packet = new GamePacket(responseCode);
         packet.addShort16(status);
         packet.addInt32(id);
-        packet.addString(username);
         return packet.getBytes();
     }
 
@@ -30,12 +28,9 @@ public class ResponseSpawn extends GameResponse {
         this.status = status;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
     public void setId(int id) {
         this.id = id;
     }
+    
 
 }

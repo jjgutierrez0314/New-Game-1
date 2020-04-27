@@ -51,7 +51,6 @@ public class Registration : MonoBehaviour
     public void ResponseRegistration(ExtendedEventArgs eventArgs) {
 		ResponseRegistrationEventArgs args = eventArgs as ResponseRegistrationEventArgs;
 		if (args.status == 0) {
-			Constants.USER_ID = args.user_id;
 			Debug.Log ("Successful Registration response : " + args.ToString());
             Debug.Log("----------------------------");
             SceneManager.LoadScene("Login");
