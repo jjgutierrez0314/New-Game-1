@@ -12,8 +12,8 @@ public class Player : MonoBehaviour
     public int currentHealth;
     public HealthBar healthBar;
 
-    public int maxStamina = 400;
-    public int currentStamina;
+    public float maxStamina = 400;
+    public float currentStamina;
     public StaminaBar staminaBar;
 
     void Awake()
@@ -55,7 +55,7 @@ public class Player : MonoBehaviour
         healthBar.SetHealth(currentHealth);
     }
 
-    public void playerRun(int stamina)
+    public void playerRun(float stamina)
     {
         currentStamina -= stamina;
         staminaBar.SetStamina(currentStamina);
@@ -67,7 +67,7 @@ public class Player : MonoBehaviour
 
         while (currentStamina < maxStamina)
         {
-            currentStamina += maxStamina / 400;
+            currentStamina += 0.5f;
             staminaBar.SetStamina(currentStamina);
             yield return regenTick;
         }
