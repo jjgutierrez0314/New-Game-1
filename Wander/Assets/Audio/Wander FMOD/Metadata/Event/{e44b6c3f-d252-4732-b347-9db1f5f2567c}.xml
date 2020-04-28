@@ -111,7 +111,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{515bb12c-076a-4d93-8783-dfc402936053}">
 		<property name="volume">
-			<value>-9</value>
+			<value>-24.5</value>
 		</property>
 		<property name="name">
 			<value>Audio 1</value>
@@ -128,7 +128,7 @@
 	</object>
 	<object class="SnapshotModule" id="{b76719b1-e25f-454e-8e88-3532157fe66a}">
 		<property name="start">
-			<value>0.40000000000000002</value>
+			<value>0.5</value>
 		</property>
 		<property name="length">
 			<value>8</value>
@@ -178,6 +178,7 @@
 	<object class="MixerBusEffectChain" id="{e2381747-f545-43af-9d0c-5a607085f08b}">
 		<relationship name="effects">
 			<destination>{5af71761-8a97-4934-9ec5-54ea79d6fba0}</destination>
+			<destination>{82caab9d-b2e9-4090-90ac-8ff137bfaca8}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{c31ba5a6-738a-4a6d-a1ec-2ef44fd8e31d}" />
@@ -197,17 +198,25 @@
 	<object class="MixerBusPanner" id="{4c25c741-38c6-4e12-a83b-3c8e821fbc4a}" />
 	<object class="MixerBusFader" id="{a517739f-dd79-4b9c-bf8b-7ccac04b034b}" />
 	<object class="MixerBusFader" id="{5af71761-8a97-4934-9ec5-54ea79d6fba0}" />
+	<object class="CompressorEffect" id="{82caab9d-b2e9-4090-90ac-8ff137bfaca8}">
+		<property name="threshold">
+			<value>-28.5</value>
+		</property>
+	</object>
 	<object class="AutomationPoint" id="{8d634743-1796-485f-a336-b80c5cb1014b}">
 		<property name="position">
-			<value>0.40000000000000002</value>
+			<value>0.5</value>
 		</property>
 		<property name="value">
 			<value>0</value>
 		</property>
+		<property name="curveShape">
+			<value>-0.476230055</value>
+		</property>
 	</object>
 	<object class="AutomationPoint" id="{c6ca5baa-3ffb-4845-88e9-56269aa7c2c1}">
 		<property name="position">
-			<value>0.80000000000000004</value>
+			<value>0.89999999999999991</value>
 		</property>
 		<property name="value">
 			<value>100</value>

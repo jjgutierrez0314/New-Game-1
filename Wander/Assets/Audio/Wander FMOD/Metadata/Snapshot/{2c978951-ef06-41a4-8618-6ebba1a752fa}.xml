@@ -4,9 +4,6 @@
 		<property name="name">
 			<value>Cave Reverb</value>
 		</property>
-		<property name="behavior">
-			<value>1</value>
-		</property>
 		<relationship name="mixer">
 			<destination>{cd274e66-3ed1-4176-84e9-dd738edf7eff}</destination>
 		</relationship>
@@ -33,6 +30,11 @@
 			<destination>{bf553118-88e7-4b66-b779-4ee06b5440c0}</destination>
 			<destination>{7862c3a5-f937-42ca-81be-139cce98d6de}</destination>
 			<destination>{d46635e4-bcec-4d69-8da4-65bb79869143}</destination>
+			<destination>{229a4f1c-1e31-405d-9f20-442123b18134}</destination>
+			<destination>{9e0969fd-4c7a-45d6-ac2f-e0dace79aff6}</destination>
+			<destination>{2cc53df1-a19a-4d07-b1d0-60f2e190a0b6}</destination>
+			<destination>{11ca0cf4-9fb8-40e6-bfff-bfd5bc6a4682}</destination>
+			<destination>{30261f6c-ea3b-42f9-b8bf-64d5357c315e}</destination>
 		</relationship>
 		<relationship name="snapshotTracks">
 			<destination>{ca71225b-4dc3-4a1e-86c6-b7212f12651f}</destination>
@@ -61,7 +63,7 @@
 			<value>decayTime</value>
 		</property>
 		<property name="value">
-			<value>3500</value>
+			<value>1700</value>
 		</property>
 		<relationship name="automatableObject">
 			<destination>{55187bc2-9329-43bb-b1d0-ee351885a15e}</destination>
@@ -72,7 +74,7 @@
 			<value>HFDecayRatio</value>
 		</property>
 		<property name="value">
-			<value>50</value>
+			<value>58.5</value>
 		</property>
 		<relationship name="automatableObject">
 			<destination>{55187bc2-9329-43bb-b1d0-ee351885a15e}</destination>
@@ -149,10 +151,65 @@
 			<value>level</value>
 		</property>
 		<property name="value">
-			<value>0</value>
+			<value>-1.5</value>
 		</property>
 		<relationship name="automatableObject">
 			<destination>{90ad9eb4-a4e1-46ed-85a1-a1a179c7bb7f}</destination>
+		</relationship>
+	</object>
+	<object class="SnapshotProperty" id="{229a4f1c-1e31-405d-9f20-442123b18134}">
+		<property name="propertyName">
+			<value>lowShelfFrequency</value>
+		</property>
+		<property name="value">
+			<value>46</value>
+		</property>
+		<relationship name="automatableObject">
+			<destination>{55187bc2-9329-43bb-b1d0-ee351885a15e}</destination>
+		</relationship>
+	</object>
+	<object class="SnapshotProperty" id="{9e0969fd-4c7a-45d6-ac2f-e0dace79aff6}">
+		<property name="propertyName">
+			<value>earlyDelay</value>
+		</property>
+		<property name="value">
+			<value>46</value>
+		</property>
+		<relationship name="automatableObject">
+			<destination>{55187bc2-9329-43bb-b1d0-ee351885a15e}</destination>
+		</relationship>
+	</object>
+	<object class="SnapshotProperty" id="{2cc53df1-a19a-4d07-b1d0-60f2e190a0b6}">
+		<property name="propertyName">
+			<value>lateDelay</value>
+		</property>
+		<property name="value">
+			<value>69</value>
+		</property>
+		<relationship name="automatableObject">
+			<destination>{55187bc2-9329-43bb-b1d0-ee351885a15e}</destination>
+		</relationship>
+	</object>
+	<object class="SnapshotProperty" id="{11ca0cf4-9fb8-40e6-bfff-bfd5bc6a4682}">
+		<property name="propertyName">
+			<value>HFReference</value>
+		</property>
+		<property name="value">
+			<value>4200</value>
+		</property>
+		<relationship name="automatableObject">
+			<destination>{55187bc2-9329-43bb-b1d0-ee351885a15e}</destination>
+		</relationship>
+	</object>
+	<object class="SnapshotProperty" id="{30261f6c-ea3b-42f9-b8bf-64d5357c315e}">
+		<property name="propertyName">
+			<value>density</value>
+		</property>
+		<property name="value">
+			<value>90</value>
+		</property>
+		<relationship name="automatableObject">
+			<destination>{55187bc2-9329-43bb-b1d0-ee351885a15e}</destination>
 		</relationship>
 	</object>
 	<object class="SnapshotTrack" id="{ca71225b-4dc3-4a1e-86c6-b7212f12651f}">

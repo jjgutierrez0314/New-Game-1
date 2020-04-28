@@ -22,6 +22,7 @@ public class CharacterSFX_Warrior : MonoBehaviour
     public string landEvent;
 
     private FMOD.Studio.EventInstance move3;
+    private FMOD.Studio.EventInstance footStep;
 
     //public functions to be called inside of the animations
     public void attackSound(){
@@ -42,7 +43,13 @@ public class CharacterSFX_Warrior : MonoBehaviour
         move3.setParameterByName("Shield Hold", 0);
     }
     public void footStepSound(){
-        FMODUnity.RuntimeManager.PlayOneShot(footStepEvent);
+
+        footStep.start();
+        //FMODUnity.RuntimeManager.PlayOneShot(footStepEvent);
+    }
+    public void footstepSounForest(){
+        footStep.setParameterByName("Surface",1);
+
     }
     public void jumpSound(){
         FMODUnity.RuntimeManager.PlayOneShot(jumpEvent);
@@ -55,6 +62,8 @@ public class CharacterSFX_Warrior : MonoBehaviour
     void Start()
     {
         move3 = FMODUnity.RuntimeManager.CreateInstance(move3Event);
+        footStep = FMODUnity.RuntimeManager.CreateInstance(footStepEvent);
+        footStep.setParameterByName("Surface", 0);
     }
 
     // Update is called once per frame
