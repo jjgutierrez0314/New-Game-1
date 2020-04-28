@@ -5,7 +5,7 @@
 			<value>Cave Ambience</value>
 		</property>
 		<property name="outputFormat">
-			<value>5</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{82978b27-806a-45a4-bb39-c37bba195c80}</destination>
@@ -336,6 +336,7 @@
 		<relationship name="effects">
 			<destination>{eaf1dbd6-75c1-4e21-b8e3-3418308ae155}</destination>
 			<destination>{102e0f1b-027f-46fb-a107-293ad4634d1f}</destination>
+			<destination>{dc9da934-e89e-4600-b8bb-b80b1db3caee}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{aba09855-cdcc-4976-84a1-d7d9379eef75}" />
@@ -464,6 +465,7 @@
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{102e0f1b-027f-46fb-a107-293ad4634d1f}" />
+	<object class="SpatialiserEffect" id="{dc9da934-e89e-4600-b8bb-b80b1db3caee}" />
 	<object class="AutomationPoint" id="{63926aee-6aa9-45e2-a3d3-06ef3144a9ef}">
 		<property name="position">
 			<value>0</value>
