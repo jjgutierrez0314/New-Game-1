@@ -7,7 +7,6 @@ public class EnemyController : MonoBehaviour
     Rigidbody2D rb2D;
     private Animator animator;
     Enemy enemy;
-    BasicAttack basicAttack;
 
     public LayerMask ground;
     private Transform groundCheck;

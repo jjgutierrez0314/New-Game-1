@@ -8,7 +8,8 @@ public class Enemy : MonoBehaviour
 
     private int health, maxHealth;
     private int attack, defense;
-    public bool isHit, death;
+    public bool isHit, death, attacking;
+    private BoxCollider2D hitbox;
 
     void Awake()
     {
@@ -20,7 +21,8 @@ public class Enemy : MonoBehaviour
             attack = 5;
             defense = 3;
         }
-        isHit = false;
+        hitbox = transform.Find("BasicAttack").GetComponent<BoxCollider2D>();
+        isHit = death = attacking = false;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -53,13 +55,40 @@ public class Enemy : MonoBehaviour
             isHit = false;
             animator.SetBool("isHit", isHit);
         }
+
+        if (attacking && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
+        {
+            attacking = hitbox.enabled = false;
+            animator.SetBool("attacking", attacking);
+        }
     }
 
-    public void hit(int damage)
+    public void Attack()
+    {
+        attacking = true;
+        animator.SetBool("attacking", attacking);
+    }
+
+    public void EnableHitbox()
+    {
+        hitbox.enabled = true;
+    }
+
+    public void Hit(int damage)
     {
         health -= damage - defense;
         isHit = true;
         animator.SetBool("isHit", isHit);
         animator.SetTrigger("hit");
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            Player player = collision.gameObject.GetComponent<Player>();
+            player.playerHit(attack);
+            Debug.Log("Player hit!");
+        }
     }
 }

@@ -54,7 +54,7 @@ public class BasicAttack : MonoBehaviour
             Enemy enemy = collision.gameObject.GetComponent<Enemy>();
             if (!enemy.isHit)
             {
-                enemy.hit(25);
+                enemy.Hit(25);
                 Debug.Log("Enemy hit!");
             }
         }
