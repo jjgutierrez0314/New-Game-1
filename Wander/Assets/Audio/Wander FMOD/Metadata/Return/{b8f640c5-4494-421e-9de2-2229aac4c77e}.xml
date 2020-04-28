@@ -8,7 +8,7 @@
 			<value>true</value>
 		</property>
 		<property name="name">
-			<value>Reverb</value>
+			<value>Cave Reverb</value>
 		</property>
 		<relationship name="effectChain">
 			<destination>{7e40d81d-e3b3-4037-9f28-f68f699791bd}</destination>
@@ -28,8 +28,14 @@
 	</object>
 	<object class="MixerBusPanner" id="{5b5a51e0-1192-4aa3-a63a-41919c1b802f}" />
 	<object class="SFXReverbEffect" id="{55187bc2-9329-43bb-b1d0-ee351885a15e}">
+		<property name="decayTime">
+			<value>8000</value>
+		</property>
+		<property name="earlyDelay">
+			<value>22.5</value>
+		</property>
 		<property name="wetLevel">
-			<value>0</value>
+			<value>0.5</value>
 		</property>
 		<property name="dryLevel">
 			<value>-80</value>

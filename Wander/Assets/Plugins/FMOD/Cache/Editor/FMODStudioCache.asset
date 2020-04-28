@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: event:/UI/Cancel
   guid: b1433ad024dcf84eb409e3975a1884fa
   Banks:
-  - {fileID: 1435676102954031207}
+  - {fileID: 930985354126756524}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -23,6 +23,41 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 319
+--- !u!114 &-8572963287592606299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &-8557846036447559520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637236112483624564
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-8471422096759301675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39,6 +74,24 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
+  Exists: 0
+--- !u!114 &-8312442615152423997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637235996559749479
+  LoadResult: 0
+  FileSizes: []
   Exists: 0
 --- !u!114 &-8023441734854842448
 MonoBehaviour:
@@ -72,7 +125,7 @@ MonoBehaviour:
   Path: event:/Music/Menu Music
   guid: 25de7ce07e3a6c4faa3ceffbddc45063
   Banks:
-  - {fileID: 1435676102954031207}
+  - {fileID: 930985354126756524}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
@@ -80,6 +133,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 50411
+--- !u!114 &-7647742819744584595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637236037354273108
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-7229812675631060491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -97,6 +168,29 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 1
+--- !u!114 &-7105000670451815118
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Level sounds/Cave/Cave Ambience
+  m_EditorClassIdentifier: 
+  Path: event:/Level sounds/Cave/Cave Ambience
+  guid: 319f9fd33c408d42a7b1f7f2ab15c296
+  Banks:
+  - {fileID: 930985354126756524}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 50500
 --- !u!114 &-6974656255666741280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,6 +209,164 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-6725655170075807928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637236005233550965
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-6680032581464905283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &-5931112823818507139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &-5698696633725067005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637235939127881850
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-5580215040546234077
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637236049423674981
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-5188462706927755179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637235998529421533
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-4388786463516423435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &-4370520399015069054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637235948281320096
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-4354220046001932482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &-4342361343158670000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,7 +382,7 @@ MonoBehaviour:
   Path: event:/UI/Password Incorrect
   guid: eda19995e3e7554da531358ba56ec592
   Banks:
-  - {fileID: 1435676102954031207}
+  - {fileID: 930985354126756524}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -138,6 +390,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 439
+--- !u!114 &-4300404671967942586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637235955225571468
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-4191729569216509742
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,8 +422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/Character/Warrior/Shield Smash
   guid: 18eeb3ab9aa01f4b9dccc2b124998bd1
-  Banks:
-  - {fileID: 1435676102954031207}
+  Banks: []
   IsStream: 0
   Is3D: 0
   IsOneShot: 0
@@ -162,6 +431,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1950
+--- !u!114 &-4136767721646848468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &-3932037191295845455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,6 +466,100 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-3902344765951910634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637236049851433258
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-3896166340969740344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Normal Reverb
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Normal Reverb
+  guid: 3cb5a853b3cbee4a8afb3842cbd379e7
+  Banks:
+  - {fileID: 930985354126756524}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-3742328587608520976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637235949516828984
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-3261129779959812007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637236116109271758
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-3121096024539308134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &-3083700649031842877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,6 +577,46 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &-2812461927854166443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &-2227681667949418187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Footsteps
+  guid: d950040d583acd4e8dbe37b31b2d2b90
+  Banks:
+  - {fileID: 930985354126756524}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 500
 --- !u!114 &-1777251185303826904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,6 +635,99 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-1585447077651479993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &-1406763907020148745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637236063897231559
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-1398605680704110786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637235938545339369
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-1239703729748993604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Warrior/Move2
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Warrior/Move2
+  guid: bad45089419be148a79aa1a6919e0fff
+  Banks:
+  - {fileID: 930985354126756524}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1171
+--- !u!114 &-47440618100754579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,22 +742,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 8820463904110504174}
-  - {fileID: 1435676102954031207}
+  - {fileID: 930985354126756524}
   EditorEvents:
   - {fileID: 2965054620475447}
   - {fileID: 435311726305861641}
   - {fileID: 4214932271169696633}
   - {fileID: -8799010036765337159}
   - {fileID: -4342361343158670000}
-  - {fileID: -4191729569216509742}
   - {fileID: -7755250755495712942}
   - {fileID: 5181907682812972526}
+  - {fileID: 4026400567719461320}
+  - {fileID: -1239703729748993604}
+  - {fileID: -2227681667949418187}
+  - {fileID: -3896166340969740344}
+  - {fileID: 2728882416108879888}
+  - {fileID: -7105000670451815118}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 1435676102954031207}
+  - {fileID: 930985354126756524}
   StringsBanks:
   - {fileID: 8820463904110504174}
-  stringsBankWriteTime: 637227622950390304
+  stringsBankWriteTime: 637236108736600840
   cacheVersion: 3
 --- !u!114 &2965054620475447
 MonoBehaviour:
@@ -261,7 +779,7 @@ MonoBehaviour:
   Path: event:/UI/Select
   guid: 16465b9d401dc644b73a636bb4501a69
   Banks:
-  - {fileID: 1435676102954031207}
+  - {fileID: 930985354126756524}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -269,6 +787,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 89
+--- !u!114 &289586472656556404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &435311726305861641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -284,7 +819,7 @@ MonoBehaviour:
   Path: event:/UI/Enter
   guid: 3a7e9e377cc92a409ddc3ec1f27e6dd5
   Banks:
-  - {fileID: 1435676102954031207}
+  - {fileID: 930985354126756524}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -292,6 +827,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 496
+--- !u!114 &762521205333398510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637235936828079510
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &792142144435909865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -303,6 +856,76 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Shield Smash/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &930985354126756524
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637236154040810920
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &935257769964958963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &1048168829530471288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637235952671465123
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &1351150952210044467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
   m_EditorClassIdentifier: 
   Name: Shield Hold
   Min: 0
@@ -326,7 +949,59 @@ MonoBehaviour:
   lastModified: 637227622950330345
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
+--- !u!114 &2029172230770233335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &2412586730026669177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &2423624250631669665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637235953985440957
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &2704753390145321637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -345,6 +1020,193 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &2728882416108879888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Cave Reverb
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Cave Reverb
+  guid: 5189972c06efa44186186ebba1a752fa
+  Banks:
+  - {fileID: 930985354126756524}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &2792015843439646456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &2887279050372174696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637236005537241847
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &3251539690196924950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637235984787156016
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &3378198102604027640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637235936499131022
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &3933527290484548359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637236041203739327
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &4022715887319238980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &4026400567719461320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Warrior/Move3
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Warrior/Move3
+  guid: 18eeb3ab9aa01f4b9dccc2b124998bd1
+  Banks:
+  - {fileID: 930985354126756524}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8516238629870435684}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1980
+--- !u!114 &4039852620855988893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &4056520278203081736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &4214932271169696633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,14 +1222,32 @@ MonoBehaviour:
   Path: event:/Character/Warrior/Basic Attack
   guid: 8777b79982f8ca4482396bed3f3690e3
   Banks:
-  - {fileID: 1435676102954031207}
+  - {fileID: 930985354126756524}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
-  Length: 906
+  Length: 685
+--- !u!114 &4320363025344870489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637235998290660469
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &4609925972082915818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386,6 +1266,23 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &4835582544741147386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
 --- !u!114 &5181907682812972526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -401,14 +1298,84 @@ MonoBehaviour:
   Path: event:/Level sounds/Forrest/Waterfall
   guid: d70acb00d9d54746a0e5a981bde9a7a7
   Banks:
-  - {fileID: 1435676102954031207}
+  - {fileID: 930985354126756524}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 0
-  MaxDistance: 4
+  MaxDistance: 40
   Length: 26297
+--- !u!114 &5406303711210768934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &5868964828429624135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637235997187630855
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &6355799736419880069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &6838285362286903440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637235997503641833
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &6883702700179749122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -424,6 +1391,75 @@ MonoBehaviour:
   Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
   SubDir: 
   lastModified: 637227610946621671
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &7947191928336443857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &8019196534177955839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &8516238629870435684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &8594287703047690465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637236036699034584
   LoadResult: 0
   FileSizes: []
   Exists: 0
@@ -445,6 +1481,24 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &8716262858574356575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637236099748459967
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &8716851059130116654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -456,6 +1510,23 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Shield Smash/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &8728344151045402816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
   m_EditorClassIdentifier: 
   Name: Shield Hold
   Min: 0
@@ -476,12 +1547,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637227622950390304
+  lastModified: 637236108736600840
   LoadResult: 0
   FileSizes:
   - Name: Desktop
-    Value: 1158
+    Value: 1584
   Exists: 1
+--- !u!114 &8864415537958997251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &8908860911993181006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637236040731247441
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &8992544908240685608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -493,6 +1599,23 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Shield Smash/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &8998704647372447979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
   m_EditorClassIdentifier: 
   Name: Shield Hold
   Min: 0

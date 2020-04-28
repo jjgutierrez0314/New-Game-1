@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - Enemy
   - One-way
+  - CaveAudio
+  - Bat
   layers:
   - Default
   - TransparentFX
