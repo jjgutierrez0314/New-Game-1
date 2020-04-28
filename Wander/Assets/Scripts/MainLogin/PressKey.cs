@@ -21,7 +21,7 @@ public class PressKey : MonoBehaviour
     {
         if(Input.anyKeyDown){
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-            FMODUnity.RuntimeManager.PlayOneShot("event:/UI/Enter");
+            FMODUnity.RuntimeManager.PlayOneShot("event:/UI/KeyPressed");
         }
     }
 }
