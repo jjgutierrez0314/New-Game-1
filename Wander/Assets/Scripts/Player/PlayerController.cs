@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody2D rb2D;
     private Animator animator;
+    Player player;
     BasicAttack basicAttack;
     Abilities abilities;
 
@@ -31,6 +32,7 @@ public class PlayerController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         rb2D = GetComponent<Rigidbody2D>();
+        player = GetComponent<Player>();
         basicAttack = GetComponentInChildren<BasicAttack>();
         abilities = GetComponent<Abilities>();
         groundCheck = transform.GetChild(0);
@@ -39,7 +41,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((!basicAttack.attacking && !abilities.actionActive) || !isGrounded)
+        if (!player.dying && ((!basicAttack.attacking && !abilities.actionActive) || !isGrounded))
         {
             // Set horizontal movement
             if (Input.GetButton("Shift") && !isTired)

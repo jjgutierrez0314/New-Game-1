@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    private Animator animator;
+
     private int health;
     private WaitForSeconds regenTick = new WaitForSeconds(0.1f);
     private Coroutine regen;
@@ -17,11 +19,13 @@ public class Player : MonoBehaviour
     public float maxStamina = 100;
     public float currentStamina;
     public StaminaBar staminaBar;
+    public bool dying;
 
     public PlayerController player;
 
     void Awake()
     {
+        animator = GetComponent<Animator>();
         health = 100;
         player = GetComponent<PlayerController>();
         // cManager = gameObject.GetComponent<ConnectionManager>();
@@ -40,6 +44,16 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (dying && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
+        {
+            // Transition to game over screen
+        }
+        else if (currentHealth <= 0)
+        {
+            dying = true;
+            animator.SetTrigger("death");
+        }
+
         if (Input.GetKey(KeyCode.LeftShift))
         {
             player.setTired(false);
