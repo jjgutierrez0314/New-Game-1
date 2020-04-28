@@ -27,8 +27,6 @@ public class PlayerController : MonoBehaviour
 
     bool isTired = false;
 
-    public UnityEvent OnLandEvent;
-
     void Awake()
     {
         animator = GetComponent<Animator>();
@@ -36,8 +34,6 @@ public class PlayerController : MonoBehaviour
         basicAttack = GetComponentInChildren<BasicAttack>();
         abilities = GetComponent<Abilities>();
         groundCheck = transform.GetChild(0);
-        if (OnLandEvent == null)
-            OnLandEvent = new UnityEvent();
     }
 
     // Update is called once per frame
@@ -92,18 +88,15 @@ public class PlayerController : MonoBehaviour
             {
                 isGrounded = true;
                 if (!wasGrounded)
-                    OnLandEvent.Invoke();
+                {
+                    animator.SetBool("isJumping", false);
+                    animator.SetFloat("yVelocity", 0);
+                }
             }
         }
 
         Vector3 targetVelocity = new Vector2(xMove * 25f * Time.fixedDeltaTime, rb2D.velocity.y);
         rb2D.velocity = Vector3.SmoothDamp(rb2D.velocity, targetVelocity, ref velocity, 0.05f);
-    }
-
-    public void OnLanding()
-    {
-        animator.SetBool("isJumping", false);
-        animator.SetFloat("yVelocity", 0);
     }
 
     // Flips the sprite
@@ -136,7 +129,7 @@ public class PlayerController : MonoBehaviour
 
         if (isGrounded)
         {
-            Vector3 targetVelocity = new Vector2(xMove * 25f * Time.fixedDeltaTime, 0);
+            Vector3 targetVelocity = new Vector2(xMove * 25f * Time.deltaTime, 0);
             rb2D.velocity = Vector3.SmoothDamp(rb2D.velocity, targetVelocity, ref velocity, 0.05f);
         }
     }
