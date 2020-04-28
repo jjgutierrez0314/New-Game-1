@@ -19,15 +19,17 @@ public class Player : MonoBehaviour
     public float maxStamina = 100;
     public float currentStamina;
     public StaminaBar staminaBar;
-    public bool dying;
+    public bool dying = false;
 
     public PlayerController player;
+    public LevelChanger levelChanger;
 
     void Awake()
     {
         animator = GetComponent<Animator>();
         health = 100;
         player = GetComponent<PlayerController>();
+        levelChanger = GameObject.Find("LevelChanger").GetComponent<LevelChanger>();
         // cManager = gameObject.GetComponent<ConnectionManager>();
         // msgQueue = gameObject.GetComponent<MessageQueue>();
     }
@@ -44,16 +46,6 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (dying && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
-        {
-            // Transition to game over screen
-        }
-        else if (currentHealth <= 0)
-        {
-            dying = true;
-            animator.SetTrigger("death");
-        }
-
         if (Input.GetKey(KeyCode.LeftShift))
         {
             player.setTired(false);
@@ -78,10 +70,12 @@ public class Player : MonoBehaviour
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
 
-        // if (health <= 0)
-        // {
-        //     SceneManager.GetActiveScene().buildIndex + 1;
-        // }
+        if (health <= 0)
+        {
+            dying = true;
+            animator.SetTrigger("death");
+            levelChanger.FadeToLevel();
+        }
     }
 
     public void playerRun(float stamina)

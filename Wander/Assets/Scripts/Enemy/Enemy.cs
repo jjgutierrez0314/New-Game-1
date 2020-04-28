@@ -42,11 +42,6 @@ public class Enemy : MonoBehaviour
     {
         if (death && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
             Destroy(gameObject);
-        else if (health <= 0)
-        {
-            death = true;
-            animator.SetBool("dying", death);
-        }
     }
 
     void FixedUpdate()
@@ -85,6 +80,12 @@ public class Enemy : MonoBehaviour
         isHit = true;
         animator.SetBool("isHit", isHit);
         animator.SetTrigger("hit");
+
+        if (health <= 0)
+        {
+            death = true;
+            animator.SetBool("dying", death);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
