@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 2451028595216425309}
   - component: {fileID: 1401598659180679924}
   - component: {fileID: 2105154596384147299}
-  - component: {fileID: 187731321}
+  - component: {fileID: 3328235706501144473}
   m_Layer: 0
   m_Name: Warrior
   m_TagString: Player
@@ -573,7 +573,7 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 0
---- !u!114 &187731321
+--- !u!114 &3328235706501144473
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

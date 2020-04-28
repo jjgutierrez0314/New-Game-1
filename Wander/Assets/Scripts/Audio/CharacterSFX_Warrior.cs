@@ -40,6 +40,7 @@ public class CharacterSFX_Warrior : MonoBehaviour
     }
     public void move3SoundStop(){  //releases held sound
         move3.setParameterByName("Shield Hold", 0);
+        move3.release();
     }
     public void footStepSound(){
         FMODUnity.RuntimeManager.PlayOneShot(footStepEvent);
