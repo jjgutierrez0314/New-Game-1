@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -62,6 +63,11 @@ public class Player : MonoBehaviour
 
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
+
+        // if (health <= 0)
+        // {
+        //     SceneManager.GetActiveScene().buildIndex + 1;
+        // }
     }
 
     public void playerRun(float stamina)
@@ -82,4 +88,11 @@ public class Player : MonoBehaviour
         }
         regen = null;
     }
+
+    // IEnumerator Fading()
+    // {
+    //     anim.SetBool("Fade", true);
+    //     yield return new WaitUntil(() => black.color.a == 1);
+    //     SceneManager.GetActiveScene().buildIndex + 1;
+    // }
 }
