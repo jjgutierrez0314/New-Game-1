@@ -12,7 +12,7 @@ public class EnemyController : MonoBehaviour
     private Transform groundCheck;
 
     public float moveSpeed;
-    float xMove = 0f;
+    public float xMove = 0f;
 
     public float jumpVelocity;
     public float fallMultiplier;

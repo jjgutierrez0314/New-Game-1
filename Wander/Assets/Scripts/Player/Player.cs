@@ -1,10 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
+    private Animator animator;
+
     private int health;
+    private int score = 0;
     private WaitForSeconds regenTick = new WaitForSeconds(0.1f);
     private Coroutine regen;
 
@@ -16,13 +20,17 @@ public class Player : MonoBehaviour
     public float maxStamina = 100;
     public float currentStamina;
     public StaminaBar staminaBar;
+    public bool dying = false;
 
     public PlayerController player;
+    public LevelChanger levelChanger;
 
     void Awake()
     {
+        animator = GetComponent<Animator>();
         health = 100;
         player = GetComponent<PlayerController>();
+        levelChanger = GameObject.Find("LevelChanger").GetComponent<LevelChanger>();
         // cManager = gameObject.GetComponent<ConnectionManager>();
         // msgQueue = gameObject.GetComponent<MessageQueue>();
     }
@@ -62,6 +70,13 @@ public class Player : MonoBehaviour
 
         currentHealth -= damage;
         healthBar.SetHealth(currentHealth);
+
+        if (health <= 0)
+        {
+            dying = true;
+            animator.SetTrigger("death");
+            levelChanger.FadeToLevel();
+        }
     }
 
     public void playerRun(float stamina)
@@ -81,5 +96,11 @@ public class Player : MonoBehaviour
             yield return regenTick;
         }
         regen = null;
+    }
+
+    public void addScore()
+    {
+        score += 1;
+        if (score >= 1) { levelChanger.FadeToLevel(); }
     }
 }

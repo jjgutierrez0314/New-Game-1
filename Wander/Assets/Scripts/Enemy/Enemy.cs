@@ -9,20 +9,24 @@ public class Enemy : MonoBehaviour
     private int health, maxHealth;
     private int attack, defense;
     public bool isHit, death, attacking;
+    private float attackCoolDownTime, attackCoolDown;
     private BoxCollider2D hitbox;
+    public Player player;
 
     void Awake()
     {
         animator = gameObject.GetComponent<Animator>();
+        player = gameObject.GetComponent<Player>();
 
         if (GameObject.FindGameObjectWithTag("Bat") != null)
         {
             health = maxHealth = 50;
-            attack = 5;
+            attack = 20;
             defense = 3;
+            attackCoolDown = 2f;
         }
         hitbox = transform.Find("BasicAttack").GetComponent<BoxCollider2D>();
-        isHit = death = attacking = false;
+        isHit = death = attacking = hitbox.enabled = false;
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -30,8 +34,8 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Player player = collision.gameObject.GetComponent<Player>();
-            player.playerHit(5); // Hit for 5 damage
-            Debug.Log("Player hit!");
+            player.playerHit(2); // Hit for 5 damage
+            Debug.Log("Player contacted!");
         }
     }
 
@@ -40,18 +44,12 @@ public class Enemy : MonoBehaviour
     {
         if (death && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
             Destroy(gameObject);
-        else if (health <= 0)
-        {
-            death = true;
-            animator.SetBool("dying", death);
-        }
     }
 
     void FixedUpdate()
     {
         if (isHit && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
         {
-            Debug.Log("ishit is false");
             isHit = false;
             animator.SetBool("isHit", isHit);
         }
@@ -65,8 +63,12 @@ public class Enemy : MonoBehaviour
 
     public void Attack()
     {
-        attacking = true;
-        animator.SetBool("attacking", attacking);
+        if (attackCoolDownTime <= Time.time)
+        {
+            attackCoolDownTime = Time.time + attackCoolDown;
+            attacking = true;
+            animator.SetBool("attacking", attacking);
+        }
     }
 
     public void EnableHitbox()
@@ -80,6 +82,13 @@ public class Enemy : MonoBehaviour
         isHit = true;
         animator.SetBool("isHit", isHit);
         animator.SetTrigger("hit");
+
+        if (health <= 0)
+        {
+            death = true;
+            animator.SetBool("dying", death);
+            player.addScore();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -211,11 +211,7 @@ GameObject:
   - component: {fileID: 5024305371183947773}
   - component: {fileID: 5024305371183947772}
   - component: {fileID: 5024305371183947760}
-  - component: {fileID: 4573050226628154131}
-  - component: {fileID: 2451028595216425309}
-  - component: {fileID: 1401598659180679924}
   - component: {fileID: 2105154596384147299}
-  - component: {fileID: 3328235706501144473}
   m_Layer: 0
   m_Name: Warrior
   m_TagString: Player
@@ -346,63 +342,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &4573050226628154131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5024305371183947769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa12272fa180a134886964c33e989d69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ground:
-    serializedVersion: 2
-    m_Bits: 256
-  moveSpeed: 3
-  sprintSpeed: 4.5
-  jumpVelocity: 3.5
-  fallMultiplier: 2
-  lowJumpMultiplier: 2
-  isGrounded: 1
---- !u!114 &2451028595216425309
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5024305371183947769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 117f1a22db5322b4a9ce987b5e6dc4cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxHealth: 100
-  currentHealth: 0
-  healthBar: {fileID: 0}
-  maxStamina: 100
-  currentStamina: 0
-  staminaBar: {fileID: 0}
-  player: {fileID: 0}
---- !u!114 &1401598659180679924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5024305371183947769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 004216fd2af10a84baf7f4708832ac4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actionActive: 0
-  ability1: 0
-  ability2: 0
-  ability3: 0
-  ability3Held: 0
 --- !u!114 &2105154596384147299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -538,7 +477,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -572,23 +511,4 @@ MonoBehaviour:
     handleAnimatorMove: 0
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
-  eventHandlerComponentsAdded: 0
---- !u!114 &3328235706501144473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5024305371183947769}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef8214bb361aa7f4c9576010c07c0d9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackEvent: event:/Character/Warrior/Basic Attack
-  move1Event: 
-  move2Event: event:/Character/Warrior/Move2
-  move3Event: event:/Character/Warrior/Move3
-  footStepEvent: event:/Character/Footsteps
-  jumpEvent: 
-  landEvent: 
+  eventHandlerComponentsAdded: 1
