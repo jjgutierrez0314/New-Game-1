@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   welcomeScreenVersion: '1.9.0 '
   playmakerVersion: 
-  showWelcomeScreen: 0
+  showWelcomeScreen: 1
   showUpgradeGuide: 0
-  lastAutoUpdateSignature: 2019.3.3f1__C:/Users/Gangzhaorige/Desktop/New-Game-1/Wander/Assets__0.0.0.0
+  lastAutoUpdateSignature: 2019.3.9f1__C:/Users/Colin/Wander/New-Game-1/Wander/Assets__0.0.0.0
   useLegacyNetworking: 0
