@@ -123,13 +123,13 @@ public class PlayerController : MonoBehaviour
     {
         float xMove;
         if (facingRight)
-            xMove = 60;
+            xMove = 50;
         else
-            xMove = -60;
+            xMove = -50;
 
         if (isGrounded)
         {
-            Vector3 targetVelocity = new Vector2(xMove * 25f * Time.deltaTime, 0);
+            Vector3 targetVelocity = new Vector2(xMove * 25f * Time.fixedDeltaTime, 0);
             rb2D.velocity = Vector3.SmoothDamp(rb2D.velocity, targetVelocity, ref velocity, 0.05f);
         }
     }
