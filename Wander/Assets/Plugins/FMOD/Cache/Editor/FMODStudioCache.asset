@@ -1,5 +1,93 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9168706835980403030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Warrior/Move3
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Warrior/Move3
+  guid: 18eeb3ab9aa01f4b9dccc2b124998bd1
+  Banks:
+  - {fileID: -8996660869500234570}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 5248345062783855290}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1980
+--- !u!114 &-9133126901574856787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Level sounds/Forrest/Waterfall
+  m_EditorClassIdentifier: 
+  Path: event:/Level sounds/Forrest/Waterfall
+  guid: d70acb00d9d54746a0e5a981bde9a7a7
+  Banks:
+  - {fileID: 382685399417257901}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 40
+  Length: 26297
+--- !u!114 &-8996660869500234570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/StreamingAssets/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637236087824983340
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-8876927262230178412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Level sounds/Forrest/Waterfall
+  m_EditorClassIdentifier: 
+  Path: event:/Level sounds/Forrest/Waterfall
+  guid: d70acb00d9d54746a0e5a981bde9a7a7
+  Banks:
+  - {fileID: 5849542736459497011}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 40
+  Length: 26297
 --- !u!114 &-8799010036765337159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40,6 +128,29 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &-8518648538054413054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Normal Reverb
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Normal Reverb
+  guid: 3cb5a853b3cbee4a8afb3842cbd379e7
+  Banks:
+  - {fileID: -7600459211993547174}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-8471422096759301675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -57,6 +168,29 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &-8471037604799466545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Cancel
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Cancel
+  guid: b1433ad024dcf84eb409e3975a1884fa
+  Banks:
+  - {fileID: -8996660869500234570}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 319
 --- !u!114 &-8312442615152423997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75,6 +209,53 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-8300558124038350744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Warrior/Move3
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Warrior/Move3
+  guid: 18eeb3ab9aa01f4b9dccc2b124998bd1
+  Banks:
+  - {fileID: -7600459211993547174}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 2265538402407909562}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1980
+--- !u!114 &-8247753329462127346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Level sounds/Forrest/Waterfall
+  m_EditorClassIdentifier: 
+  Path: event:/Level sounds/Forrest/Waterfall
+  guid: d70acb00d9d54746a0e5a981bde9a7a7
+  Banks:
+  - {fileID: -4683115851966865381}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 40
+  Length: 26297
 --- !u!114 &-8023441734854842448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -86,6 +267,23 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
   m_Name: parameter:/Shield Smash/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &-7913839510980215231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
   m_EditorClassIdentifier: 
   Name: Shield Hold
   Min: 0
@@ -133,6 +331,94 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-7600459211993547174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637236071034863522
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-7538759648872440475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Cancel
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Cancel
+  guid: b1433ad024dcf84eb409e3975a1884fa
+  Banks:
+  - {fileID: 382685399417257901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 319
+--- !u!114 &-7538684832196170148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Menu Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Menu Music
+  guid: 25de7ce07e3a6c4faa3ceffbddc45063
+  Banks:
+  - {fileID: 382685399417257901}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 50411
+--- !u!114 &-7298180560342773072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Warrior/Move3
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Warrior/Move3
+  guid: 18eeb3ab9aa01f4b9dccc2b124998bd1
+  Banks:
+  - {fileID: 382685399417257901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 4095549076448403680}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1980
 --- !u!114 &-7229812675631060491
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -209,6 +495,29 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-6705216159401235891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Select
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Select
+  guid: 16465b9d401dc644b73a636bb4501a69
+  Banks:
+  - {fileID: 382685399417257901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 89
 --- !u!114 &-6680032581464905283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,6 +534,109 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
+  Exists: 1
+--- !u!114 &-6584193223618058471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Warrior/Basic Attack
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Warrior/Basic Attack
+  guid: 8777b79982f8ca4482396bed3f3690e3
+  Banks:
+  - {fileID: -8996660869500234570}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 685
+--- !u!114 &-6340599654281718784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &-6287363378412286083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Warrior/Move2
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Warrior/Move2
+  guid: bad45089419be148a79aa1a6919e0fff
+  Banks:
+  - {fileID: 382685399417257901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1171
+--- !u!114 &-6097347825938080140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/StreamingAssets/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637236087825053937
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 1584
+  Exists: 1
+--- !u!114 &-5841900025883514848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/StreamingAssets/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637236086586593157
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 1584
   Exists: 1
 --- !u!114 &-5698696633725067005
 MonoBehaviour:
@@ -262,6 +674,76 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-5484303046650300795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Warrior/Move3
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Warrior/Move3
+  guid: 18eeb3ab9aa01f4b9dccc2b124998bd1
+  Banks:
+  - {fileID: -4683115851966865381}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 1522163986344599974}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1980
+--- !u!114 &-5440627926030482485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Footsteps
+  guid: d950040d583acd4e8dbe37b31b2d2b90
+  Banks:
+  - {fileID: -7600459211993547174}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 500
+--- !u!114 &-5384244967967136814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Enter
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Enter
+  guid: 3a7e9e377cc92a409ddc3ec1f27e6dd5
+  Banks:
+  - {fileID: -4683115851966865381}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 496
 --- !u!114 &-5188462706927755179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,6 +762,116 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-4978921318657804663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Menu Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Menu Music
+  guid: 25de7ce07e3a6c4faa3ceffbddc45063
+  Banks:
+  - {fileID: 5849542736459497011}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 50411
+--- !u!114 &-4846004761485888981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Cancel
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Cancel
+  guid: b1433ad024dcf84eb409e3975a1884fa
+  Banks:
+  - {fileID: 5849542736459497011}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 319
+--- !u!114 &-4683115851966865381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/StreamingAssets/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637236086586533182
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
+--- !u!114 &-4486318713089527060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Password Incorrect
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Password Incorrect
+  guid: eda19995e3e7554da531358ba56ec592
+  Banks:
+  - {fileID: -1803131476621306266}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 439
+--- !u!114 &-4394172325581742261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Warrior/Move2
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Warrior/Move2
+  guid: bad45089419be148a79aa1a6919e0fff
+  Banks:
+  - {fileID: -7600459211993547174}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1171
 --- !u!114 &-4388786463516423435
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -355,6 +947,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 439
+--- !u!114 &-4325472967548741217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Footsteps
+  guid: d950040d583acd4e8dbe37b31b2d2b90
+  Banks:
+  - {fileID: -4683115851966865381}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 500
 --- !u!114 &-4300404671967942586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -413,6 +1028,29 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &-3938797498282570469
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Footsteps
+  guid: d950040d583acd4e8dbe37b31b2d2b90
+  Banks:
+  - {fileID: 5849542736459497011}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 500
 --- !u!114 &-3932037191295845455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -472,6 +1110,44 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &-3893031938612830423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/FMOD Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637236070110229538
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1584
+  Exists: 0
+--- !u!114 &-3798220441604698230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/FmodBuild/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637236071902242264
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &-3742328587608520976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -490,6 +1166,161 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-3607355639537478939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &-3566840839949010619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Level sounds/Cave/Cave Ambience
+  m_EditorClassIdentifier: 
+  Path: event:/Level sounds/Cave/Cave Ambience
+  guid: 319f9fd33c408d42a7b1f7f2ab15c296
+  Banks:
+  - {fileID: -4683115851966865381}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 50500
+--- !u!114 &-3448675780952737597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Password Incorrect
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Password Incorrect
+  guid: eda19995e3e7554da531358ba56ec592
+  Banks:
+  - {fileID: -7600459211993547174}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 439
+--- !u!114 &-3254413381425060116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Enter
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Enter
+  guid: 3a7e9e377cc92a409ddc3ec1f27e6dd5
+  Banks:
+  - {fileID: -8996660869500234570}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 496
+--- !u!114 &-3242822568905115674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Level sounds/Cave/Cave Ambience
+  m_EditorClassIdentifier: 
+  Path: event:/Level sounds/Cave/Cave Ambience
+  guid: 319f9fd33c408d42a7b1f7f2ab15c296
+  Banks:
+  - {fileID: 382685399417257901}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 50500
+--- !u!114 &-3238028661521449335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Level sounds/Forrest/Waterfall
+  m_EditorClassIdentifier: 
+  Path: event:/Level sounds/Forrest/Waterfall
+  guid: d70acb00d9d54746a0e5a981bde9a7a7
+  Banks:
+  - {fileID: -1803131476621306266}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 40
+  Length: 26297
+--- !u!114 &-3210441087715306796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Level sounds/Cave/Cave Ambience
+  m_EditorClassIdentifier: 
+  Path: event:/Level sounds/Cave/Cave Ambience
+  guid: 319f9fd33c408d42a7b1f7f2ab15c296
+  Banks:
+  - {fileID: 5849542736459497011}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 50500
 --- !u!114 &-3121096024539308134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -524,6 +1355,46 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &-3075741897663882455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Password Incorrect
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Password Incorrect
+  guid: eda19995e3e7554da531358ba56ec592
+  Banks:
+  - {fileID: -8996660869500234570}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 439
+--- !u!114 &-3060539013761364841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
 --- !u!114 &-2812461927854166443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,6 +1412,88 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &-2620663982867123661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &-2445900492337726467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/FMOD Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637236070110169453
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &-2341415043312958605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Warrior/Move3
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Warrior/Move3
+  guid: 18eeb3ab9aa01f4b9dccc2b124998bd1
+  Banks:
+  - {fileID: -1803131476621306266}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -6340599654281718784}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1980
+--- !u!114 &-2275053110627106107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Password Incorrect
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Password Incorrect
+  guid: eda19995e3e7554da531358ba56ec592
+  Banks:
+  - {fileID: 5849542736459497011}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 439
 --- !u!114 &-2227681667949418187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -564,6 +1517,70 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 500
+--- !u!114 &-2226680956315609098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Normal Reverb
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Normal Reverb
+  guid: 3cb5a853b3cbee4a8afb3842cbd379e7
+  Banks:
+  - {fileID: -4683115851966865381}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-2198424889753286196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Warrior/Basic Attack
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Warrior/Basic Attack
+  guid: 8777b79982f8ca4482396bed3f3690e3
+  Banks:
+  - {fileID: 5849542736459497011}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 685
+--- !u!114 &-1803131476621306266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637236076650242432
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-1777251185303826904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -582,6 +1599,29 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-1666962827815302606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Level sounds/Cave/Cave Ambience
+  m_EditorClassIdentifier: 
+  Path: event:/Level sounds/Cave/Cave Ambience
+  guid: 319f9fd33c408d42a7b1f7f2ab15c296
+  Banks:
+  - {fileID: -8996660869500234570}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 50500
 --- !u!114 &-1585447077651479993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -599,6 +1639,52 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &-1506236412964042162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Normal Reverb
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Normal Reverb
+  guid: 3cb5a853b3cbee4a8afb3842cbd379e7
+  Banks:
+  - {fileID: -8996660869500234570}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-1435555747331187012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Enter
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Enter
+  guid: 3a7e9e377cc92a409ddc3ec1f27e6dd5
+  Banks:
+  - {fileID: -7600459211993547174}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 496
 --- !u!114 &-1406763907020148745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -635,6 +1721,52 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &-1367230745501456998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Level sounds/Cave/Cave Ambience
+  m_EditorClassIdentifier: 
+  Path: event:/Level sounds/Cave/Cave Ambience
+  guid: 319f9fd33c408d42a7b1f7f2ab15c296
+  Banks:
+  - {fileID: -1803131476621306266}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 50500
+--- !u!114 &-1253635818380435223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Warrior/Move2
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Warrior/Move2
+  guid: bad45089419be148a79aa1a6919e0fff
+  Banks:
+  - {fileID: -8996660869500234570}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1171
 --- !u!114 &-1239703729748993604
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -658,6 +1790,302 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 1171
+--- !u!114 &-944003363594164396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Cave Reverb
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Cave Reverb
+  guid: 5189972c06efa44186186ebba1a752fa
+  Banks:
+  - {fileID: -8996660869500234570}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-787471685549770827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Enter
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Enter
+  guid: 3a7e9e377cc92a409ddc3ec1f27e6dd5
+  Banks:
+  - {fileID: 5849542736459497011}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 496
+--- !u!114 &-751630984788446678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637236076650302366
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1584
+  Exists: 0
+--- !u!114 &-744225310194276074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Level sounds/Forrest/Waterfall
+  m_EditorClassIdentifier: 
+  Path: event:/Level sounds/Forrest/Waterfall
+  guid: d70acb00d9d54746a0e5a981bde9a7a7
+  Banks:
+  - {fileID: -7600459211993547174}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 40
+  Length: 26297
+--- !u!114 &-707000825876941885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Footsteps
+  guid: d950040d583acd4e8dbe37b31b2d2b90
+  Banks:
+  - {fileID: -1803131476621306266}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 500
+--- !u!114 &-686612595013825994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Normal Reverb
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Normal Reverb
+  guid: 3cb5a853b3cbee4a8afb3842cbd379e7
+  Banks:
+  - {fileID: -1803131476621306266}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-214850118066312713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Cave Reverb
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Cave Reverb
+  guid: 5189972c06efa44186186ebba1a752fa
+  Banks:
+  - {fileID: -7600459211993547174}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-136147375592279544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Cave Reverb
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Cave Reverb
+  guid: 5189972c06efa44186186ebba1a752fa
+  Banks:
+  - {fileID: -4683115851966865381}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-112821523979908951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Warrior/Move2
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Warrior/Move2
+  guid: bad45089419be148a79aa1a6919e0fff
+  Banks:
+  - {fileID: -4683115851966865381}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1171
+--- !u!114 &-94727813884596978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Warrior/Basic Attack
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Warrior/Basic Attack
+  guid: 8777b79982f8ca4482396bed3f3690e3
+  Banks:
+  - {fileID: -1803131476621306266}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 685
+--- !u!114 &-92477258321717841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Cave Reverb
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Cave Reverb
+  guid: 5189972c06efa44186186ebba1a752fa
+  Banks:
+  - {fileID: 382685399417257901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-65438384282475129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Password Incorrect
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Password Incorrect
+  guid: eda19995e3e7554da531358ba56ec592
+  Banks:
+  - {fileID: 382685399417257901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 439
+--- !u!114 &-24837189358983334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Menu Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Menu Music
+  guid: 25de7ce07e3a6c4faa3ceffbddc45063
+  Banks:
+  - {fileID: -4683115851966865381}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 50411
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -671,28 +2099,28 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: 8820463904110504174}
-  - {fileID: -1406763907020148745}
+  - {fileID: 5658717196450681455}
+  - {fileID: 382685399417257901}
   EditorEvents:
-  - {fileID: 2965054620475447}
-  - {fileID: 435311726305861641}
-  - {fileID: 4214932271169696633}
-  - {fileID: -8799010036765337159}
-  - {fileID: -4342361343158670000}
-  - {fileID: -7755250755495712942}
-  - {fileID: 5181907682812972526}
-  - {fileID: 4026400567719461320}
-  - {fileID: -1239703729748993604}
-  - {fileID: -2227681667949418187}
-  - {fileID: -3896166340969740344}
-  - {fileID: 2728882416108879888}
-  - {fileID: -7105000670451815118}
+  - {fileID: -6705216159401235891}
+  - {fileID: -7298180560342773072}
+  - {fileID: -7538684832196170148}
+  - {fileID: -3242822568905115674}
+  - {fileID: 3355377410126725746}
+  - {fileID: 2828116536532080702}
+  - {fileID: -92477258321717841}
+  - {fileID: 9163530223963535587}
+  - {fileID: -7538759648872440475}
+  - {fileID: -6287363378412286083}
+  - {fileID: -9133126901574856787}
+  - {fileID: 1775519426953871083}
+  - {fileID: -65438384282475129}
   EditorParameters: []
   MasterBanks:
-  - {fileID: -1406763907020148745}
+  - {fileID: 382685399417257901}
   StringsBanks:
-  - {fileID: 8820463904110504174}
-  stringsBankWriteTime: 637236063897301535
+  - {fileID: 5658717196450681455}
+  stringsBankWriteTime: 637236107653519116
   cacheVersion: 3
 --- !u!114 &2965054620475447
 MonoBehaviour:
@@ -734,6 +2162,24 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &382685399417257901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637236107653458758
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &435311726305861641
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -809,6 +2255,29 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &1045159901429197749
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Select
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Select
+  guid: 16465b9d401dc644b73a636bb4501a69
+  Banks:
+  - {fileID: -4683115851966865381}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 89
 --- !u!114 &1048168829530471288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -827,6 +2296,29 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &1215756498700065468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Footsteps
+  guid: d950040d583acd4e8dbe37b31b2d2b90
+  Banks:
+  - {fileID: -8996660869500234570}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 500
 --- !u!114 &1351150952210044467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -844,6 +2336,29 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &1426177633035362412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Cancel
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Cancel
+  guid: b1433ad024dcf84eb409e3975a1884fa
+  Banks:
+  - {fileID: -7600459211993547174}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 319
 --- !u!114 &1435676102954031207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -862,6 +2377,69 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &1522163986344599974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &1660197904247629966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Select
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Select
+  guid: 16465b9d401dc644b73a636bb4501a69
+  Banks:
+  - {fileID: -7600459211993547174}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 89
+--- !u!114 &1775519426953871083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Footsteps
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Footsteps
+  guid: d950040d583acd4e8dbe37b31b2d2b90
+  Banks:
+  - {fileID: 382685399417257901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 500
 --- !u!114 &2029172230770233335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -879,6 +2457,43 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &2240684828573775820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/StreamingAssets/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637236084250089710
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 1584
+  Exists: 1
+--- !u!114 &2265538402407909562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
 --- !u!114 &2423624250631669665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -897,6 +2512,67 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &2672095762563736067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637236071034863522
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &2695872466588735690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637236071034923542
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1584
+  Exists: 1
+--- !u!114 &2699739285869615283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Warrior/Basic Attack
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Warrior/Basic Attack
+  guid: 8777b79982f8ca4482396bed3f3690e3
+  Banks:
+  - {fileID: -7600459211993547174}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 685
 --- !u!114 &2704753390145321637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -938,6 +2614,29 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &2742365659121426044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Level sounds/Cave/Cave Ambience
+  m_EditorClassIdentifier: 
+  Path: event:/Level sounds/Cave/Cave Ambience
+  guid: 319f9fd33c408d42a7b1f7f2ab15c296
+  Banks:
+  - {fileID: -7600459211993547174}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 50500
 --- !u!114 &2792015843439646456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -955,6 +2654,29 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &2828116536532080702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Normal Reverb
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Normal Reverb
+  guid: 3cb5a853b3cbee4a8afb3842cbd379e7
+  Banks:
+  - {fileID: 382685399417257901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &2887279050372174696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -973,6 +2695,87 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &3011255517937921094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &3095828142256345349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Cave Reverb
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Cave Reverb
+  guid: 5189972c06efa44186186ebba1a752fa
+  Banks:
+  - {fileID: 5849542736459497011}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &3159134013601569094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Select
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Select
+  guid: 16465b9d401dc644b73a636bb4501a69
+  Banks:
+  - {fileID: -8996660869500234570}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 89
+--- !u!114 &3243294304400193854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637236072956379609
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &3251539690196924950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -991,6 +2794,29 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &3355377410126725746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Enter
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Enter
+  guid: 3a7e9e377cc92a409ddc3ec1f27e6dd5
+  Banks:
+  - {fileID: 382685399417257901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 496
 --- !u!114 &3378198102604027640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1009,6 +2835,29 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &3381267488221824783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Select
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Select
+  guid: 16465b9d401dc644b73a636bb4501a69
+  Banks:
+  - {fileID: 5849542736459497011}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 89
 --- !u!114 &3933527290484548359
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1026,6 +2875,23 @@ MonoBehaviour:
   lastModified: 637236041203739327
   LoadResult: 0
   FileSizes: []
+  Exists: 0
+--- !u!114 &3992429072676932387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
   Exists: 0
 --- !u!114 &4022715887319238980
 MonoBehaviour:
@@ -1102,6 +2968,23 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &4095549076448403680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
 --- !u!114 &4214932271169696633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1125,6 +3008,24 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 685
+--- !u!114 &4238911321619356956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/StreamingAssets/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637236081307263698
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &4320363025344870489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1143,6 +3044,52 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &4384551895422631034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Menu Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Menu Music
+  guid: 25de7ce07e3a6c4faa3ceffbddc45063
+  Banks:
+  - {fileID: -7600459211993547174}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 50411
+--- !u!114 &4524794245541957207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Cancel
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Cancel
+  guid: b1433ad024dcf84eb409e3975a1884fa
+  Banks:
+  - {fileID: -4683115851966865381}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 319
 --- !u!114 &4609925972082915818
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1178,6 +3125,88 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &4864151163573142406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Enter
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Enter
+  guid: 3a7e9e377cc92a409ddc3ec1f27e6dd5
+  Banks:
+  - {fileID: -1803131476621306266}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 496
+--- !u!114 &4917231438299805669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Warrior/Basic Attack
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Warrior/Basic Attack
+  guid: 8777b79982f8ca4482396bed3f3690e3
+  Banks:
+  - {fileID: -4683115851966865381}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 685
+--- !u!114 &5062634907064315844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637236076650242432
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &5108730386441671081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637236089521255188
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
 --- !u!114 &5181907682812972526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1201,6 +3230,23 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 40
   Length: 26297
+--- !u!114 &5248345062783855290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
 --- !u!114 &5406303711210768934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1218,6 +3264,44 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &5658717196450681455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637236107653519116
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1584
+  Exists: 1
+--- !u!114 &5849542736459497011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/StreamingAssets/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637236084250029722
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &5868964828429624135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1253,6 +3337,29 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &6580316183900063693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Level sounds/Forrest/Waterfall
+  m_EditorClassIdentifier: 
+  Path: event:/Level sounds/Forrest/Waterfall
+  guid: d70acb00d9d54746a0e5a981bde9a7a7
+  Banks:
+  - {fileID: -8996660869500234570}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 40
+  Length: 26297
 --- !u!114 &6838285362286903440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1289,6 +3396,205 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 0
+--- !u!114 &6911206492458259735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Menu Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Menu Music
+  guid: 25de7ce07e3a6c4faa3ceffbddc45063
+  Banks:
+  - {fileID: -1803131476621306266}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 50411
+--- !u!114 &7039148067112447676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Warrior/Move3
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Warrior/Move3
+  guid: 18eeb3ab9aa01f4b9dccc2b124998bd1
+  Banks:
+  - {fileID: 5849542736459497011}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -3060539013761364841}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1980
+--- !u!114 &7191234411228392102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Password Incorrect
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Password Incorrect
+  guid: eda19995e3e7554da531358ba56ec592
+  Banks:
+  - {fileID: -4683115851966865381}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 439
+--- !u!114 &7199188256949639171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Cave Reverb
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Cave Reverb
+  guid: 5189972c06efa44186186ebba1a752fa
+  Banks:
+  - {fileID: -1803131476621306266}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &7278022454439657515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Cancel
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Cancel
+  guid: b1433ad024dcf84eb409e3975a1884fa
+  Banks:
+  - {fileID: -1803131476621306266}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 319
+--- !u!114 &7282148407735381835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/FmodBuild/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637236071902313755
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1584
+  Exists: 0
+--- !u!114 &7468365515977858192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 1
+--- !u!114 &7751332435367185207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: snapshot:/Normal Reverb
+  m_EditorClassIdentifier: 
+  Path: snapshot:/Normal Reverb
+  guid: 3cb5a853b3cbee4a8afb3842cbd379e7
+  Banks:
+  - {fileID: 5849542736459497011}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &7888932727372712260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Warrior/Move2
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Warrior/Move2
+  guid: bad45089419be148a79aa1a6919e0fff
+  Banks:
+  - {fileID: -1803131476621306266}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1171
 --- !u!114 &7947191928336443857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1306,6 +3612,29 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &7967609845130762106
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Menu Music
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Menu Music
+  guid: 25de7ce07e3a6c4faa3ceffbddc45063
+  Banks:
+  - {fileID: -8996660869500234570}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 50411
 --- !u!114 &8019196534177955839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1322,6 +3651,64 @@ MonoBehaviour:
   Min: 0
   Max: 2
   Default: 0
+  Exists: 0
+--- !u!114 &8215723068810360607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Move3/Shield Hold
+  m_EditorClassIdentifier: 
+  Name: Shield Hold
+  Min: 0
+  Max: 2
+  Default: 0
+  Exists: 0
+--- !u!114 &8285715260885336404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Select
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Select
+  guid: 16465b9d401dc644b73a636bb4501a69
+  Banks:
+  - {fileID: -1803131476621306266}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 89
+--- !u!114 &8509540703526797156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/StreamingAssets/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637236081307334008
+  LoadResult: 0
+  FileSizes: []
   Exists: 0
 --- !u!114 &8594287703047690465
 MonoBehaviour:
@@ -1393,6 +3780,29 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &8767175091504329152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Warrior/Move2
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Warrior/Move2
+  guid: bad45089419be148a79aa1a6919e0fff
+  Banks:
+  - {fileID: 5849542736459497011}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 1171
 --- !u!114 &8820463904110504174
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1482,3 +3892,46 @@ MonoBehaviour:
   Max: 2
   Default: 0
   Exists: 0
+--- !u!114 &9066237444237138237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/Audio/Wander FMOD/Build/Desktop/Master.strings.bank
+  SubDir: 
+  lastModified: 637236076650302366
+  LoadResult: 0
+  FileSizes:
+  - Name: Desktop
+    Value: 1584
+  Exists: 1
+--- !u!114 &9163530223963535587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Warrior/Basic Attack
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Warrior/Basic Attack
+  guid: 8777b79982f8ca4482396bed3f3690e3
+  Banks:
+  - {fileID: 382685399417257901}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 685
