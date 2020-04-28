@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     private Animator animator;
 
     private int health;
+    private int score = 0;
     private WaitForSeconds regenTick = new WaitForSeconds(0.1f);
     private Coroutine regen;
 
@@ -97,10 +98,9 @@ public class Player : MonoBehaviour
         regen = null;
     }
 
-    // IEnumerator Fading()
-    // {
-    //     anim.SetBool("Fade", true);
-    //     yield return new WaitUntil(() => black.color.a == 1);
-    //     SceneManager.GetActiveScene().buildIndex + 1;
-    // }
+    public void addScore()
+    {
+        score += 1;
+        if (score >= 1) { levelChanger.FadeToLevel(); }
+    }
 }

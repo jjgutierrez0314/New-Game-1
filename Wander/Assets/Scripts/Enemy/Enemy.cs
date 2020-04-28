@@ -11,15 +11,17 @@ public class Enemy : MonoBehaviour
     public bool isHit, death, attacking;
     private float attackCoolDownTime, attackCoolDown;
     private BoxCollider2D hitbox;
+    public Player player;
 
     void Awake()
     {
         animator = gameObject.GetComponent<Animator>();
+        player = gameObject.GetComponent<Player>();
 
         if (GameObject.FindGameObjectWithTag("Bat") != null)
         {
             health = maxHealth = 50;
-            attack = 5;
+            attack = 20;
             defense = 3;
             attackCoolDown = 2f;
         }
@@ -32,7 +34,7 @@ public class Enemy : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Player player = collision.gameObject.GetComponent<Player>();
-            player.playerHit(5); // Hit for 5 damage
+            player.playerHit(2); // Hit for 5 damage
             Debug.Log("Player contacted!");
         }
     }
@@ -85,6 +87,7 @@ public class Enemy : MonoBehaviour
         {
             death = true;
             animator.SetBool("dying", death);
+            player.addScore();
         }
     }
 
