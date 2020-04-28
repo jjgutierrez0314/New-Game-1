@@ -4,6 +4,9 @@
 		<property name="name">
 			<value>Cave Reverb</value>
 		</property>
+		<property name="behavior">
+			<value>1</value>
+		</property>
 		<relationship name="mixer">
 			<destination>{cd274e66-3ed1-4176-84e9-dd738edf7eff}</destination>
 		</relationship>
@@ -35,6 +38,7 @@
 			<destination>{ca71225b-4dc3-4a1e-86c6-b7212f12651f}</destination>
 			<destination>{689a51df-6ac7-44af-af77-db42b9928ccb}</destination>
 			<destination>{d767c1fe-caa6-4fa3-80d3-cd8a1147a42c}</destination>
+			<destination>{bd867742-fb92-4fa2-87fa-4b476baf4796}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{8b1b2d68-c5f4-475f-8365-2a0f6d44a665}" />
@@ -57,7 +61,7 @@
 			<value>decayTime</value>
 		</property>
 		<property name="value">
-			<value>8000</value>
+			<value>3500</value>
 		</property>
 		<relationship name="automatableObject">
 			<destination>{55187bc2-9329-43bb-b1d0-ee351885a15e}</destination>
@@ -164,6 +168,11 @@
 	<object class="SnapshotTrack" id="{d767c1fe-caa6-4fa3-80d3-cd8a1147a42c}">
 		<relationship name="mixerStrip">
 			<destination>{608dacff-7c48-452d-a7b8-878c4fca227a}</destination>
+		</relationship>
+	</object>
+	<object class="SnapshotTrack" id="{bd867742-fb92-4fa2-87fa-4b476baf4796}">
+		<relationship name="mixerStrip">
+			<destination>{887e344e-2cae-423b-8424-db66915997f2}</destination>
 		</relationship>
 	</object>
 </objects>
