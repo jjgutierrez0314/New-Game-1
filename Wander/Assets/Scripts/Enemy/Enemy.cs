@@ -5,11 +5,21 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     private Animator animator;
-    public bool isHit;
+
+    private int health, maxHealth;
+    private int attack, defense;
+    public bool isHit, death;
 
     void Awake()
     {
         animator = gameObject.GetComponent<Animator>();
+
+        if (GameObject.FindGameObjectWithTag("Bat") != null)
+        {
+            health = maxHealth = 50;
+            attack = 5;
+            defense = 3;
+        }
         isHit = false;
     }
 
@@ -26,7 +36,13 @@ public class Enemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (death && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
+            Destroy(gameObject);
+        else if (health <= 0)
+        {
+            death = true;
+            animator.SetBool("dying", death);
+        }
     }
 
     void FixedUpdate()
@@ -39,8 +55,9 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void hit()
+    public void hit(int damage)
     {
+        health -= damage - defense;
         isHit = true;
         animator.SetBool("isHit", isHit);
         animator.SetTrigger("hit");

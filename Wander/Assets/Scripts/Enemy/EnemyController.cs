@@ -12,12 +12,12 @@ public class EnemyController : MonoBehaviour
     public LayerMask ground;
     private Transform groundCheck;
 
-    public float moveSpeed = 16f;
+    public float moveSpeed;
     float xMove = 0f;
 
-    public float jumpVelocity = 7f;
-    public float fallMultiplier = 2f;
-    public float lowJumpMultiplier = 2f;
+    public float jumpVelocity;
+    public float fallMultiplier;
+    public float lowJumpMultiplier;
     Vector3 velocity = Vector3.zero;
 
     public bool isGrounded;
@@ -28,6 +28,11 @@ public class EnemyController : MonoBehaviour
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         enemy = GetComponent<Enemy>();
+        if (GameObject.FindGameObjectWithTag("Bat") != null)
+        {
+            moveSpeed = 3f;
+            jumpVelocity = fallMultiplier = lowJumpMultiplier = 0f;
+        }
     }
 
     // Update is called once per frame
