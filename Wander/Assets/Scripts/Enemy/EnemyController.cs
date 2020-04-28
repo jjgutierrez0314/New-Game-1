@@ -30,7 +30,7 @@ public class EnemyController : MonoBehaviour
         enemy = GetComponent<Enemy>();
         if (GameObject.FindGameObjectWithTag("Bat") != null)
         {
-            moveSpeed = 3f;
+            moveSpeed = 1f;
             jumpVelocity = fallMultiplier = lowJumpMultiplier = 0f;
         }
     }
@@ -62,9 +62,9 @@ public class EnemyController : MonoBehaviour
     {
         float xMove;
         if (facingRight)
-            xMove = -50;
+            xMove = -5;
         else
-            xMove = 50;
+            xMove = 5;
 
         Vector3 targetVelocity = new Vector2(xMove * 25f * Time.fixedDeltaTime, rb2D.velocity.y);
         rb2D.velocity = Vector3.SmoothDamp(rb2D.velocity, targetVelocity, ref velocity, 0.05f);
