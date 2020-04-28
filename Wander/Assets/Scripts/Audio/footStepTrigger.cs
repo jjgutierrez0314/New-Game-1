@@ -13,7 +13,7 @@ public class footStepTrigger : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D col)
     {
-        characterSFX_Warrior.footstepSounForest();
+        characterSFX_Warrior.footstepSoundForest();
     }
     // Update is called once per frame
     void Update()

@@ -43,13 +43,14 @@ public class CharacterSFX_Warrior : MonoBehaviour
         move3.setParameterByName("Shield Hold", 0);
     }
     public void footStepSound(){
-
         footStep.start();
         //FMODUnity.RuntimeManager.PlayOneShot(footStepEvent);
     }
-    public void footstepSounForest(){
+    public void footstepSoundForest(){
         footStep.setParameterByName("Surface",1);
-
+    }
+    public void footstepSoundCave(){
+        footStep.setParameterByName("Surface", 0);
     }
     public void jumpSound(){
         FMODUnity.RuntimeManager.PlayOneShot(jumpEvent);
@@ -57,13 +58,15 @@ public class CharacterSFX_Warrior : MonoBehaviour
     public void landSound(){
         FMODUnity.RuntimeManager.PlayOneShot(landEvent);
     }
+    public void deathSound(){
+        FMODUnity.RuntimeManager.PlayOneShot("event:/DeathStinger");
+    }
     
     // Start is called before the first frame update
     void Start()
     {
         move3 = FMODUnity.RuntimeManager.CreateInstance(move3Event);
         footStep = FMODUnity.RuntimeManager.CreateInstance(footStepEvent);
-        footStep.setParameterByName("Surface", 0);
     }
 
     // Update is called once per frame
