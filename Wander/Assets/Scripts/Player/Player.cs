@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-public class Player : MonoBehaviour
+using Mirror;
+public class Player : NetworkBehaviour
 {
     private Animator animator;
 

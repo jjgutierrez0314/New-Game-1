@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Networking;
-public class PlayerController : MonoBehaviour
+using Mirror;
+public class PlayerController : NetworkBehaviour
 {
     Rigidbody2D rb2D;
     private Animator animator;
@@ -37,10 +38,13 @@ public class PlayerController : MonoBehaviour
         abilities = GetComponent<Abilities>();
         groundCheck = transform.GetChild(0);
     }
-
     // Update is called once per frame
     void Update()
-    {
+    {   
+        if (!isLocalPlayer)
+        {   
+            return;
+        }
         if (!player.dying && ((!basicAttack.attacking && !abilities.actionActive) || !isGrounded))
         {
             // Set horizontal movement
@@ -67,6 +71,10 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (!isLocalPlayer)
+        {   
+            return;
+        }
         // Physics to control jump height depending on how long the Jump button is pressed
         if (rb2D.velocity.y < 0)
             rb2D.velocity += Physics2D.gravity * (fallMultiplier - 1) * Time.deltaTime;

@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class Abilities : MonoBehaviour
+using Mirror;
+public class Abilities : NetworkBehaviour
 {
     Animator animator;
 
@@ -17,7 +17,11 @@ public class Abilities : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   
+        if (!isLocalPlayer)
+        {   
+            return;
+        }
         if (!actionActive)
         {
             actionActive = true;
@@ -53,7 +57,11 @@ public class Abilities : MonoBehaviour
     }
 
     void FixedUpdate()
-    {
+    {   
+        if (!isLocalPlayer)
+        {   
+            return;
+        }
         if (ability1 || ability2 || ability3)
         {
             if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)

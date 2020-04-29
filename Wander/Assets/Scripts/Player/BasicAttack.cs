@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class BasicAttack : MonoBehaviour
+using Mirror;
+public class BasicAttack : NetworkBehaviour
 {
     Animator animator;
 
@@ -20,7 +20,11 @@ public class BasicAttack : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   
+        if (isLocalPlayer)
+        {   
+            return;
+        }
         if (Input.GetButtonDown("Attack") && !attacking)
         {
             attacking = true;
@@ -29,7 +33,11 @@ public class BasicAttack : MonoBehaviour
     }
 
     void FixedUpdate()
-    {
+    {   
+        if (isLocalPlayer)
+        {   
+            return;
+        }
         // Wait for attacking animation to finish
         if (attacking && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
             attacking = false;

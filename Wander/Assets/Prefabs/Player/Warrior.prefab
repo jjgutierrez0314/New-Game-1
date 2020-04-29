@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1265720610}
   - component: {fileID: 1265720609}
   - component: {fileID: 1597705647}
+  - component: {fileID: 459371329494590802}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -85,6 +86,19 @@ AudioListener:
   m_GameObject: {fileID: 1265720607}
   m_Enabled: 1
 --- !u!114 &1597705647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1265720607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListenerNumber: -1
+--- !u!114 &459371329494590802
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -212,6 +226,10 @@ GameObject:
   - component: {fileID: 5024305371183947772}
   - component: {fileID: 5024305371183947760}
   - component: {fileID: 2105154596384147299}
+  - component: {fileID: 288722813}
+  - component: {fileID: 288722814}
+  - component: {fileID: 288722815}
+  - component: {fileID: 288722816}
   m_Layer: 0
   m_Name: Warrior
   m_TagString: Player
@@ -512,3 +530,81 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 1
+--- !u!114 &288722813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5024305371183947769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef8214bb361aa7f4c9576010c07c0d9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackEvent: event:/Character/Warrior/Basic Attack
+  move1Event: 
+  move2Event: event:/Character/Warrior/Move2
+  move3Event: event:/Character/Warrior/Move3
+  footStepEvent: event:/Character/Footsteps
+  jumpEvent: 
+  landEvent: 
+--- !u!114 &288722814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5024305371183947769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa12272fa180a134886964c33e989d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ground:
+    serializedVersion: 2
+    m_Bits: 256
+  moveSpeed: 2.7
+  sprintSpeed: 3.25
+  jumpVelocity: 4
+  fallMultiplier: 1.5
+  lowJumpMultiplier: 2
+  isGrounded: 0
+--- !u!114 &288722815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5024305371183947769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 117f1a22db5322b4a9ce987b5e6dc4cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0
+  healthBar: {fileID: 0}
+  maxStamina: 100
+  currentStamina: 0
+  staminaBar: {fileID: 0}
+  dying: 0
+  player: {fileID: 0}
+  levelChanger: {fileID: 0}
+--- !u!114 &288722816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5024305371183947769}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 004216fd2af10a84baf7f4708832ac4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionActive: 0
+  ability1: 0
+  ability2: 1
+  ability3: 0
+  ability3Held: 0
