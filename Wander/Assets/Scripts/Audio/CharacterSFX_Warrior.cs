@@ -26,13 +26,13 @@ public class CharacterSFX_Warrior : MonoBehaviour
 
     //public functions to be called inside of the animations
     public void attackSound(){
-        FMODUnity.RuntimeManager.PlayOneShot(attackEvent);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Character/Warrior/Basic Attack");
     }  
     public void move1Sound(){
         FMODUnity.RuntimeManager.PlayOneShot(move1Event);
     }
     public void move2Sound(){
-        FMODUnity.RuntimeManager.PlayOneShot(move2Event);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Character/Warrior/Move2");
     }
     public void move3SoundStart(){ //starts event and starts the held sound
         move3.start();
@@ -65,8 +65,8 @@ public class CharacterSFX_Warrior : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        move3 = FMODUnity.RuntimeManager.CreateInstance(move3Event);
-        footStep = FMODUnity.RuntimeManager.CreateInstance(footStepEvent);
+        move3 = FMODUnity.RuntimeManager.CreateInstance("event:/Character/Warrior/Move3");
+        footStep = FMODUnity.RuntimeManager.CreateInstance("event:/Character/Footsteps");
     }
 
     // Update is called once per frame
