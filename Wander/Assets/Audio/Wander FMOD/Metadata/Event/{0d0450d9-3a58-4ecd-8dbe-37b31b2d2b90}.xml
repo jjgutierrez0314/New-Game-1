@@ -171,7 +171,7 @@
 	</object>
 	<object class="EventMixerGroup" id="{a2de1983-c7dc-4a04-aa69-593d81f0782b}">
 		<property name="name">
-			<value>Forrest</value>
+			<value>Forest</value>
 		</property>
 		<relationship name="automators">
 			<destination>{d7db85af-ff58-407a-b620-e25fc49fabb6}</destination>

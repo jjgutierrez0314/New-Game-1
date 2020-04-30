@@ -59,7 +59,7 @@ public class CharacterSFX_Warrior : MonoBehaviour
         FMODUnity.RuntimeManager.PlayOneShot(landEvent);
     }
     public void deathSound(){
-        FMODUnity.RuntimeManager.PlayOneShot("event:/DeathStinger");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/Music/DeathStinger");
     }
     
     // Start is called before the first frame update
