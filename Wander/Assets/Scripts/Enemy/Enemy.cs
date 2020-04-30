@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class Enemy : MonoBehaviour
+using Mirror;
+public class Enemy : NetworkBehaviour
 {
     private Animator animator;
 
