@@ -4,8 +4,11 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Networking;
 using Mirror;
+
+
 public class PlayerController : NetworkBehaviour
 {
+    public Camera myCam;
     Rigidbody2D rb2D;
     private Animator animator;
     Player player;
@@ -37,6 +40,7 @@ public class PlayerController : NetworkBehaviour
         basicAttack = GetComponentInChildren<BasicAttack>();
         abilities = GetComponent<Abilities>();
         groundCheck = transform.GetChild(0);
+        myCam.enabled = false;
     }
     // Update is called once per frame
     void Update()
@@ -44,6 +48,11 @@ public class PlayerController : NetworkBehaviour
         if (!isLocalPlayer)
         {   
             return;
+        } else {
+            if(myCam.enabled == false){
+                myCam.enabled = true;
+                Debug.Log("WTF");
+            }
         }
         if (!player.dying && ((!basicAttack.attacking && !abilities.actionActive) || !isGrounded))
         {
@@ -74,6 +83,11 @@ public class PlayerController : NetworkBehaviour
         if (!isLocalPlayer)
         {   
             return;
+        } else {
+            if(myCam.enabled == false){
+                myCam.enabled = true;
+                Debug.Log("WTF");
+            }
         }
         // Physics to control jump height depending on how long the Jump button is pressed
         if (rb2D.velocity.y < 0)

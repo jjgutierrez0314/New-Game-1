@@ -181,6 +181,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 703da41dbf7e75d469359dabda322c3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
   attacking: 0
 --- !u!1 &5024305370051837859
 GameObject:
@@ -561,6 +563,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa12272fa180a134886964c33e989d69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  myCam: {fileID: 0}
+  audioListener: {fileID: 0}
   ground:
     serializedVersion: 2
     m_Bits: 256
@@ -582,6 +588,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 117f1a22db5322b4a9ce987b5e6dc4cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 0}
@@ -603,6 +611,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 004216fd2af10a84baf7f4708832ac4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
   actionActive: 0
   ability1: 0
   ability2: 1
