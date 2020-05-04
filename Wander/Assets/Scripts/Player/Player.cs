@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
-public class Player : MonoBehaviour
+using Mirror;
+public class Player : NetworkBehaviour
 {
     private Animator animator;
 
@@ -37,28 +37,35 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
-
-        currentStamina = maxStamina;
-        staminaBar.SetMaxStamina(maxStamina);
+        if (isLocalPlayer)
+        {
+            healthBar = GameObject.Find("Health Bar").GetComponent<HealthBar>();
+            staminaBar = GameObject.Find("Stamina Bar").GetComponent<StaminaBar>();
+            currentHealth = maxHealth;
+            healthBar.SetMaxHealth(maxHealth);
+            currentStamina = maxStamina;
+            staminaBar.SetMaxStamina(maxStamina);
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (isLocalPlayer)
         {
-            player.setTired(false);
-            playerRun(0.2f);
-
-            if (regen != null) { StopCoroutine(regen); }
-            regen = StartCoroutine(RegenStamina());
-
-            if (currentStamina <= 0)
+            if (Input.GetKey(KeyCode.LeftShift))
             {
-                player.setTired(true);
-                Debug.Log("Out of stamina");
+                player.setTired(false);
+                playerRun(0.2f);
+
+                if (regen != null) { StopCoroutine(regen); }
+                regen = StartCoroutine(RegenStamina());
+
+                if (currentStamina <= 0)
+                {
+                    player.setTired(true);
+                    Debug.Log("Out of stamina");
+                }
             }
         }
     }

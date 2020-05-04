@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class EnemyController : MonoBehaviour
+using Mirror;
+public class EnemyController : NetworkBehaviour
 {
     Rigidbody2D rb2D;
     private Animator animator;
