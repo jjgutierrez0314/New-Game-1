@@ -9,6 +9,8 @@ using Mirror;
 public class PlayerController : NetworkBehaviour
 {
     public Camera myCam;
+
+    public AudioListener myAud;
     Rigidbody2D rb2D;
     private Animator animator;
     Player player;
@@ -41,6 +43,7 @@ public class PlayerController : NetworkBehaviour
         abilities = GetComponent<Abilities>();
         groundCheck = transform.GetChild(0);
         myCam.enabled = false;
+        myAud.enabled = false;
     }
     // Update is called once per frame
     void Update()
@@ -51,7 +54,9 @@ public class PlayerController : NetworkBehaviour
         } else {
             if(myCam.enabled == false){
                 myCam.enabled = true;
-                Debug.Log("WTF");
+            }
+            if(myAud.enabled == false){
+                myAud.enabled = true;
             }
         }
         if (!player.dying && ((!basicAttack.attacking && !abilities.actionActive) || !isGrounded))
@@ -86,7 +91,9 @@ public class PlayerController : NetworkBehaviour
         } else {
             if(myCam.enabled == false){
                 myCam.enabled = true;
-                Debug.Log("WTF");
+            }
+             if(myAud.enabled == false){
+                myAud.enabled = true;
             }
         }
         // Physics to control jump height depending on how long the Jump button is pressed
@@ -161,5 +168,15 @@ public class PlayerController : NetworkBehaviour
     public void setTired(bool val)
     {
         isTired = val;
+    }
+    public void setBackground(){
+        GameObject.Find("map00").GetComponent<ScrollBackground>().target = rb2D;
+        GameObject.Find("map01").GetComponent<ScrollBackground>().target = rb2D;
+        GameObject.Find("map02").GetComponent<ScrollBackground>().target = rb2D;
+        GameObject.Find("map03").GetComponent<ScrollBackground>().target = rb2D;
+    }
+
+    public override void OnStartLocalPlayer(){
+        setBackground();
     }
 }

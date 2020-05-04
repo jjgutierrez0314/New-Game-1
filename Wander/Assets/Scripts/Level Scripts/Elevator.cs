@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using Mirror;
 public class Elevator : MonoBehaviour {
     //Elevator Variables
     public Vector3[] points;

@@ -17,7 +17,7 @@ public class soundStop : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         if (!Input.GetButton("Ability3")){
-        characterSFX_Warrior.move3SoundStop();
+            characterSFX_Warrior.move3SoundStop();
         }
         
     }
