@@ -48,12 +48,7 @@ public class RequestRegistration extends GameRequest {
         }
         Connection connection = null;
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://" + 
-            "---" + 
-            ":" + "---" + "/" + 
-            "---", 
-            "---", 
-            "---");
+            connection = DriverManager.getConnection("jdbc:mysql://" + "wanderdb.c4p7z07xl4sc.us-east-1.rds.amazonaws.com" + ":" + "3306" + "/" + "wander", "root", "awesomeganbold");
         } catch (SQLException e) {
             System.out.println("Connection Failed!:\n" + e.getMessage());
         }
@@ -62,7 +57,6 @@ public class RequestRegistration extends GameRequest {
         } else {
             System.out.println("FAILURE! Failed to make connection!");
         }
-
         Log.printf("User '%s' is registering...", username);
         if (version.compareTo(Constants.CLIENT_VERSION) >= 0) {
             String query = "SELECT * FROM Players WHERE username = '" + username + "';";
