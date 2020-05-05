@@ -5,7 +5,7 @@
 			<value>Footsteps</value>
 		</property>
 		<property name="outputFormat">
-			<value>1</value>
+			<value>2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{c1da6a81-d160-4247-a656-c488e6be9710}</destination>
@@ -60,7 +60,11 @@
 			<destination>{608dacff-7c48-452d-a7b8-878c4fca227a}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{8ad329f9-3084-48cb-92f6-4fcf333e0811}" />
+	<object class="EventAutomatableProperties" id="{8ad329f9-3084-48cb-92f6-4fcf333e0811}">
+		<property name="voiceStealing">
+			<value>3</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{98c78ecc-a7a3-4268-a0d5-a1b76dd72b65}" />
 	<object class="GroupTrack" id="{bf7d9646-f9b6-4520-b134-c4fd25393d58}">
 		<relationship name="automationTracks">
@@ -189,9 +193,14 @@
 	<object class="MixerBusEffectChain" id="{209d20f7-2c99-4216-b92a-c1498132ce55}">
 		<relationship name="effects">
 			<destination>{adf20ee2-7dce-42f1-9de7-f457db0d465e}</destination>
+			<destination>{8e329d76-70ab-46d2-ae23-80af70312dde}</destination>
 		</relationship>
 	</object>
-	<object class="MixerBusPanner" id="{99bf68d6-ed53-470d-9300-06b7cb328bb7}" />
+	<object class="MixerBusPanner" id="{99bf68d6-ed53-470d-9300-06b7cb328bb7}">
+		<property name="surroundPanDirection">
+			<value>153.434952</value>
+		</property>
+	</object>
 	<object class="MixerBusFader" id="{ce894998-3c16-450f-9fc9-3b3caca32112}" />
 	<object class="RandomizerModulator" id="{a0ce1045-ba5f-422d-ad16-589f293a647b}">
 		<property name="nameOfPropertyBeingModulated">
@@ -273,6 +282,26 @@
 	</object>
 	<object class="MixerBusPanner" id="{18bedae2-3ee5-4542-b7a4-aff1889cec4f}" />
 	<object class="MixerBusFader" id="{adf20ee2-7dce-42f1-9de7-f457db0d465e}" />
+	<object class="SpatialiserEffect" id="{8e329d76-70ab-46d2-ae23-80af70312dde}">
+		<property name="distanceRolloffType">
+			<value>2</value>
+		</property>
+		<property name="minimumDistance">
+			<value>4.89999962</value>
+		</property>
+		<property name="maximumDistance">
+			<value>9</value>
+		</property>
+		<property name="extentMode">
+			<value>1</value>
+		</property>
+		<property name="soundSize">
+			<value>0.699999928</value>
+		</property>
+		<property name="minimumExtent">
+			<value>360</value>
+		</property>
+	</object>
 	<object class="AutomationCurve" id="{258f067e-6460-4e54-860d-d276b6d5dcb9}">
 		<relationship name="parameter">
 			<destination>{1694fa67-6de6-4f30-913a-ae798941a8c3}</destination>
@@ -280,6 +309,7 @@
 		<relationship name="automationPoints">
 			<destination>{39adf8b2-7604-4a19-bfb2-e52b44b1d44d}</destination>
 			<destination>{bdb2850f-c65b-480d-80ab-22baf1312962}</destination>
+			<destination>{7c1f71e5-6ce1-4a7b-9e26-56990af75e3b}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{7c0bf031-c2df-4251-8795-65bdd0d3a554}" />
@@ -290,6 +320,7 @@
 		<relationship name="automationPoints">
 			<destination>{e797bcee-74d8-44fb-9348-07db18d1bed0}</destination>
 			<destination>{cab4d2ba-da16-456b-bb52-124a7923f09b}</destination>
+			<destination>{b30d8c24-8052-41fd-97e2-22f3123fe539}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{4e30e945-1faa-4132-abd2-ff0b95d893d3}" />
@@ -306,7 +337,15 @@
 			<value>0</value>
 		</property>
 		<property name="value">
-			<value>3.81469727e-06</value>
+			<value>-8</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{7c1f71e5-6ce1-4a7b-9e26-56990af75e3b}">
+		<property name="position">
+			<value>2</value>
+		</property>
+		<property name="value">
+			<value>-80</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{e797bcee-74d8-44fb-9348-07db18d1bed0}">
@@ -320,6 +359,14 @@
 	<object class="AutomationPoint" id="{cab4d2ba-da16-456b-bb52-124a7923f09b}">
 		<property name="position">
 			<value>1</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{b30d8c24-8052-41fd-97e2-22f3123fe539}">
+		<property name="position">
+			<value>2</value>
 		</property>
 		<property name="value">
 			<value>0</value>
