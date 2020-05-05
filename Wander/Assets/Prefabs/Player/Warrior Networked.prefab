@@ -526,13 +526,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef8214bb361aa7f4c9576010c07c0d9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackEvent: event:/Character/Warrior/Basic Attack
   move1Event: 
-  move2Event: event:/Character/Warrior/Move2
-  move3Event: event:/Character/Warrior/Move3
-  footStepEvent: event:/Character/Footsteps
-  jumpEvent: 
-  landEvent: 
+  jumpEvent: event:/Character/Jump
+  landEvent: event:/Character/Landing
 --- !u!114 &6047168310943482655
 MonoBehaviour:
   m_ObjectHideFlags: 0
