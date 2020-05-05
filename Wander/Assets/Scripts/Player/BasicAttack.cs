@@ -13,7 +13,7 @@ public class BasicAttack : NetworkBehaviour
     void Awake()
     {
         animator = GetComponentInParent<Animator>();
-        hitbox = GetComponent<BoxCollider2D>();
+        hitbox = GameObject.Find("BasicAttack").GetComponent<BoxCollider2D>();
         hitbox.enabled = false;
         attacking = false;
     }
@@ -21,7 +21,7 @@ public class BasicAttack : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {   
-        if (isLocalPlayer)
+        if (!isLocalPlayer)
         {   
             return;
         }
@@ -34,7 +34,7 @@ public class BasicAttack : NetworkBehaviour
 
     void FixedUpdate()
     {   
-        if (isLocalPlayer)
+        if (!isLocalPlayer)
         {   
             return;
         }
