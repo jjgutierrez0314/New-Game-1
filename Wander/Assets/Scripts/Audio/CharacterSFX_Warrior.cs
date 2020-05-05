@@ -6,16 +6,16 @@ public class CharacterSFX_Warrior : MonoBehaviour
 {
 
     //Gives easy access to which events are for each one
-    [FMODUnity.EventRef]
-    public string attackEvent;
+   // [FMODUnity.EventRef]
+    //public string attackEvent;
     [FMODUnity.EventRef]
     public string move1Event;
-    [FMODUnity.EventRef]
-    public string move2Event;
-    [FMODUnity.EventRef]
-    public string move3Event;
-    [FMODUnity.EventRef]
-    public string footStepEvent;
+   // [FMODUnity.EventRef]
+    //public string move2Event;
+   // [FMODUnity.EventRef]
+   // public string move3Event;
+   // [FMODUnity.EventRef]
+  //  public string footStepEvent;
     [FMODUnity.EventRef]
     public string jumpEvent;
     [FMODUnity.EventRef]
@@ -23,6 +23,8 @@ public class CharacterSFX_Warrior : MonoBehaviour
 
     private FMOD.Studio.EventInstance move3;
     private FMOD.Studio.EventInstance footStep;
+    private FMOD.Studio.EventInstance jump;
+    private FMOD.Studio.EventInstance landing;
 
     //public functions to be called inside of the animations
     public void attackSound(){
@@ -44,19 +46,26 @@ public class CharacterSFX_Warrior : MonoBehaviour
     }
     public void footStepSound(){
         footStep.start();
+        //footStep.release();
         //FMODUnity.RuntimeManager.PlayOneShot(footStepEvent);
     }
     public void footstepSoundForest(){
-        footStep.setParameterByName("Surface",1);
+        FMOD.RESULT test = footStep.setParameterByName("Surface",1);
+        jump.setParameterByName("Surface", 1);
+        landing.setParameterByName("Surface", 1);
+        Debug.Log("param forreset returned: " + test);
     }
     public void footstepSoundCave(){
         footStep.setParameterByName("Surface", 0);
+        jump.setParameterByName("Surface", 0);
+        landing.setParameterByName("Surface", 0);
+        Debug.Log("changed to cave steps");
     }
     public void jumpSound(){
-        FMODUnity.RuntimeManager.PlayOneShot(jumpEvent);
+        jump.start();
     }
     public void landSound(){
-        FMODUnity.RuntimeManager.PlayOneShot(landEvent);
+        landing.start();
     }
     public void deathSound(){
         FMODUnity.RuntimeManager.PlayOneShot("event:/Music/DeathStinger");
@@ -67,6 +76,8 @@ public class CharacterSFX_Warrior : MonoBehaviour
     {
         move3 = FMODUnity.RuntimeManager.CreateInstance("event:/Character/Warrior/Move3");
         footStep = FMODUnity.RuntimeManager.CreateInstance("event:/Character/Footsteps");
+        jump = FMODUnity.RuntimeManager.CreateInstance("event:/Character/Jump");
+        landing = FMODUnity.RuntimeManager.CreateInstance("event:/Character/Landing");
     }
 
     // Update is called once per frame
