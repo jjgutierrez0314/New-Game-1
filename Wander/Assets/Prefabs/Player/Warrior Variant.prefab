@@ -90,10 +90,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1265720608, guid: 209f377859db01d4fbdcebfebba45d4a, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5024305371183947769, guid: 209f377859db01d4fbdcebfebba45d4a,
         type: 3}
       propertyPath: m_Name
-      value: Warrior
+      value: Warrior Variant
       objectReference: {fileID: 0}
     - target: {fileID: 5024305371183947770, guid: 209f377859db01d4fbdcebfebba45d4a,
         type: 3}
