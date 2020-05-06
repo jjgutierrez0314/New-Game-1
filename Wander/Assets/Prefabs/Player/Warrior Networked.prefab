@@ -206,12 +206,12 @@ GameObject:
   - component: {fileID: 6047168310943482652}
   - component: {fileID: 6047168310943482655}
   - component: {fileID: 1608401443960460185}
-  - component: {fileID: 6047168310943482849}
   - component: {fileID: 1608401443960460190}
   - component: {fileID: 1608401443960460191}
   - component: {fileID: 5831303847228598651}
   - component: {fileID: 1861874932}
   - component: {fileID: 7455110231077151657}
+  - component: {fileID: 6047168310943482849}
   - component: {fileID: 8331518039515688305}
   m_Layer: 0
   m_Name: Warrior Networked
@@ -577,25 +577,6 @@ MonoBehaviour:
   dying: 0
   player: {fileID: 0}
   levelChanger: {fileID: 0}
---- !u!114 &6047168310943482849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1608401443960460184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 004216fd2af10a84baf7f4708832ac4c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  actionActive: 0
-  ability1: 0
-  ability2: 1
-  ability3: 0
-  ability3Held: 0
 --- !u!114 &1608401443960460190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -670,6 +651,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ListenerNumber: -1
+--- !u!114 &6047168310943482849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608401443960460184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 004216fd2af10a84baf7f4708832ac4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  actionActive: 0
+  ability1: 0
+  ability2: 0
+  ability3: 0
+  ability3Held: 0
 --- !u!114 &8331518039515688305
 MonoBehaviour:
   m_ObjectHideFlags: 0

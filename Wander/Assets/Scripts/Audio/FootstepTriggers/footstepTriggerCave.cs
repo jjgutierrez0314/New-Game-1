@@ -11,13 +11,10 @@ public class footstepTriggerCave : MonoBehaviour
     {
         characterSFX_Warrior = GameObject.FindObjectOfType<CharacterSFX_Warrior>();
     }
+    
     void OnTriggerEnter2D(Collider2D col)
     {
         characterSFX_Warrior.footstepSoundCave();
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

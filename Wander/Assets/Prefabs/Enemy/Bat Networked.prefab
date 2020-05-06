@@ -18,8 +18,8 @@ GameObject:
   - component: {fileID: 4886840040982409943}
   - component: {fileID: 6090614177684300760}
   - component: {fileID: 7649379318355099024}
-  - component: {fileID: 7649379318355099027}
   - component: {fileID: 7649379318355099026}
+  - component: {fileID: 7649379318355099027}
   m_Layer: 0
   m_Name: Bat Networked
   m_TagString: Enemy
@@ -1087,6 +1087,22 @@ MonoBehaviour:
   sceneId: 0
   serverOnly: 0
   m_AssetId: 
+--- !u!114 &7649379318355099026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3737403400354132560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f6f3bf89aa97405989c802ba270f815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  clientAuthority: 0
+  animator: {fileID: 3737403400354132565}
 --- !u!114 &7649379318355099027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1105,22 +1121,6 @@ MonoBehaviour:
   localPositionSensitivity: 0.01
   localRotationSensitivity: 0.01
   localScaleSensitivity: 0.01
---- !u!114 &7649379318355099026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3737403400354132560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7f6f3bf89aa97405989c802ba270f815, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  clientAuthority: 0
-  animator: {fileID: 3737403400354132565}
 --- !u!1 &4453088067848279370
 GameObject:
   m_ObjectHideFlags: 0
