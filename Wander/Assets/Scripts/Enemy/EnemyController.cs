@@ -27,11 +27,28 @@ public class EnemyController : NetworkBehaviour
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         enemy = GetComponent<Enemy>();
-        if (GameObject.FindGameObjectWithTag("Bat") != null)
+        if (GameObject.FindGameObjectWithTag("Bat") != null)//
         {
             moveSpeed = 1f;
             jumpVelocity = fallMultiplier = lowJumpMultiplier = 0f;
         }
+        /*
+        else if (GameObject.FindGameObjectWithTag("Mushroom") != null)//
+        {
+            moveSpeed = 1f;
+            jumpVelocity = fallMultiplier = lowJumpMultiplier = 1f;
+        }
+        else if (GameObject.FindGameObjectWithTag("Goblin") != null)//
+        {
+            moveSpeed = 2f;
+            jumpVelocity = fallMultiplier = lowJumpMultiplier = 2f;
+        }
+        else if (GameObject.FindGameObjectWithTag("Skeleton") != null)//
+        {
+            moveSpeed = 1f;
+            jumpVelocity = fallMultiplier = lowJumpMultiplier = 1f;
+        }
+        */
     }
 
     // Update is called once per frame

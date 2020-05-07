@@ -18,13 +18,37 @@ public class Enemy : NetworkBehaviour
         animator = gameObject.GetComponent<Animator>();
         player = gameObject.GetComponent<Player>();
 
-        if (GameObject.FindGameObjectWithTag("Bat") != null)
+        if (GameObject.FindGameObjectWithTag("Bat") != null)//
         {
             health = maxHealth = 50;
             attack = 20;
             defense = 3;
             attackCoolDown = 2f;
+        }/*
+        else if (GameObject.FindGameObjectWithTag("Mushroom") != null) {
+            health = maxHealth = 75;
+            attack = 40;
+            defense = 6;
+            attackCoolDown = 3f;
+
         }
+        else if (GameObject.FindGameObjectWithTag("Goblin") != null)
+        {
+            health = maxHealth = 50;
+            attack = 40;
+            defense = 3;
+            attackCoolDown = 2f;
+
+        }
+        else if (GameObject.FindGameObjectWithTag("Skeleton") != null)
+        {
+            health = maxHealth = 125;
+            attack = 70;
+            defense = 6;
+            attackCoolDown = 5f;
+
+        }
+        */
         hitbox = transform.Find("BasicAttack").GetComponent<BoxCollider2D>();
         isHit = death = attacking = hitbox.enabled = false;
     }
