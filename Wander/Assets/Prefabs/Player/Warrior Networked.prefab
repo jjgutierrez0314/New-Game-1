@@ -213,6 +213,7 @@ GameObject:
   - component: {fileID: 7455110231077151657}
   - component: {fileID: 6047168310943482849}
   - component: {fileID: 8331518039515688305}
+  - component: {fileID: 457602992039314015}
   m_Layer: 0
   m_Name: Warrior Networked
   m_TagString: Player
@@ -543,17 +544,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  myCam: {fileID: 1750987769}
-  myAud: {fileID: 1633169467}
-  ground:
-    serializedVersion: 2
-    m_Bits: 256
-  moveSpeed: 2.7
-  sprintSpeed: 3.25
-  jumpVelocity: 4
-  fallMultiplier: 1.5
-  lowJumpMultiplier: 2
-  isGrounded: 0
+  isTired: 0
 --- !u!114 &1608401443960460185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -685,6 +676,32 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   attacking: 0
+--- !u!114 &457602992039314015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608401443960460184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9e9011cf177d644f94ed2f24d57a4e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  isTired: 0
+  myCam: {fileID: 1750987769}
+  myAud: {fileID: 1633169467}
+  ground:
+    serializedVersion: 2
+    m_Bits: 256
+  moveSpeed: 8
+  sprintSpeed: 12
+  jumpVelocity: 4
+  fallMultiplier: 1
+  lowJumpMultiplier: 2
+  isGrounded: 0
 --- !u!1 &6047168311517961911
 GameObject:
   m_ObjectHideFlags: 0
