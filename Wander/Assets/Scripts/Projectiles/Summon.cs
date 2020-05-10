@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
+using UnityEngine.Networking;
+using Mirror;
 public class Summon : MonoBehaviour
 {
     public bool ability2;
@@ -27,7 +29,7 @@ public class Summon : MonoBehaviour
     }
     void Summoner() {
         projectilePOS = transform.position;
-        projectilePOS += new Vector2(+1f, -0.43f);
+        projectilePOS += new Vector2(+0.3f, -0.043f);
         Instantiate(portal, projectilePOS, Quaternion.identity);
     
     }

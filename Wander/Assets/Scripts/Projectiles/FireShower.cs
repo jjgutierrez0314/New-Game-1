@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
+using UnityEngine.Networking;
+using Mirror;
 public class FireShower : MonoBehaviour
 {
     public GameObject fireshower;
@@ -14,15 +16,15 @@ public class FireShower : MonoBehaviour
     int count = 0;
     bool active=false;
     float[] FirePosX =
-             {0.0f,1.0f,-1.75f,
-             0.0f,1.0f,-1.75f,
-             0.0f,1.0f,-1.75f,
-             0.0f,1.0f,-1.75f};
+             {0.0f,0.1f,-0.175f,
+             0.0f,0.1f,-0.175f,
+             0.0f,0.1f,-0.175f,
+             0.0f,0.1f,-0.175f};
     float[] FirePosY= 
-             {0.0f,1.0f,-1.0f,
-             0.0f,1.0f,-1.0f,
-             0.0f,1.0f,-1.0f,
-             0.0f,1.0f,-1.0f};
+             {0.0f,0.1f,-0.1f,
+             0.0f,0.1f,-0.1f,
+             0.0f,0.1f,-0.1f,
+             0.0f,0.1f,-0.1f};
     void Awake()
     {
 
@@ -42,7 +44,7 @@ public class FireShower : MonoBehaviour
             animator.SetTrigger("ability1");
             nextFire = Time.time + fireRate;
             showerPOS = transform.position;
-            showerPOS += new Vector2(+4f, 5.0f);
+            showerPOS += new Vector2(+0.4f, 0.5f);
             active = true;
 
         }

@@ -26,7 +26,7 @@ public class minion : MonoBehaviour
     void SummonMin() {
 
         minionPOS = transform.position;
-        minionPOS += new Vector2(+1f, -0.43f);
+        minionPOS += new Vector2(+0.3f, -0.043f);
         Instantiate(minionSumm, minionPOS, Quaternion.identity);
     }
 }

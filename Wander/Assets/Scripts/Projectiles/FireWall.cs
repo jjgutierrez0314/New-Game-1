@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
+using UnityEngine.Networking;
+using Mirror;
 public class FireWall : MonoBehaviour
 {
     public GameObject Fire;
@@ -33,7 +35,7 @@ public class FireWall : MonoBehaviour
             animator.SetTrigger("ability3");
             nextFire = Time.time + fireRate;
             wallPOS = transform.position;
-            wallPOS += new Vector2(1.0f, -0.75f);
+            wallPOS += new Vector2(0.1f, -0.075f);
             active = true;
 
         }
@@ -45,7 +47,7 @@ public class FireWall : MonoBehaviour
                 if (Timer <= 0f)
                 {
 
-                    fire(wallPOS += new Vector2(2f, 0f));
+                    fire(wallPOS += new Vector2(0.2f, 0f));
                     Timer = 0.5f;
                 }
             }
