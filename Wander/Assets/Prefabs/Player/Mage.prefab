@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: -5164886062504993457}
   - component: {fileID: 4152408922387862257}
   - component: {fileID: 4953636267200612571}
-  - component: {fileID: 5232950557545559945}
   - component: {fileID: 5238595480326236044}
   - component: {fileID: 4340195298137186666}
   - component: {fileID: 8532982165356768769}
@@ -180,21 +179,6 @@ MonoBehaviour:
   dying: 0
   player: {fileID: 0}
   levelChanger: {fileID: 0}
---- !u!114 &5232950557545559945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1546363441769914248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa12272fa180a134886964c33e989d69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  isTired: 0
 --- !u!114 &5238595480326236044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -402,9 +386,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef8214bb361aa7f4c9576010c07c0d9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  printFootstep: 0
   move1Event: 
-  jumpEvent: event:/Character/Jump
-  landEvent: event:/Character/Landing
 --- !u!114 &1138058864212455298
 MonoBehaviour:
   m_ObjectHideFlags: 0

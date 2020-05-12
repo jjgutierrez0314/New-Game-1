@@ -72,10 +72,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fireball Left
       objectReference: {fileID: 0}
+    - target: {fileID: 7148846396342949921, guid: 49d248fbe70edc042bc289a70055af43,
+        type: 3}
+      propertyPath: velX
+      value: -3
+      objectReference: {fileID: 0}
     - target: {fileID: 9007513977897445094, guid: 49d248fbe70edc042bc289a70055af43,
         type: 3}
       propertyPath: velX
       value: -0.5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9007513977897445094, guid: 49d248fbe70edc042bc289a70055af43, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 49d248fbe70edc042bc289a70055af43, type: 3}
