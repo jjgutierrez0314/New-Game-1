@@ -18,28 +18,26 @@ public class NetworkManagerWander : NetworkManager {
     public override void OnClientConnect(NetworkConnection conn){
         base.OnClientConnect(conn);
         ClassMessage mess = new ClassMessage{
-            chosenClass = "Mage"
+            chosenClass = DBManager.choosen
         };
+        // conn.Send(mess);
+        ClientScene.AddPlayer(conn);
         conn.Send(mess);
     }
 
     void OnCreateCharacter(NetworkConnection conn, ClassMessage message){
-        if(message.chosenClass == "Mage"){
-            GameObject gameobject = (GameObject)Resources.Load("Mage", typeof(GameObject));
-            // NetworkServer.AddPlayerForConnection(conn, gameobject);
-            // messageGlobal = message.chosenClass;
-        }
+        messageGlobal = message.chosenClass;
     }
 
     public override void OnServerAddPlayer(NetworkConnection conn){
         if(messageGlobal == "Mage"){
-            GameObject player = Instantiate((GameObject)Resources.Load("Warrior", typeof(GameObject)));
+            GameObject player = Instantiate(Resources.Load("characters/Mage", typeof(GameObject))) as GameObject;
             NetworkServer.AddPlayerForConnection(conn, player);
         } else if (messageGlobal == "Warrior"){
-            GameObject player = Instantiate((GameObject)Resources.Load("Warrior", typeof(GameObject)));
+            GameObject player = Instantiate(Resources.Load("characters/Warrior", typeof(GameObject))) as GameObject;
             NetworkServer.AddPlayerForConnection(conn, player);
         } else {
-            GameObject player = Instantiate((GameObject)Resources.Load("Warrior", typeof(GameObject)));
+            GameObject player = Instantiate(Resources.Load("characters/Ranger", typeof(GameObject))) as GameObject;
             NetworkServer.AddPlayerForConnection(conn, player);
         }
     }

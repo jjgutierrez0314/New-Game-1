@@ -7,9 +7,9 @@ public class DeticatedServer : MonoBehaviour
     private void Start()
     {
         if(Application.isBatchMode){
-            gameObject.GetComponent<NetworkManager>().StartServer();
+            gameObject.GetComponent<NetworkManagerWander>().StartServer();
         } else {
-            gameObject.GetComponent<NetworkManager>().StartClient();
+            gameObject.GetComponent<NetworkManagerWander>().StartClient();
         }
     }
 
