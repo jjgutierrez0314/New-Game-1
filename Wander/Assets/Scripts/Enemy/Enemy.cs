@@ -66,7 +66,6 @@ public class Enemy : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("hitbox enabled = " + hitbox.enabled);
         if (death && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
             Destroy(gameObject);
     }

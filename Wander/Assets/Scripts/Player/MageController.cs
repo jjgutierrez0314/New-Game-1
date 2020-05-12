@@ -213,14 +213,14 @@ public class MageController : PlayerController
             projectilePOS += new Vector2(+.1f, 0.05f);
             GameObject obj = Instantiate(RightFire, projectilePOS, Quaternion.identity);
             NetworkServer.Spawn(obj);
-            Destroy(obj,5);
+            Destroy(obj,5f);
         }
         else
         {
             projectilePOS += new Vector2(-.1f, 0.05f);
             GameObject obj = Instantiate(RightFire, projectilePOS, Quaternion.identity);
             NetworkServer.Spawn(obj);
-            Destroy(obj,5);
+            Destroy(obj,5f);
         }
     }
 }

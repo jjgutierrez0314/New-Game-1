@@ -169,6 +169,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
+  attack: 0
+  defense: 0
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 0}
@@ -456,9 +458,9 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 256
-  moveSpeed: 16
-  sprintSpeed: 24
-  jumpVelocity: 7
+  moveSpeed: 3
+  sprintSpeed: 4
+  jumpVelocity: 4
   fallMultiplier: 2
   lowJumpMultiplier: 2
   isGrounded: 0

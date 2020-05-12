@@ -48,7 +48,6 @@ public class FireWall : NetworkBehaviour
             {
                 if (Timer <= 0f)
                 {
-
                     CmdFire(wallPOS += new Vector2(0.2f, 0f));
                     Timer = 0.5f;
                 }
@@ -62,6 +61,7 @@ public class FireWall : NetworkBehaviour
         count += 1;
         GameObject fire = Instantiate(Fire, adjustPos, Quaternion.identity);
         NetworkServer.Spawn(fire);
+        Destroy(fire,3f);
         if (count == 0) { active = false; }
     }
 
