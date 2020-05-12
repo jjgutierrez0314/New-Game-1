@@ -24,7 +24,14 @@ public class Enemy : NetworkBehaviour
             attack = 20;
             defense = 3;
             attackCoolDown = 2f;
-        }/*
+        }else if (GameObject.FindGameObjectWithTag("Boss") != null) {
+            health = maxHealth = 1000;
+            attack = 40;
+            defense = 6;
+            attackCoolDown = 3f;
+
+        }
+        /*
         else if (GameObject.FindGameObjectWithTag("Mushroom") != null) {
             health = maxHealth = 75;
             attack = 40;

@@ -9,6 +9,7 @@ TagManager:
   - One-way
   - CaveAudio
   - Bat
+  - Boss
   layers:
   - Default
   - TransparentFX
