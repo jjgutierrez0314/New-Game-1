@@ -13,26 +13,24 @@ public class MonsterSFX_Eye : MonoBehaviour
     [FMODUnity.EventRef]
     public string deathEvent;
     [FMODUnity.EventRef]
-    public string footStepEvent;
-    [FMODUnity.EventRef]
     public string emoteEvent;
+
+    public GameObject gameobject;
+
 
 
     //public functions to be called inside of the animations
     public void attackSound(){
-        FMODUnity.RuntimeManager.PlayOneShot(attackEvent);
+        FMODUnity.RuntimeManager.PlayOneShotAttached(attackEvent, gameobject);
     }  
     public void damageSound(){
-        FMODUnity.RuntimeManager.PlayOneShot(damageEvent);
+        FMODUnity.RuntimeManager.PlayOneShotAttached(damageEvent, gameobject);
     }
     public void deathSound(){
-        FMODUnity.RuntimeManager.PlayOneShot(deathEvent);
-    }
-    public void footStepSound(){
-        FMODUnity.RuntimeManager.PlayOneShot(footStepEvent);
+        FMODUnity.RuntimeManager.PlayOneShotAttached(deathEvent, gameobject);
     }
     public void emoteSound(){
-        FMODUnity.RuntimeManager.PlayOneShot(emoteEvent);
+        FMODUnity.RuntimeManager.PlayOneShotAttached(emoteEvent, gameobject);
     }
 
     
