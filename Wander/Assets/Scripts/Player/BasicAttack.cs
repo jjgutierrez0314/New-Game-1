@@ -20,7 +20,7 @@ public class BasicAttack : NetworkBehaviour
 
     // Update is called once per frame
     void Update()
-    {   
+    {
         if (!isLocalPlayer)
         {   
             return;
@@ -56,9 +56,8 @@ public class BasicAttack : NetworkBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Enemy"))
+        if (hitbox.enabled && collision.CompareTag("Enemy"))
         {
-            // Need to set isHit since entities have more than one collider which could cause multiple collisions on the same object simultaneously
             Enemy enemy = collision.gameObject.GetComponent<Enemy>();
             if (!enemy.isHit)
             {

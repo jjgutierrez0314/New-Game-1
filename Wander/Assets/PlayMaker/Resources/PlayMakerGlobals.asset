@@ -24,7 +24,7 @@ MonoBehaviour:
     quaternionVariables: []
     gameObjectVariables:
     - useVariable: 1
-      name: playerObject
+      name: 
       tooltip: 
       showInInspector: 0
       networkSync: 0
