@@ -203,7 +203,6 @@ GameObject:
   - component: {fileID: 1608401443960460189}
   - component: {fileID: 1608401443960460177}
   - component: {fileID: 6047168310943482652}
-  - component: {fileID: 6047168310943482655}
   - component: {fileID: 3467664856342403430}
   - component: {fileID: 1608401443960460185}
   - component: {fileID: 1608401443960460190}
@@ -214,7 +213,7 @@ GameObject:
   - component: {fileID: 6047168310943482849}
   - component: {fileID: 8331518039515688305}
   m_Layer: 0
-  m_Name: Warrior Networked
+  m_Name: Warrior
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -356,24 +355,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef8214bb361aa7f4c9576010c07c0d9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  printFootstep: 0
   move1Event: 
-  jumpEvent: event:/Character/Jump
-  landEvent: event:/Character/Landing
---- !u!114 &6047168310943482655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1608401443960460184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa12272fa180a134886964c33e989d69, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  isTired: 0
 --- !u!114 &3467664856342403430
 MonoBehaviour:
   m_ObjectHideFlags: 0

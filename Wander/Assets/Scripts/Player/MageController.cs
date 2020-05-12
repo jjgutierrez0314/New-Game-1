@@ -93,7 +93,7 @@ public class MageController : PlayerController
             Flip();
         if (Input.GetButtonDown("Attack") && !attacking && Time.time > nextFire)
         {
-            attacking = true;
+            //attacking = true;
             animator.SetTrigger("attack");
             nextFire = Time.time + fireRate;
             fire();

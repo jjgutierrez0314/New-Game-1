@@ -401,9 +401,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef8214bb361aa7f4c9576010c07c0d9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  printFootstep: 0
   move1Event: 
-  jumpEvent: event:/Character/Jump
-  landEvent: event:/Character/Landing
 --- !u!114 &8001683646351976944
 MonoBehaviour:
   m_ObjectHideFlags: 0
