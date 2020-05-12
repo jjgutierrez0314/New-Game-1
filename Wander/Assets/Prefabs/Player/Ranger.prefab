@@ -19,10 +19,10 @@ GameObject:
   - component: {fileID: 8571713328265814346}
   - component: {fileID: 7954092931675081510}
   - component: {fileID: 4015680514933877509}
-  - component: {fileID: 2761950131229225079}
   - component: {fileID: 8001683646351976944}
   - component: {fileID: 8122042825300265848}
   - component: {fileID: 2265883731909395011}
+  - component: {fileID: 8468802718944120629}
   m_Layer: 0
   m_Name: Ranger
   m_TagString: Player
@@ -404,38 +404,6 @@ MonoBehaviour:
   move1Event: 
   jumpEvent: event:/Character/Jump
   landEvent: event:/Character/Landing
---- !u!114 &2761950131229225079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 418582126320028377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2f66c96ef382874ba80d76f4afebb3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  isTired: 0
-  myCam: {fileID: 4251454394014699887}
-  myAud: {fileID: 5654821476694689192}
-  ground:
-    serializedVersion: 2
-    m_Bits: 256
-  moveSpeed: 8
-  sprintSpeed: 12
-  jumpVelocity: 4
-  fallMultiplier: 1
-  lowJumpMultiplier: 2
-  isGrounded: 0
-  RightFire: {fileID: 7479298518420579672, guid: 884ec41fc38f00342b0d82dc826ddcc0,
-    type: 3}
-  LeftFire: {fileID: 7479298518420579672, guid: 884ec41fc38f00342b0d82dc826ddcc0,
-    type: 3}
-  fireRate: 0.1
-  attacking: 0
 --- !u!114 &8001683646351976944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -484,7 +452,39 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   clientAuthority: 1
-  animator: {fileID: 0}
+  animator: {fileID: 2961823227756529568}
+--- !u!114 &8468802718944120629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418582126320028377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7374bd2d85baa4c4f99a27be9a39db01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  isTired: 0
+  myCam: {fileID: 4251454394014699887}
+  myAud: {fileID: 5654821476694689192}
+  ground:
+    serializedVersion: 2
+    m_Bits: 256
+  moveSpeed: 16
+  sprintSpeed: 24
+  jumpVelocity: 7
+  fallMultiplier: 2
+  lowJumpMultiplier: 2
+  isGrounded: 0
+  RightFire: {fileID: 7479298518420579672, guid: 884ec41fc38f00342b0d82dc826ddcc0,
+    type: 3}
+  LeftFire: {fileID: 2185180462948210822, guid: 331b127fd04f49f4594ffd130c7be240,
+    type: 3}
+  fireRate: 0.5
+  attacking: 0
 --- !u!1 &859173385141886517
 GameObject:
   m_ObjectHideFlags: 0
@@ -677,7 +677,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2124680770368856667}
-  - component: {fileID: 750380543011532205}
   m_Layer: 0
   m_Name: GroundCheck
   m_TagString: Untagged
@@ -699,29 +698,6 @@ Transform:
   m_Father: {fileID: 2365186610625165376}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &750380543011532205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6352697502625228864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 117f1a22db5322b4a9ce987b5e6dc4cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  maxHealth: 100
-  currentHealth: 0
-  healthBar: {fileID: 0}
-  maxStamina: 100
-  currentStamina: 0
-  staminaBar: {fileID: 0}
-  dying: 0
-  player: {fileID: 0}
-  levelChanger: {fileID: 0}
 --- !u!1 &9060817242980185389
 GameObject:
   m_ObjectHideFlags: 0

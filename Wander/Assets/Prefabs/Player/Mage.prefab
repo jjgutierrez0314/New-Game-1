@@ -16,13 +16,13 @@ GameObject:
   - component: {fileID: 4953636267200612571}
   - component: {fileID: 5232950557545559945}
   - component: {fileID: 5238595480326236044}
-  - component: {fileID: 8926780428302399615}
-  - component: {fileID: 1271484013890763557}
-  - component: {fileID: 2373036783874631654}
   - component: {fileID: 4340195298137186666}
   - component: {fileID: 8532982165356768769}
   - component: {fileID: 244250369550355513}
-  - component: {fileID: 7349884499001261522}
+  - component: {fileID: 1138058864212455298}
+  - component: {fileID: 8926780428302399615}
+  - component: {fileID: 1271484013890763557}
+  - component: {fileID: 2373036783874631654}
   m_Layer: 0
   m_Name: Mage
   m_TagString: Player
@@ -365,6 +365,78 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 1
+--- !u!114 &4340195298137186666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546363441769914248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25b6e1e866a3b8a42ae9d840fe471e71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8532982165356768769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546363441769914248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListenerNumber: -1
+--- !u!114 &244250369550355513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546363441769914248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef8214bb361aa7f4c9576010c07c0d9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  move1Event: 
+  jumpEvent: event:/Character/Jump
+  landEvent: event:/Character/Landing
+--- !u!114 &1138058864212455298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546363441769914248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7374bd2d85baa4c4f99a27be9a39db01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  isTired: 0
+  myCam: {fileID: 4548898231473879258}
+  myAud: {fileID: 2211621240480890638}
+  ground:
+    serializedVersion: 2
+    m_Bits: 256
+  moveSpeed: 16
+  sprintSpeed: 24
+  jumpVelocity: 7
+  fallMultiplier: 2
+  lowJumpMultiplier: 2
+  isGrounded: 0
+  RightFire: {fileID: 5785041440604217753, guid: 49d248fbe70edc042bc289a70055af43,
+    type: 3}
+  LeftFire: {fileID: 5726334893860619939, guid: 4d54d006f4ef8334f92ffeb00745a3ab,
+    type: 3}
+  fireRate: 0.5
+  attacking: 0
 --- !u!114 &8926780428302399615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -414,78 +486,6 @@ MonoBehaviour:
   syncInterval: 0.1
   clientAuthority: 1
   animator: {fileID: 4152408922387862257}
---- !u!114 &4340195298137186666
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1546363441769914248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 25b6e1e866a3b8a42ae9d840fe471e71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8532982165356768769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1546363441769914248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ListenerNumber: -1
---- !u!114 &244250369550355513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1546363441769914248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef8214bb361aa7f4c9576010c07c0d9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  move1Event: 
-  jumpEvent: event:/Character/Jump
-  landEvent: event:/Character/Landing
---- !u!114 &7349884499001261522
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1546363441769914248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2f66c96ef382874ba80d76f4afebb3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  isTired: 0
-  myCam: {fileID: 4548898231473879258}
-  myAud: {fileID: 2211621240480890638}
-  ground:
-    serializedVersion: 2
-    m_Bits: 256
-  moveSpeed: 8
-  sprintSpeed: 12
-  jumpVelocity: 4
-  fallMultiplier: 1
-  lowJumpMultiplier: 2
-  isGrounded: 0
-  RightFire: {fileID: 5785041440604217753, guid: 49d248fbe70edc042bc289a70055af43,
-    type: 3}
-  LeftFire: {fileID: 5726334893860619939, guid: 4d54d006f4ef8334f92ffeb00745a3ab,
-    type: 3}
-  fireRate: 0.1
-  attacking: 0
 --- !u!1 &2918853302994927078
 GameObject:
   m_ObjectHideFlags: 0
@@ -730,7 +730,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6972793937058838438}
-  - component: {fileID: 1527616202577062292}
   m_Layer: 0
   m_Name: GroundCheck
   m_TagString: Untagged
@@ -752,29 +751,6 @@ Transform:
   m_Father: {fileID: 3488046511888542993}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1527616202577062292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7373429442238735433}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 117f1a22db5322b4a9ce987b5e6dc4cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  maxHealth: 100
-  currentHealth: 0
-  healthBar: {fileID: 0}
-  maxStamina: 100
-  currentStamina: 0
-  staminaBar: {fileID: 0}
-  dying: 0
-  player: {fileID: 0}
-  levelChanger: {fileID: 0}
 --- !u!1 &8321006055866012160
 GameObject:
   m_ObjectHideFlags: 0
