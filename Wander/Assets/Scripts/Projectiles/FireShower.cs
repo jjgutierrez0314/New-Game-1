@@ -46,8 +46,8 @@ public class FireShower : NetworkBehaviour
             ability1 = true;
             animator.SetTrigger("ability1");
             nextFire = Time.time + fireRate;
-            Vector3 pos = new Vector3(0.4f,0.5f,0);
-            firePosition.position += pos;
+            // Vector3 pos = new Vector3(0.4f,0.5f,0);
+            // firePosition.position += pos;
             active = true;
 
         }
@@ -78,7 +78,7 @@ public class FireShower : NetworkBehaviour
         //Instantiate(fireshower, showerPOS, Quaternion.identity);
         //showerPOS += new Vector2(-2.75f, 0.0f);
         //Instantiate(fireshower, showerPOS, Quaternion.identity);
-        Destroy(fiore,3);
+        Destroy(fiore,5);
         if (count == 0) { active = false; }
     }
 

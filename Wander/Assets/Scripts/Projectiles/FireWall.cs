@@ -49,18 +49,19 @@ public class FireWall : NetworkBehaviour
                 if (Timer <= 0f)
                 {
 
-                    fire(wallPOS += new Vector2(0.2f, 0f));
+                    CmdFire(wallPOS += new Vector2(0.2f, 0f));
                     Timer = 0.5f;
                 }
             }
         }
 
     }
-
-    void fire(Vector2 adjustPos)
+    [Command]
+    void CmdFire(Vector2 adjustPos)
     {
         count += 1;
-        Instantiate(Fire, adjustPos, Quaternion.identity);
+        GameObject fire = Instantiate(Fire, adjustPos, Quaternion.identity);
+        NetworkServer.Spawn(fire);
         if (count == 0) { active = false; }
     }
 

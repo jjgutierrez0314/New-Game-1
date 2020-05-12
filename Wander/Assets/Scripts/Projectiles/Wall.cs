@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class Wall : MonoBehaviour
+using Mirror;
+public class Wall : NetworkBehaviour
 {
     public float velX = 0.0f;
     public float velY = -0.5f;
@@ -15,7 +15,6 @@ public class Wall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
         Destroy(gameObject, 3f);
     }
 }
