@@ -8,6 +8,7 @@ public class Player : NetworkBehaviour
     private Animator animator;
 
     private int health;
+    public int attack, defense;
     private int score = 0;
     private WaitForSeconds regenTick = new WaitForSeconds(0.1f);
     private Coroutine regen;
@@ -29,6 +30,8 @@ public class Player : NetworkBehaviour
     {
         animator = GetComponent<Animator>();
         health = 100;
+        attack = 25;
+        defense = 10;
         player = GetComponent<PlayerController>();
         levelChanger = GameObject.Find("LevelChanger").GetComponent<LevelChanger>();
         // cManager = gameObject.GetComponent<ConnectionManager>();
@@ -72,10 +75,10 @@ public class Player : NetworkBehaviour
 
     public void playerHit(int damage)
     {
-        health -= damage;
+        health -= damage - defense;
         Debug.Log("Remaining HP : " + health);
 
-        currentHealth -= damage;
+        currentHealth -= damage - defense;
         healthBar.SetHealth(currentHealth);
 
         if (health <= 0)

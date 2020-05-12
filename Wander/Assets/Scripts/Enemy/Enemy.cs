@@ -58,7 +58,7 @@ public class Enemy : NetworkBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             Player player = collision.gameObject.GetComponent<Player>();
-            player.playerHit(2); // Hit for 5 damage
+            player.playerHit(2 + player.defense);
             Debug.Log("Player contacted!");
         }
     }
@@ -66,6 +66,7 @@ public class Enemy : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("hitbox enabled = " + hitbox.enabled);
         if (death && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
             Destroy(gameObject);
     }
@@ -95,9 +96,13 @@ public class Enemy : NetworkBehaviour
         }
     }
 
-    public void EnableHitbox()
+    public void EnableEnemyHitbox()
     {
         hitbox.enabled = true;
+    }
+    public void DisableEnemyHitbox()
+    {
+        hitbox.enabled = false;
     }
 
     public void Hit(int damage)
@@ -115,7 +120,7 @@ public class Enemy : NetworkBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
