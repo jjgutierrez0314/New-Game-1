@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Networking;
 using Mirror;
-public class Summon : MonoBehaviour
+public class Summon : NetworkBehaviour
 {
     public bool ability2;
     Animator animator;
@@ -19,7 +19,10 @@ public class Summon : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   
+        if(!isLocalPlayer){
+            return;
+        }
         if (Input.GetButtonDown("Ability2"))
         {
             animator.SetTrigger("ability2");
@@ -35,6 +38,9 @@ public class Summon : MonoBehaviour
     }
     void FixedUpdate()
     {
+        if(!isLocalPlayer){
+            return;
+        }
         // Wait for attacking animation to finish
         if (ability2&& animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
             ability2 = false;

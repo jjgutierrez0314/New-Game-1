@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Networking;
 using Mirror;
-public class FireShower : MonoBehaviour
+public class FireShower : NetworkBehaviour
 {
     public GameObject fireshower;
     Vector2 showerPOS;
@@ -35,7 +35,9 @@ public class FireShower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(!isLocalPlayer){
+            return;
+        }
         if (Input.GetButtonDown("Ability1") && !ability1 && Time.time > nextFire)
         {
             count = 0;//resets count
@@ -80,6 +82,9 @@ public class FireShower : MonoBehaviour
 
     void FixedUpdate()
     {
+        if(!isLocalPlayer){
+            return;
+        }
         // Wait for attacking animation to finish
         if (ability1 && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
             ability1 = false;

@@ -512,6 +512,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e7086c9ac71a634392b45530b5334fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
   ability2: 0
   portal: {fileID: 5091499591678382372, guid: ea9017861b8cc3445844e01ed82a91a0, type: 3}
 --- !u!1 &3248937308237550024
@@ -557,6 +559,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d878c667e6b004aa09ab0dfe64f795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
   fireshower: {fileID: 4807759583437160422, guid: f4b4109bbe5ff6d4fa7f38d43c62c8a8,
     type: 3}
   fireRate: 0.5
@@ -839,6 +843,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a00297c8b7d99d643a1e1b81813ab12f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
   Fire: {fileID: 6957403169615693867, guid: ed5627dfb32606f4a96757b88b3ea196, type: 3}
   fireRate: 0.5
   ability3: 0

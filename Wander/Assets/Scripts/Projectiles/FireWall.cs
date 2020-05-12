@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Networking;
 using Mirror;
-public class FireWall : MonoBehaviour
+public class FireWall : NetworkBehaviour
 {
     public GameObject Fire;
     Vector2 wallPOS;
@@ -26,7 +26,9 @@ public class FireWall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(!isLocalPlayer){
+            return;
+        }
         if (Input.GetButtonDown("Ability3") && !ability3 && Time.time > nextFire)
         {
             count = 0;//resets count
@@ -64,6 +66,9 @@ public class FireWall : MonoBehaviour
 
     void FixedUpdate()
     {
+        if(!isLocalPlayer){
+            return;
+        }
         if (ability3 && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
             ability3 = false;
     }

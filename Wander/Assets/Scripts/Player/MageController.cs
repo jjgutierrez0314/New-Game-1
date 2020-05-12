@@ -91,7 +91,7 @@ public class MageController : PlayerController
         // Flip the player
         if ((xMove > 0 && !facingRight) || (xMove < 0 && facingRight))
             Flip();
-        if (Input.GetButtonDown("Attack") && !attacking && Time.time > nextFire)
+        if (Input.GetButtonDown("Attack") && Time.time > nextFire)
         {
             //attacking = true;
             animator.SetTrigger("attack");
@@ -202,6 +202,9 @@ public class MageController : PlayerController
 
     void fire()
     {
+        if(!isLocalPlayer){
+            return;
+        }
         projectilePOS = transform.position;
         if (facingRight)
         {

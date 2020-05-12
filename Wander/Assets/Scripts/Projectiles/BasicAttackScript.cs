@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public class BasicAttackScript : MonoBehaviour
 {
     public float velX = 0.5f;
