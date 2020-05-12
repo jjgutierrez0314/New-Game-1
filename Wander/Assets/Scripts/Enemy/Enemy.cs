@@ -25,7 +25,7 @@ public class Enemy : NetworkBehaviour
             defense = 3;
             attackCoolDown = 2f;
         }else if (GameObject.FindGameObjectWithTag("Boss") != null) {
-            health = maxHealth = 1000;
+            health = maxHealth = 250;
             attack = 40;
             defense = 6;
             attackCoolDown = 3f;

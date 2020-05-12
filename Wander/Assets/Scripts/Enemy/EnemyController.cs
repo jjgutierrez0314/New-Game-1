@@ -31,6 +31,10 @@ public class EnemyController : NetworkBehaviour
         {
             moveSpeed = 1f;
             jumpVelocity = fallMultiplier = lowJumpMultiplier = 0f;
+        } else if (GameObject.FindGameObjectWithTag("Boss") != null)//
+        {
+            moveSpeed = 1f;
+            jumpVelocity = fallMultiplier = lowJumpMultiplier = 0f;
         }
         /*
         else if (GameObject.FindGameObjectWithTag("Mushroom") != null)//
