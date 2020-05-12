@@ -16,7 +16,7 @@ public class Shower : NetworkBehaviour
     void Update()
     {   
         rb.velocity = new Vector2(velX,velY);
-        Destroy(gameObject, 5f);
+        Destroy(gameObject, 5);
     }
 }
 

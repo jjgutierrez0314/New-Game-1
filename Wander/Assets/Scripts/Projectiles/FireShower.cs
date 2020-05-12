@@ -78,8 +78,8 @@ public class FireShower : NetworkBehaviour
         //Instantiate(fireshower, showerPOS, Quaternion.identity);
         //showerPOS += new Vector2(-2.75f, 0.0f);
         //Instantiate(fireshower, showerPOS, Quaternion.identity);
-        Destroy(fiore,5);
         if (count == 0) { active = false; }
+        Destroy(fiore,5);
     }
 
     void FixedUpdate()
