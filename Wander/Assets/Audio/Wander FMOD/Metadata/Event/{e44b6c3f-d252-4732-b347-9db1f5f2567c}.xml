@@ -133,8 +133,8 @@
 		<property name="length">
 			<value>8</value>
 		</property>
-		<relationship name="fadeInCurve">
-			<destination>{c2afd783-afe7-48a2-9c70-c400a23cbc82}</destination>
+		<relationship name="modulators">
+			<destination>{dd289e13-2dfc-4f04-a93a-dc4dbc9942ce}</destination>
 		</relationship>
 		<relationship name="event">
 			<destination>{6da67cbc-2302-4c58-a2ab-4ac1ef67a8ca}</destination>
@@ -182,13 +182,22 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{c31ba5a6-738a-4a6d-a1ec-2ef44fd8e31d}" />
-	<object class="FadeCurve" id="{c2afd783-afe7-48a2-9c70-c400a23cbc82}">
-		<relationship name="startPoint">
-			<destination>{8d634743-1796-485f-a336-b80c5cb1014b}</destination>
-		</relationship>
-		<relationship name="endPoint">
-			<destination>{c6ca5baa-3ffb-4845-88e9-56269aa7c2c1}</destination>
-		</relationship>
+	<object class="ADSRModulator" id="{dd289e13-2dfc-4f04-a93a-dc4dbc9942ce}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>intensity</value>
+		</property>
+		<property name="attackTime">
+			<value>461.538452</value>
+		</property>
+		<property name="peakValue">
+			<value>100</value>
+		</property>
+		<property name="sustainValue">
+			<value>100</value>
+		</property>
+		<property name="releaseTime">
+			<value>1980.76904</value>
+		</property>
 	</object>
 	<object class="MixerBusEffectChain" id="{5e141012-7097-4b0c-8e0b-d986ccfa8b06}">
 		<relationship name="effects">
@@ -201,25 +210,6 @@
 	<object class="CompressorEffect" id="{82caab9d-b2e9-4090-90ac-8ff137bfaca8}">
 		<property name="threshold">
 			<value>-28.5</value>
-		</property>
-	</object>
-	<object class="AutomationPoint" id="{8d634743-1796-485f-a336-b80c5cb1014b}">
-		<property name="position">
-			<value>0.70000000000000007</value>
-		</property>
-		<property name="value">
-			<value>0</value>
-		</property>
-		<property name="curveShape">
-			<value>-0.476230055</value>
-		</property>
-	</object>
-	<object class="AutomationPoint" id="{c6ca5baa-3ffb-4845-88e9-56269aa7c2c1}">
-		<property name="position">
-			<value>1.1000000000000001</value>
-		</property>
-		<property name="value">
-			<value>100</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{09642f7d-88a1-4a99-98d0-0932549a6d5f}" />

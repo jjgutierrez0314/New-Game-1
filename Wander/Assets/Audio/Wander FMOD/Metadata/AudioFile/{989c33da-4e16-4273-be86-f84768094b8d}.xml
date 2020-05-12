@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{989c33da-4e16-4273-be86-f84768094b8d}">
 		<property name="assetPath">
-			<value>Warrior/Wander_SFX_shieldsmash_fullanimation.wav</value>
+			<value>Character/Character/Warrior/Wander_SFX_shieldsmash_fullanimation.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

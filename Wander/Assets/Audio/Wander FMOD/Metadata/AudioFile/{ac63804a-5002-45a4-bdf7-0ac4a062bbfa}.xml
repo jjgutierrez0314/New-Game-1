@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{ac63804a-5002-45a4-bdf7-0ac4a062bbfa}">
 		<property name="assetPath">
-			<value>Environment/Forrest/Wander_SFX_crow - Trimmed (4).wav</value>
+			<value>Level sounds/Level sounds/Environment/Forrest/Wander_SFX_crow - Trimmed (4).wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

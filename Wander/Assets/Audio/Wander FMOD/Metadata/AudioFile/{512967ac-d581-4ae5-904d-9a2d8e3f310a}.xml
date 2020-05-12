@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{512967ac-d581-4ae5-904d-9a2d8e3f310a}">
 		<property name="assetPath">
-			<value>Footsteps/Wander_SFX_jump.wav</value>
+			<value>Character/Character/Footsteps/Wander_SFX_jump.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

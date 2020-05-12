@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{83a15491-5eea-4e1b-be2a-0472424ac57a}">
 		<property name="assetPath">
-			<value>Environment/Forrest/Wander_SFX_environment_waterfall.wav</value>
+			<value>Level sounds/Level sounds/Environment/Forrest/Wander_SFX_environment_waterfall.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

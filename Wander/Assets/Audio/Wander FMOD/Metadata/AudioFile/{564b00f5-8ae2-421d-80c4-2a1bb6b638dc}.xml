@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{564b00f5-8ae2-421d-80c4-2a1bb6b638dc}">
 		<property name="assetPath">
-			<value>Environment/Forrest/Wander_SFX_crow - Trimmed.wav</value>
+			<value>Level sounds/Level sounds/Environment/Forrest/Wander_SFX_crow - Trimmed.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>

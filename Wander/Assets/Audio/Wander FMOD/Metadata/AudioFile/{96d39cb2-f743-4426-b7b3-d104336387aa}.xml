@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{96d39cb2-f743-4426-b7b3-d104336387aa}">
-		<property name="assetPath">
-			<value>CharacterSounds/WaterSplash.wav</value>
-		</property>
+		<property name="assetPath" />
 		<property name="frequencyInKHz">
 			<value>44.0999985</value>
 		</property>

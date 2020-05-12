@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.00.00">
 	<object class="AudioFile" id="{d6666b0e-2789-46fd-af62-6769f8fb9c52}">
 		<property name="assetPath">
-			<value>Environment/Wander_SFX_cavewater.wav</value>
+			<value>Level sounds/Level sounds/Environment/Wander_SFX_cavewater.wav</value>
 		</property>
 		<property name="frequencyInKHz">
 			<value>48</value>
