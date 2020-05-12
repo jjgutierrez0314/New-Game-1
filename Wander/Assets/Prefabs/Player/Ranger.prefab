@@ -169,6 +169,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
+  attack: 0
+  defense: 0
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 0}
@@ -603,8 +605,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5d878c667e6b004aa09ab0dfe64f795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
   fireshower: {fileID: 673114637030960924, guid: ce8424e362c0e044eb5ffb5ed1278605,
     type: 3}
+  firePosition: {fileID: 0}
   fireRate: 0.5
   ability1: 0
   Timer: 0

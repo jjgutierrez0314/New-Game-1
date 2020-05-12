@@ -31,13 +31,13 @@ public class NetworkManagerWander : NetworkManager {
 
     public override void OnServerAddPlayer(NetworkConnection conn){
         if(messageGlobal == "Mage"){
-            GameObject player = Instantiate(Resources.Load("characters/Mage", typeof(GameObject))) as GameObject;
+            GameObject player = Instantiate(Resources.Load("characters/Ranger", typeof(GameObject))) as GameObject;
             NetworkServer.AddPlayerForConnection(conn, player);
         } else if (messageGlobal == "Warrior"){
-            GameObject player = Instantiate(Resources.Load("characters/Warrior", typeof(GameObject))) as GameObject;
+            GameObject player = Instantiate(Resources.Load("characters/Ranger", typeof(GameObject))) as GameObject;
             NetworkServer.AddPlayerForConnection(conn, player);
         } else {
-            GameObject player = Instantiate(Resources.Load("characters/Mage", typeof(GameObject))) as GameObject;
+            GameObject player = Instantiate(Resources.Load("characters/Ranger", typeof(GameObject))) as GameObject;
             NetworkServer.AddPlayerForConnection(conn, player);
         }
     }

@@ -97,7 +97,7 @@ public class MageController : PlayerController
             //attacking = true;
             animator.SetTrigger("attack");
             nextFire = Time.time + fireRate;
-            CmdFire();
+            CmdFireArrow();
         }
     }
 
@@ -202,11 +202,8 @@ public class MageController : PlayerController
         setBackground();
     }
     [Command]
-    void CmdFire()
+    void CmdFireArrow()
     {
-        if(!isLocalPlayer){
-            return;
-        }
         projectilePOS = transform.position;
         if (facingRight)
         {
