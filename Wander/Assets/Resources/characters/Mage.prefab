@@ -47,6 +47,7 @@ Transform:
   - {fileID: 8423794744915307807}
   - {fileID: 2176605629597798628}
   - {fileID: 2723403408478836486}
+  - {fileID: 635450132740712094}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -450,8 +451,8 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   clientAuthority: 1
-  localPositionSensitivity: 0.01
-  localRotationSensitivity: 0.01
+  localPositionSensitivity: 2.56
+  localRotationSensitivity: -2.6
   localScaleSensitivity: 0.01
 --- !u!114 &2373036783874631654
 MonoBehaviour:
@@ -485,6 +486,7 @@ MonoBehaviour:
   syncInterval: 0.1
   fireshower: {fileID: 4807759583437160422, guid: f4b4109bbe5ff6d4fa7f38d43c62c8a8,
     type: 3}
+  firePosition: {fileID: 635450132740712094}
   fireRate: 0.5
   ability1: 0
   Timer: 0
@@ -693,6 +695,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3488046511888542993}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7499617010241277326
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 635450132740712094}
+  m_Layer: 0
+  m_Name: MageFireShower
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &635450132740712094
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7499617010241277326}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.703, y: -0.004, z: -0.16804148}
+  m_LocalScale: {x: 1.1326703, y: 1.1326703, z: 1.1326703}
+  m_Children: []
+  m_Father: {fileID: 3488046511888542993}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8321006055866012160
 GameObject:

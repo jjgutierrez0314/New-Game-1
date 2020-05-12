@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class Shower : MonoBehaviour
+using Mirror;
+public class Shower : NetworkBehaviour
 {
     public float velX = 0.0f;
     public float velY = -0.5f;
@@ -14,7 +14,7 @@ public class Shower : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {   
         rb.velocity = new Vector2(velX,velY);
         Destroy(gameObject, 5f);
     }

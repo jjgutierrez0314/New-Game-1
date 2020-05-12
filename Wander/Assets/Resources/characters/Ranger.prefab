@@ -607,6 +607,7 @@ MonoBehaviour:
   syncInterval: 0.1
   fireshower: {fileID: 673114637030960924, guid: ce8424e362c0e044eb5ffb5ed1278605,
     type: 3}
+  firePosition: {fileID: 0}
   fireRate: 0.5
   ability1: 0
   Timer: 0
