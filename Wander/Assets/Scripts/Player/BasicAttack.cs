@@ -6,6 +6,7 @@ public class BasicAttack : NetworkBehaviour
 {
     Animator animator;
 
+    Player player;
     BoxCollider2D hitbox;
 
     public bool attacking;
@@ -13,6 +14,7 @@ public class BasicAttack : NetworkBehaviour
     void Awake()
     {
         animator = GetComponentInParent<Animator>();
+        player = GetComponent<Player>();
         hitbox = GameObject.Find("BasicAttack").GetComponent<BoxCollider2D>();
         hitbox.enabled = false;
         attacking = false;
@@ -25,6 +27,10 @@ public class BasicAttack : NetworkBehaviour
         {   
             return;
         }
+        if (!hitbox)
+            hitbox = GameObject.Find("BasicAttack").GetComponent<BoxCollider2D>();
+        if (!attacking && hitbox.enabled)
+            hitbox.enabled = false;
         if (Input.GetButtonDown("Attack") && !attacking)
         {
             attacking = true;
@@ -54,15 +60,15 @@ public class BasicAttack : NetworkBehaviour
         hitbox.enabled = false;
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
+    void OnTriggerStay2D(Collider2D collision)
     {
         if (hitbox.enabled && collision.CompareTag("Enemy"))
         {
             Enemy enemy = collision.gameObject.GetComponent<Enemy>();
             if (!enemy.isHit)
             {
-                enemy.Hit(25);
-                Debug.Log("Enemy hit!");
+                enemy.Hit(player.attack);
+                Debug.Log("Enemy hit by basic attack!");
             }
         }
     }
