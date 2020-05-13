@@ -18,19 +18,12 @@ public class Enemy : NetworkBehaviour
         animator = gameObject.GetComponent<Animator>();
         player = gameObject.GetComponent<Player>();
 
-        if (GameObject.FindGameObjectWithTag("Bat") != null)//
+        if (GameObject.FindGameObjectWithTag("Bat") != null)
         {
             health = maxHealth = 50;
             attack = 20;
             defense = 3;
             attackCoolDown = 2f;
-        }/*
-        else if (GameObject.FindGameObjectWithTag("Mushroom") != null) {
-            health = maxHealth = 75;
-            attack = 40;
-            defense = 6;
-            attackCoolDown = 3f;
-
         }
         else if (GameObject.FindGameObjectWithTag("Goblin") != null)
         {
@@ -38,6 +31,13 @@ public class Enemy : NetworkBehaviour
             attack = 40;
             defense = 3;
             attackCoolDown = 2f;
+
+        }/*
+        else if (GameObject.FindGameObjectWithTag("Mushroom") != null) {
+            health = maxHealth = 75;
+            attack = 40;
+            defense = 6;
+            attackCoolDown = 3f;
 
         }
         else if (GameObject.FindGameObjectWithTag("Skeleton") != null)
@@ -66,12 +66,13 @@ public class Enemy : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (death && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
-            Destroy(gameObject);
     }
 
     void FixedUpdate()
     {
+        if (death && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
+            Destroy(gameObject);
+
         if (isHit && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
         {
             isHit = false;
@@ -87,7 +88,7 @@ public class Enemy : NetworkBehaviour
 
     public void Attack()
     {
-        if (attackCoolDownTime <= Time.time)
+        if (!death && attackCoolDownTime <= Time.time)
         {
             attackCoolDownTime = Time.time + attackCoolDown;
             attacking = true;
@@ -106,6 +107,7 @@ public class Enemy : NetworkBehaviour
 
     public void Hit(int damage)
     {
+        Debug.Log("health: " + health);
         health -= damage - defense;
         isHit = true;
         animator.SetBool("isHit", isHit);
@@ -113,9 +115,10 @@ public class Enemy : NetworkBehaviour
 
         if (health <= 0)
         {
+            Destroy(GetComponent<Rigidbody2D>());
             death = true;
             animator.SetBool("dying", death);
-            player.addScore();
+            //player.addScore();
         }
     }
 
