@@ -18,14 +18,14 @@ public class Enemy : NetworkBehaviour
         animator = gameObject.GetComponent<Animator>();
         player = gameObject.GetComponent<Player>();
 
-        if (GameObject.FindGameObjectWithTag("Bat") != null)
+        if (transform.Find("Tag").tag == "Bat")
         {
             health = maxHealth = 50;
             attack = 20;
             defense = 3;
             attackCoolDown = 2f;
         }
-        else if (GameObject.FindGameObjectWithTag("Goblin") != null)
+        else if (transform.Find("Tag").tag == "Goblin")
         {
             health = maxHealth = 50;
             attack = 40;
