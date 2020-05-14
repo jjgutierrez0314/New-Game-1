@@ -19,11 +19,11 @@ GameObject:
   - component: {fileID: 8571713328265814346}
   - component: {fileID: 7954092931675081510}
   - component: {fileID: 4015680514933877509}
-  - component: {fileID: 2761950131229225079}
   - component: {fileID: 8001683646351976944}
   - component: {fileID: 8122042825300265848}
   - component: {fileID: 2265883731909395011}
-  - component: {fileID: 477393825849797535}
+  - component: {fileID: 430735296788727882}
+  - component: {fileID: 2687302156095196252}
   m_Layer: 0
   m_Name: Ranger
   m_TagString: Player
@@ -168,6 +168,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
+  attack: 0
+  defense: 0
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 0}
@@ -399,41 +401,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef8214bb361aa7f4c9576010c07c0d9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  printFootstep: 0
   move1Event: 
-  jumpEvent: event:/Character/Jump
-  landEvent: event:/Character/Landing
---- !u!114 &2761950131229225079
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 418582126320028377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2f66c96ef382874ba80d76f4afebb3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  isTired: 0
-  myCam: {fileID: 4251454394014699887}
-  myAud: {fileID: 5654821476694689192}
-  ground:
-    serializedVersion: 2
-    m_Bits: 256
-  moveSpeed: 8
-  sprintSpeed: 12
-  jumpVelocity: 4
-  fallMultiplier: 1
-  lowJumpMultiplier: 2
-  isGrounded: 0
-  RightFire: {fileID: 7479298518420579672, guid: 884ec41fc38f00342b0d82dc826ddcc0,
-    type: 3}
-  LeftFire: {fileID: 2185180462948210822, guid: 331b127fd04f49f4594ffd130c7be240,
-    type: 3}
-  fireRate: 0.1
-  attacking: 0
 --- !u!114 &8001683646351976944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -483,7 +452,7 @@ MonoBehaviour:
   syncInterval: 0.1
   clientAuthority: 1
   animator: {fileID: 0}
---- !u!114 &477393825849797535
+--- !u!114 &430735296788727882
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -492,25 +461,57 @@ MonoBehaviour:
   m_GameObject: {fileID: 418582126320028377}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f3341ab329514b4bab363b3283193f5, type: 3}
+  m_Script: {fileID: 11500000, guid: 7374bd2d85baa4c4f99a27be9a39db01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  isTired: 0
+  myCam: {fileID: 4251454394014699887}
+  myAud: {fileID: 5654821476694689192}
+  ground:
+    serializedVersion: 2
+    m_Bits: 256
+  moveSpeed: 16
+  sprintSpeed: 24
+  jumpVelocity: 7
+  fallMultiplier: 2
+  lowJumpMultiplier: 2
+  isGrounded: 0
+  RightFire: {fileID: 7479298518420579672, guid: 884ec41fc38f00342b0d82dc826ddcc0,
+    type: 3}
+  LeftFire: {fileID: 2185180462948210822, guid: 331b127fd04f49f4594ffd130c7be240,
+    type: 3}
+  fireRate: 0.5
+  attacking: 0
+--- !u!114 &2687302156095196252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418582126320028377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 539a226d809375e4bb0ee76ca21e8881, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Arrowshower: {fileID: 673114637030960924, guid: ce8424e362c0e044eb5ffb5ed1278605,
     type: 3}
-  FirstArrow: {fileID: 8546241071624370202, guid: 96e9570427dbb594e8aa85c5d41abaf1,
+  FirstArrow: {fileID: 8546241071624370202, guid: cbb383f1eb68d2b49b5b5091af90dbb9,
     type: 3}
   fireRate1: 0.5
   ability1: 0
   Timer1: 0
-  RightFire: {fileID: 7161897824905593605, guid: c5c9666c343aa5442ad182aba60fd1f3,
+  RightFire: {fileID: 7161897824905593605, guid: 9d0f58cc5e864094c86f5218ce36c017,
     type: 3}
-  LeftFire: {fileID: 7161897824905593605, guid: c5c9666c343aa5442ad182aba60fd1f3,
+  LeftFire: {fileID: 7161897824905593605, guid: 9d0f58cc5e864094c86f5218ce36c017,
     type: 3}
-  A1: {fileID: 6389169430872929277, guid: b94c1b6b8deea73468d14c975267522e, type: 3}
-  A2: {fileID: 5087849097889343158, guid: 352e3a79ac221b442869d65e629fa0c6, type: 3}
-  A3: {fileID: 6666350230050830566, guid: 54cd406b5a3e0a4428fc65d1b47cba54, type: 3}
-  A4: {fileID: 1246761331571305397, guid: a3b2c6f1437a63c448792de70091959e, type: 3}
-  A5: {fileID: 1419349843399185789, guid: e399daaa929af334c987f5a002c37a8a, type: 3}
+  A1: {fileID: 6389169430872929277, guid: 4366b970e78076449b8a953fdb10598b, type: 3}
+  A2: {fileID: 5087849097889343158, guid: af69b90c6d57608459d24e44afb44dff, type: 3}
+  A3: {fileID: 6666350230050830566, guid: 634ebc3f7aaa9e3498c295dea09d2cf1, type: 3}
+  A4: {fileID: 1246761331571305397, guid: a5b827c0017aa2941b44bb6d4257d03f, type: 3}
+  A5: {fileID: 1419349843399185789, guid: 0bfec2e175ef72e459271d9f78d7cf71, type: 3}
 --- !u!1 &859173385141886517
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,6 +619,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
+  attack: 0
+  defense: 0
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 0}
