@@ -85,9 +85,9 @@ public class MageAbilities : MonoBehaviour
 
         }
 
+        wallPOS = transform.position;
 
 
-      
 
     }
        

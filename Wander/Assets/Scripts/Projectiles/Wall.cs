@@ -17,7 +17,7 @@ public class Wall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       
+        //transform.position;
         ///Destroy(gameObject, 3f);
     }
 }
