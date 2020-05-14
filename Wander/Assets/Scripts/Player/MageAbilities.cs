@@ -6,7 +6,7 @@ using UnityEngine.Networking;
 using Mirror;
 
 //Ability 3 is bugged where it won't activate after a while
-public class MageAbilities : MonoBehaviour
+public class MageAbilities : NetworkBehaviour
 {
     public Animator animator;
 
@@ -57,8 +57,11 @@ public class MageAbilities : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    { 
-            if (Input.GetButtonDown("Ability1") && !ability1 && Time.time > nextFire1)
+    {   
+        if(!isLocalPlayer){
+            return;
+        }
+        if (Input.GetButtonDown("Ability1") && !ability1 && Time.time > nextFire1)
         {
 
             ability1 = true;
@@ -66,25 +69,19 @@ public class MageAbilities : MonoBehaviour
             nextFire1 = Time.time + fireRate;
             showerPOS = transform.position;
             showerPOS += new Vector2(+0.4f, 0.5f);
-            fire1(showerPOS);
+            CmdFire1(showerPOS);
             
-        }
-            else if (Input.GetButtonDown("Ability2"))
-            {
+        } else if (Input.GetButtonDown("Ability2")){
             animator.SetTrigger("ability2");
             Summoner();
         }
-            else if (Input.GetButtonDown("Ability3") && Time.time > nextFire)
-            {
-           
+        else if (Input.GetButtonDown("Ability3") && Time.time > nextFire){
             ability3 = true;
             animator.SetTrigger("ability3");
             nextFire = Time.time + fireRate;
             wallPOS = transform.position;
             Instantiate(Fire, wallPOS, Quaternion.identity);
-
         }
-
         wallPOS = transform.position;
 
 
@@ -94,23 +91,24 @@ public class MageAbilities : MonoBehaviour
      
     void FixedUpdate()
     {
+        if(!isLocalPlayer){
+            return;
+        }
         if (ability1 && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
             ability1 = false;
-
-
         // Wait for attacking animation to finish
         if (ability2 && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
             ability2 = false;
-
-
         if (ability3 && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
             ability3 = false;
     }
-    void fire1(Vector2 adjustPos)
+    [Command]
+    void CmdFire1(Vector2 adjustPos)
     {
         //count += 1;
-        Instantiate(fireshower, adjustPos, Quaternion.identity);
 
+        GameObject obj = Instantiate(fireshower, adjustPos, Quaternion.identity);
+        NetworkServer.Spawn(obj);
        // if (count == 0) { active = false; }
     }
 
@@ -123,8 +121,6 @@ public class MageAbilities : MonoBehaviour
         minionPOS = transform.position;
         minionPOS += new Vector2(+0.3f, -0.043f);
         Instantiate(minion, minionPOS, Quaternion.identity);
-
-
     }
 
     

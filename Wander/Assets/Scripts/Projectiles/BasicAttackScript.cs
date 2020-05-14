@@ -20,7 +20,6 @@ public class BasicAttackScript : MonoBehaviour
     void Update()
     {
         rb.velocity = new Vector2(velX, velY);
-       
     }
 
 
