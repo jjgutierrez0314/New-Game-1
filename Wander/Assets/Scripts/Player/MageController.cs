@@ -211,7 +211,7 @@ public class MageController : PlayerController{
         else
         {
             projectilePOS += new Vector2(-.1f, 0.05f);
-            GameObject obj = Instantiate(RightFire, projectilePOS, Quaternion.identity);
+            GameObject obj = Instantiate(LeftFire, projectilePOS, Quaternion.identity);
             NetworkServer.Spawn(obj);
             Destroy(obj,5f);
         }
