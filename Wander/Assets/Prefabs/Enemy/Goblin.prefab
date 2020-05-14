@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 749768060666473432}
   - component: {fileID: 3737403400354132564}
   - component: {fileID: 3737403400354132565}
-  - component: {fileID: 1363096806280993211}
-  - component: {fileID: 5971329535649702218}
+  - component: {fileID: 4488462283670681230}
+  - component: {fileID: 1838605071972837835}
   - component: {fileID: 4886840040982409943}
   - component: {fileID: 6090614177684300760}
   - component: {fileID: 7649379318355099024}
@@ -152,7 +152,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1363096806280993211
+--- !u!114 &4488462283670681230
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -169,13 +169,13 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 256
-  moveSpeed: 16
+  moveSpeed: 0
   xMove: 0
   jumpVelocity: 0
   fallMultiplier: 0
   lowJumpMultiplier: 0
   facingRight: 0
---- !u!114 &5971329535649702218
+--- !u!114 &1838605071972837835
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -705,7 +705,7 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             typeName: UnityEngine.Object
-            value: {fileID: 1363096806280993211}
+            value: {fileID: 4488462283670681230}
           TargetTypeName: EnemyController
           PropertyName: moveSpeed
           BoolParameter:
@@ -837,7 +837,7 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             typeName: UnityEngine.Object
-            value: {fileID: 1363096806280993211}
+            value: {fileID: 4488462283670681230}
           TargetTypeName: EnemyController
           PropertyName: xMove
           BoolParameter:
@@ -1686,7 +1686,7 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           typeName: Enemy
-          value: {fileID: 5971329535649702218}
+          value: {fileID: 1838605071972837835}
         fsmVarParams:
         - variableName: 
           objectType: 

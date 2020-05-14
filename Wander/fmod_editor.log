@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001F738A05C48 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 00000217B6BDCB28 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -15,10 +15,529 @@
 [LOG] Thread::initThread                       : Init FMOD Studio bank load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
 [LOG] Manager::init                            : done.
 [LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 9932832
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89536
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000840DDAF45C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA669DC320
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA669DC2F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA669DC3F0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA669DC4B0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000021842305998
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Wander_SFX_cavewater', format=2, channels=2, frequency=48000, lengthbytes=35072, lengthpcm=133952, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.478036.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 9932832
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89536
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000840DDAF45C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA669DC320
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA669DC2F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA669DC3F0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA669DC4B0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0000021842305998
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Wander_SFX_shieldsmash_fullanimation', format=2, channels=2, frequency=48000, lengthbytes=57088, lengthpcm=240000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.365509.
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Wander FMOD\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 000002178CEFF688 : node = 000002177AEFACA0
+[LOG] SystemI::createSound                     : add node to async list : head = 000002177ACB9058.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000002178CEFF688
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Wander FMOD\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9932832
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 89536
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002177AEFADB0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Wander_SFX_Cavewind', format=2, channels=2, frequency=48000, lengthbytes=625472, lengthpcm=2469888, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.091034.
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Wander FMOD\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 0000021840FD02E8 : node = 000002177AEFAF20
+[LOG] SystemI::createSound                     :     add node to async list : head = 000002177ACB9058.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000002178CEFF688
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000021840FD02E8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Wander FMOD\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9932832
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 89536
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002177AEFB030
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Wander_SFX_Cavewind', format=2, channels=2, frequency=48000, lengthbytes=625472, lengthpcm=2469888, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.091034.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000021840FD02E8
+[LOG] SoundI::getSubSound                      : sound 000002178CEFF688.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 0000021840FD02E8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000021840FD1068
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000021840FD1068
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 9932832
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89536
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000840DDAF45C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA669DC320
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA669DC2F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA669DC3F0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA669DC4B0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002178F6007C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Forest Footsteps - Trimmed (3)', format=2, channels=1, frequency=48000, lengthbytes=3360, lengthpcm=16320, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.100861.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 9932832
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89536
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000840DDAF45C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA669DC320
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA669DC2F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA669DC3F0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA669DC4B0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002178F6007C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Wander_SFX_Cave_footsteps_2', format=2, channels=2, frequency=48000, lengthbytes=6720, lengthpcm=24000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.109680.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 9932832
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89536
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000840DDAF45C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA669DC320
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA669DC2F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA669DC3F0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA669DC4B0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002178F6007C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Forest Footsteps - Trimmed (5)', format=2, channels=1, frequency=48000, lengthbytes=6496, lengthpcm=36478, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.026917.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 9932832
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89536
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000840DDAF45C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA669DC320
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA669DC2F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA669DC3F0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA669DC4B0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002178F6007C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Forest Footsteps - Trimmed (4)', format=2, channels=1, frequency=48000, lengthbytes=6976, lengthpcm=39358, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.044281.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 9932832
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89536
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000840DDAF45C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA669DC320
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA669DC2F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA669DC3F0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA669DC4B0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002178F6007C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Forest Footsteps - Trimmed (2)', format=2, channels=1, frequency=48000, lengthbytes=6816, lengthpcm=38400, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.041718.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 9932832
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89536
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000840DDAF45C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA669DC320
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA669DC2F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA669DC3F0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA669DC4B0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002178F6007C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Forest Footsteps - Trimmed', format=2, channels=1, frequency=48000, lengthbytes=3552, lengthpcm=19200, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.070953.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 9932832
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89536
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000840DDAF45C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA669DC320
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA669DC2F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA669DC3F0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA669DC4B0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002178F6007C8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Wander_SFX_Cave_footsteps_1', format=2, channels=2, frequency=48000, lengthbytes=7200, lengthpcm=24000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.098328.
+[LOG] SoundI::release                          : Wander_SFX_Cavewind (0000021840FD02E8)
+[LOG] SoundI::release                          :     Wander_SFX_Cavewind (000002178FF4C558)
+[LOG] SoundI::release                          :     Wander_SFX_Cavewind (0000021840FD1068)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 9932832
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89536
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000840DDAF45C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA669DC320
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA669DC2F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA669DC3F0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA669DC4B0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002178F5FA6D8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Wander_SFX_jump', format=2, channels=2, frequency=48000, lengthbytes=70528, lengthpcm=336000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.151978.
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Wander FMOD\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000021840FD02E8 : node = 000002184269C310
+[LOG] SystemI::createSound                     : add node to async list : head = 000002177ACB9058.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000021840FD02E8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Wander FMOD\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9932832
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 89536
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002184269C420
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Wander_SFX_Cavewind', format=2, channels=2, frequency=48000, lengthbytes=625472, lengthpcm=2469888, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.091034.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000021840FD02E8
+[LOG] SoundI::getSubSound                      : sound 0000021840FD02E8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000021840FD1068
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000021840FD1068
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 9932832
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89536
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000840DDAF45C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA669DC320
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA669DC2F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA669DC3F0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA669DC4B0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002184209C978
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Wander_SFX_warrior_mainswordattack', format=2, channels=2, frequency=48000, lengthbytes=6464, lengthpcm=28800, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.200470.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 9932832
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89536
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000840DDAF45C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA669DC320
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA669DC2F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA669DC3F0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA669DC4B0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002184209C348
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Wander_SFX_bat_damage_3', format=2, channels=2, frequency=48000, lengthbytes=6688, lengthpcm=18000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.509430.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 9932832
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89536
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000840DDAF45C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA669DC320
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA669DC2F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA669DC3F0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA669DC4B0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002184209C348
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Wander_SFX_bat_damage_2', format=2, channels=2, frequency=48000, lengthbytes=4640, lengthpcm=14625, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.354309.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 9932832
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89536
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000840DDAF45C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA669DC320
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA669DC2F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA669DC3F0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA669DC4B0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002184209C348
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Wander_SFX_bat_damage_1', format=2, channels=2, frequency=48000, lengthbytes=4896, lengthpcm=14999, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.351074.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 9932832
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89536
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000840DDAF45C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA669DC320
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA669DC2F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA669DC3F0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA669DC4B0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002184209C348
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Wander_SFX_bat_death_2', format=2, channels=2, frequency=48000, lengthbytes=13376, lengthpcm=37125, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.469360.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 9932832
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 89536
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 000000840DDAF45C
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFA669DC320
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFA669DC2F0
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFA669DC3F0
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFA669DC4B0
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000002184209C348
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Wander_SFX_bat_death_1', format=2, channels=2, frequency=48000, lengthbytes=16768, lengthpcm=51141, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.454987.
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] SoundI::release                          : Wander_SFX_Cavewind (0000021840FD02E8)
+[LOG] SoundI::release                          :     Wander_SFX_Cavewind (000002178FF9E188)
+[LOG] SoundI::release                          :     Wander_SFX_Cavewind (0000021840FD1068)
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Wander FMOD\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000217523231B8 : node = 000002184269C1D0
+[LOG] SystemI::createSound                     : add node to async list : head = 000002177ACB9058.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000217523231B8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Wander FMOD\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9932832
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 89536
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002184269C2E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Wander_SFX_Cavewind', format=2, channels=2, frequency=48000, lengthbytes=625472, lengthpcm=2469888, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.091034.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000217523231B8
+[LOG] SoundI::getSubSound                      : sound 00000217523231B8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000021752323368
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000021752323368
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Wander FMOD\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 0000021840FD02E8 : node = 000002184269C090
+[LOG] SystemI::createSound                     : add node to async list : head = 000002177ACB9058.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000021840FD02E8
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Wander FMOD\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9932832
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 89536
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002184269C1A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Wander_SFX_Cavewind', format=2, channels=2, frequency=48000, lengthbytes=625472, lengthpcm=2469888, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.091034.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000021840FD02E8
+[LOG] SoundI::getSubSound                      : sound 0000021840FD02E8.  Subsound index 0 / 1
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0000021840FD1068
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0000021840FD1068
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Wander FMOD\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     : setdata soundi = 00000218415D50F8 : node = 000002184269C310
+[LOG] SystemI::createSound                     : add node to async list : head = 000002177ACB9058.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000218415D50F8
+[LOG] SystemI::createSound                     : filename = Assets\Audio\Wander FMOD\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Wander FMOD\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSound                     :     setdata soundi = 00000218415D4F48 : node = 000002184269C450
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9932832
+[LOG] SystemI::createSound                     :     add node to async list : head = 000002177ACB9058.  list count = 0
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 89536
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Wander FMOD\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002184269C420
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSound                     :     setdata soundi = 00000218415D4D98 : node = 000002184269C590
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 200
+[LOG] SystemI::createSound                     :     add node to async list : head = 000002177ACB9058.  list count = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSound                     :     filename = Assets\Audio\Wander FMOD\Build\Desktop/Master.bank : mode 02010082
+[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] SystemI::createSound                     :     setdata soundi = 00000218415D4888 : node = 000002184269C6D0
+[LOG] SystemI::createSound                     :     add node to async list : head = 000002177ACB9058.  list count = 2
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Wander_SFX_environment_waterfall', format=2, channels=2, frequency=48000, lengthbytes=341184, lengthpcm=1262256, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.184401.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000218415D50F8
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000218415D4F48
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Wander FMOD\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9932832
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 89536
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002184269C560
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 200
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Wander_SFX_environment_waterfall', format=2, channels=2, frequency=48000, lengthbytes=341184, lengthpcm=1262256, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.184401.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000218415D4F48
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000218415D4D98
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Wander FMOD\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9932832
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 89536
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002184269C6A0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 200
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Wander_SFX_environment_waterfall', format=2, channels=2, frequency=48000, lengthbytes=341184, lengthpcm=1262256, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.184401.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000218415D4D98
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 00000218415D4888
+[LOG] SystemI::createSoundInternal             :     Create name='Assets\Audio\Wander FMOD\Build\Desktop/Master.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 9932832
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 89536
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000002184269C7E0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 200
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Wander_SFX_environment_waterfall', format=2, channels=2, frequency=48000, lengthbytes=341184, lengthpcm=1262256, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.184401.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 00000218415D4888
+[LOG] SoundI::getSubSound                      : sound 00000218415D50F8.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 00000218415D4F48.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 00000218415D4D98.  Subsound index 0 / 1
+[LOG] SoundI::getSubSound                      : sound 00000218415D4888.  Subsound index 0 / 1
+[LOG] SoundI::release                          : Wander_SFX_environment_waterfall (000002178CEFFB98)
+[LOG] SoundI::release                          :     Wander_SFX_environment_waterfall (000002177ACBAC48)
+[LOG] SoundI::release                          :     Wander_SFX_environment_waterfall (000002178CEFF178)
+[LOG] SoundI::release                          : Wander_SFX_environment_waterfall (000002178CEFE5A8)
+[LOG] SoundI::release                          :     Wander_SFX_environment_waterfall (000002177ACBAAA8)
+[LOG] SoundI::release                          :     Wander_SFX_environment_waterfall (000002178CEFEFC8)
+[LOG] SoundI::release                          : Wander_SFX_environment_waterfall (000002178CEFF4D8)
+[LOG] SoundI::release                          :     Wander_SFX_environment_waterfall (000002177ACBA908)
+[LOG] SoundI::release                          :     Wander_SFX_environment_waterfall (000002178CEFEC68)
+[LOG] SoundI::release                          : Wander_SFX_environment_waterfall (000002178CEFF9E8)
+[LOG] SoundI::release                          :     Wander_SFX_environment_waterfall (000002177ACBA5C8)
+[LOG] SoundI::release                          :     Wander_SFX_environment_waterfall (000002178CEFEAB8)
+[LOG] SoundI::release                          :  (0000021847C46FF8)
+[LOG] SoundI::release                          :     Wander_SFX_bat_damage_1 (00000217B72C45B8)
+[LOG] SoundI::release                          :  (0000021847C46D18)
+[LOG] SoundI::release                          :     Wander_SFX_bat_damage_2 (00000217B72C7E98)
+[LOG] SoundI::release                          :  (0000021847C47728)
+[LOG] SoundI::release                          :     Wander_SFX_bat_damage_3 (00000217B72C67D8)
+[LOG] SoundI::release                          :  (0000021847C48E28)
+[LOG] SoundI::release                          :     Wander_SFX_bat_death_1 (0000021847D5ADB8)
+[LOG] SoundI::release                          :  (0000021847C47FC8)
+[LOG] SoundI::release                          :     Wander_SFX_bat_death_2 (0000021847D59218)
+[LOG] SoundI::release                          :  (0000021847C46A38)
+[LOG] SoundI::release                          :     Wander_SFX_jump (000002178FF4C558)
+[LOG] SoundI::release                          : Wander_SFX_environment_waterfall (00000218415D4F48)
+[LOG] SoundI::release                          :     Wander_SFX_environment_waterfall (0000021847D5AC18)
+[LOG] SoundI::release                          :     Wander_SFX_environment_waterfall (00000218415D5458)
+[LOG] SoundI::release                          : Wander_SFX_environment_waterfall (00000218415D4888)
+[LOG] SoundI::release                          :     Wander_SFX_environment_waterfall (0000021847D593B8)
+[LOG] SoundI::release                          :     Wander_SFX_environment_waterfall (00000218415D52A8)
+[LOG] SoundI::release                          : Wander_SFX_environment_waterfall (00000218415D4D98)
+[LOG] SoundI::release                          :     Wander_SFX_environment_waterfall (0000021847D58518)
+[LOG] SoundI::release                          :     Wander_SFX_environment_waterfall (00000218415D4A38)
+[LOG] SoundI::release                          : Wander_SFX_environment_waterfall (00000218415D50F8)
+[LOG] SoundI::release                          :     Wander_SFX_environment_waterfall (0000021847D58ED8)
+[LOG] SoundI::release                          :     Wander_SFX_environment_waterfall (00000218415D4BE8)
+[LOG] SoundI::release                          : Wander_SFX_Cavewind (0000021840FD02E8)
+[LOG] SoundI::release                          :     Wander_SFX_Cavewind (0000021847D57CF8)
+[LOG] SoundI::release                          :     Wander_SFX_Cavewind (0000021840FD1068)
+[LOG] SoundI::release                          : Wander_SFX_Cavewind (00000217523231B8)
+[LOG] SoundI::release                          :     Wander_SFX_Cavewind (0000021847D5A8D8)
+[LOG] SoundI::release                          :     Wander_SFX_Cavewind (0000021752323368)
+[LOG] SoundI::release                          : Wander_SFX_Cavewind (000002178CEFF688)
+[LOG] SoundI::release                          :     Wander_SFX_Cavewind (000002178FF4CD78)
+[LOG] SoundI::release                          :     Wander_SFX_Cavewind (000002178CEFF838)
+[LOG] SoundI::release                          :  (0000021847C45A68)
+[LOG] SoundI::release                          :     Wander_SFX_Cave_footsteps_1 (000002178FF4DDB8)
+[LOG] SoundI::release                          :  (0000021847C47448)
+[LOG] SoundI::release                          :     Wander_SFX_Cave_footsteps_2 (000002178FF4ACF8)
+[LOG] SoundI::release                          :  (0000021847C47E58)
+[LOG] SoundI::release                          :     Forest Footsteps - Trimmed (2) (000002178FF4D738)
+[LOG] SoundI::release                          :  (0000021847C475B8)
+[LOG] SoundI::release                          :     Forest Footsteps - Trimmed (000002178FF4DA78)
+[LOG] SoundI::release                          :  (0000021847C472D8)
+[LOG] SoundI::release                          :     Forest Footsteps - Trimmed (3) (000002178FF4DC18)
+[LOG] SoundI::release                          :  (0000021847C45D48)
+[LOG] SoundI::release                          :     Forest Footsteps - Trimmed (4) (000002178FF4AE98)
+[LOG] SoundI::release                          :  (0000021847C45EB8)
+[LOG] SoundI::release                          :     Forest Footsteps - Trimmed (5) (000002178FF4D598)
+[LOG] SoundI::release                          :  (0000021847C47B78)
+[LOG] SoundI::release                          :     Wander_SFX_warrior_mainswordattack (000002178FF9E9A8)
+[LOG] SoundI::release                          :  (0000021847C48138)
+[LOG] SoundI::release                          :     Wander_SFX_cavewater (000002178FF4E0F8)
+[LOG] SoundI::release                          :  (00000217B652AD28)
+[LOG] SoundI::release                          :     Torch (000002177ACB93E8)
+[LOG] SoundI::release                          :  (00000217B6529068)
+[LOG] SoundI::release                          :     Torch - Trimmed (000002177ACB9588)
+[LOG] SoundI::release                          :  (00000217B6529A78)
+[LOG] SoundI::release                          :     KeyPressedSound (000002177ACB9248)
+[LOG] SoundI::release                          :  (0000021847C47CE8)
+[LOG] SoundI::release                          :     Wander_SFX_shieldsmash_fullanimation (000002178FF4C3B8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] SystemI::close                           : Closed.
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
+[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] Manager::readBank                        : fileversion = 125, compatVersion = 119 (oldest = 44, newest = 125)
-[LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
+[LOG] SystemI::close                           : Closed.
