@@ -39,10 +39,15 @@ public class ArcherAbilities : NetworkBehaviour
     Vector3 velocity = Vector3.zero;
     Vector2 showerPOS3;
 
+
+    //ability1Hitbox = GameObject.Find("Ability1").GetComponent<BoxCollider2D>();
+    bool right;
+    
+    //playerScript.facingRight
     // Start is called before the first frame update
     void Awake()
     {
-
+        
         animator = GetComponentInParent<Animator>();
         ability1 = false;
 
@@ -121,10 +126,22 @@ public class ArcherAbilities : NetworkBehaviour
     [Command]
     void CmdFire2()
     {
+        right = GetComponentInParent<MageController>().facingRight;
         projectilePOS = transform.position;
-        projectilePOS += new Vector2(+.1f, 0.05f);
-        GameObject obj = Instantiate(RightFire, projectilePOS, Quaternion.identity);
-        NetworkServer.Spawn(obj);
+        if (right)
+        {
+            projectilePOS += new Vector2(+.1f, 0.05f);
+            GameObject obj = Instantiate(RightFire, projectilePOS, Quaternion.identity);
+            NetworkServer.Spawn(obj);
+            Destroy(obj, 5f);
+        }
+        else
+        {
+            projectilePOS += new Vector2(-.1f, 0.05f);
+            GameObject obj = Instantiate(LeftFire, projectilePOS, Quaternion.identity);
+            NetworkServer.Spawn(obj);
+            Destroy(obj, 5f);
+        }
     }
     [Command]
     void CmdFire3()

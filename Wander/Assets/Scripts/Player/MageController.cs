@@ -28,7 +28,7 @@ public class MageController : PlayerController{
     Vector3 velocity = Vector3.zero;
 
     public bool isGrounded;
-    bool facingRight = true;
+    public bool facingRight = true;
 
     public GameObject RightFire, LeftFire;
     Vector2 projectilePOS;
