@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 4340195298137186666}
   - component: {fileID: 8532982165356768769}
   - component: {fileID: 244250369550355513}
-  - component: {fileID: 7349884499001261522}
-  - component: {fileID: 7659265363004696009}
+  - component: {fileID: 7014494096051041735}
+  - component: {fileID: 6960551415134962133}
   m_Layer: 0
   m_Name: Mage
   m_TagString: Player
@@ -168,6 +168,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
+  attack: 0
+  defense: 0
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 0}
@@ -448,10 +450,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef8214bb361aa7f4c9576010c07c0d9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  printFootstep: 0
   move1Event: 
-  jumpEvent: event:/Character/Jump
-  landEvent: event:/Character/Landing
---- !u!114 &7349884499001261522
+--- !u!114 &7014494096051041735
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -460,7 +461,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1546363441769914248}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f2f66c96ef382874ba80d76f4afebb3b, type: 3}
+  m_Script: {fileID: 11500000, guid: 7374bd2d85baa4c4f99a27be9a39db01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   syncMode: 0
@@ -471,11 +472,11 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 256
-  moveSpeed: 4
-  sprintSpeed: 6
-  jumpVelocity: 6
+  moveSpeed: 16
+  sprintSpeed: 24
+  jumpVelocity: 7
   fallMultiplier: 2
-  lowJumpMultiplier: 1
+  lowJumpMultiplier: 2
   isGrounded: 0
   RightFire: {fileID: 5785041440604217753, guid: 49d248fbe70edc042bc289a70055af43,
     type: 3}
@@ -483,7 +484,7 @@ MonoBehaviour:
     type: 3}
   fireRate: 0.5
   attacking: 0
---- !u!114 &7659265363004696009
+--- !u!114 &6960551415134962133
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -492,13 +493,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1546363441769914248}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 779c034e3cc56ca449aacb53efa28134, type: 3}
+  m_Script: {fileID: 11500000, guid: eedc852ca5fddf9409af26e2b6dd05a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 4152408922387862257}
   fireshower: {fileID: 4807759583437160422, guid: f4b4109bbe5ff6d4fa7f38d43c62c8a8,
     type: 3}
   fireRate1: 0.5
-  animator1: {fileID: 4152408922387862257}
   ability1: 0
   Timer1: 0
   ability2: 0
@@ -651,6 +652,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
+  attack: 0
+  defense: 0
   maxHealth: 100
   currentHealth: 0
   healthBar: {fileID: 0}
