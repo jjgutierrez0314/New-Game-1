@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4725278372158980985}
   - component: {fileID: 7844759812443745562}
   - component: {fileID: 3263810167264815189}
-  - component: {fileID: 8625957774450001886}
+  - component: {fileID: 3184375793742178016}
   m_Layer: 0
   m_Name: Arrow
   m_TagString: Untagged
@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9bf2957b6a49c3344a81449af81cf735, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a49514ca6267ea14588bdd30eb87e924, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -104,7 +104,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &8625957774450001886
+--- !u!114 &3184375793742178016
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -113,8 +113,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 7479298518420579672}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b58d960b88b65744f84fed17c0b5e246, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ab968b69e8cb3548bcdc2436cd91076, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velX: 5
+  velX: 2
   velY: 0

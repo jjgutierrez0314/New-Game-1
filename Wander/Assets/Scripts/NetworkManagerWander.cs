@@ -21,7 +21,7 @@ public class NetworkManagerWander : NetworkManager {
             chosenClass = DBManager.choosen
         };
         // conn.Send(mess);
-        ClientScene.AddPlayer(conn);
+        // ClientScene.AddPlayer(conn);
         conn.Send(mess);
     }
 
@@ -34,7 +34,7 @@ public class NetworkManagerWander : NetworkManager {
             GameObject player = Instantiate(Resources.Load("characters/Mage", typeof(GameObject))) as GameObject;
             NetworkServer.AddPlayerForConnection(conn, player);
         } else if (messageGlobal == "Warrior"){
-            GameObject player = Instantiate(Resources.Load("characters/Warrior", typeof(GameObject))) as GameObject;
+            GameObject player = Instantiate(Resources.Load("characters/Mage", typeof(GameObject))) as GameObject;
             NetworkServer.AddPlayerForConnection(conn, player);
         } else {
             GameObject player = Instantiate(Resources.Load("characters/Warrior", typeof(GameObject))) as GameObject;

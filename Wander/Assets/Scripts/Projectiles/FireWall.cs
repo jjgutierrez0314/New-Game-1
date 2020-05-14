@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Networking;
 using Mirror;
-public class FireWall : MonoBehaviour
+public class FireWall : NetworkBehaviour
 {
     public GameObject Fire;
     Vector2 wallPOS;
@@ -26,7 +26,9 @@ public class FireWall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(!isLocalPlayer){
+            return;
+        }
         if (Input.GetButtonDown("Ability3") && !ability3 && Time.time > nextFire)
         {
             count = 0;//resets count
@@ -46,24 +48,28 @@ public class FireWall : MonoBehaviour
             {
                 if (Timer <= 0f)
                 {
-
-                    fire(wallPOS += new Vector2(0.2f, 0f));
+                    CmdFire(wallPOS += new Vector2(0.2f, 0f));
                     Timer = 0.5f;
                 }
             }
         }
 
     }
-
-    void fire(Vector2 adjustPos)
+    [Command]
+    void CmdFire(Vector2 adjustPos)
     {
         count += 1;
-        Instantiate(Fire, adjustPos, Quaternion.identity);
+        GameObject fire = Instantiate(Fire, adjustPos, Quaternion.identity);
+        NetworkServer.Spawn(fire);
+        Destroy(fire,3f);
         if (count == 0) { active = false; }
     }
 
     void FixedUpdate()
     {
+        if(!isLocalPlayer){
+            return;
+        }
         if (ability3 && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
             ability3 = false;
     }

@@ -4,10 +4,11 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Networking;
 using Mirror;
-public class FireShower : MonoBehaviour
+public class FireShower : NetworkBehaviour
 {
     public GameObject fireshower;
-    Vector2 showerPOS;
+    
+    public Transform firePosition;
     public float fireRate = 0.5f;
     float nextFire = 0.0f;
     Animator animator;
@@ -35,7 +36,9 @@ public class FireShower : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(!isLocalPlayer){
+            return;
+        }
         if (Input.GetButtonDown("Ability1") && !ability1 && Time.time > nextFire)
         {
             count = 0;//resets count
@@ -43,8 +46,8 @@ public class FireShower : MonoBehaviour
             ability1 = true;
             animator.SetTrigger("ability1");
             nextFire = Time.time + fireRate;
-            showerPOS = transform.position;
-            showerPOS += new Vector2(+0.4f, 0.5f);
+            // Vector3 pos = new Vector3(0.4f,0.5f,0);
+            // firePosition.position += pos;
             active = true;
 
         }
@@ -55,19 +58,19 @@ public class FireShower : MonoBehaviour
             {
                 if (Timer <= 0f)
                 {
-
-                    fire(showerPOS += new Vector2(FirePosX[count], FirePosY[count]));
+                    Cmdfire(firePosition.position += new Vector3(FirePosX[count], FirePosY[count], 0f));
                     Timer = 0.5f;
                 }
             }
         }
 
     }
-
-    void fire(Vector2 adjustPos)
+    [Command]
+    void Cmdfire(Vector2 adjustPos)
     {
         count += 1;
-        Instantiate(fireshower, adjustPos, Quaternion.identity);
+        GameObject fiore = Instantiate(fireshower, adjustPos, Quaternion.identity);
+        NetworkServer.Spawn(fiore);
         //showerPOS = transform.position;
         //showerPOS += new Vector2(+4f, 5.0f);
         //Instantiate(fireshower, showerPOS, Quaternion.identity);
@@ -76,10 +79,14 @@ public class FireShower : MonoBehaviour
         //showerPOS += new Vector2(-2.75f, 0.0f);
         //Instantiate(fireshower, showerPOS, Quaternion.identity);
         if (count == 0) { active = false; }
+        Destroy(fiore,5);
     }
 
     void FixedUpdate()
     {
+        if(!isLocalPlayer){
+            return;
+        }
         // Wait for attacking animation to finish
         if (ability1 && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
             ability1 = false;

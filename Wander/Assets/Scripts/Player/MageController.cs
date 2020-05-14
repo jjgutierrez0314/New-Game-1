@@ -88,15 +88,16 @@ public class MageController : PlayerController
         else
             xMove = 0;
 
-        // Flip the player
+        // Flip the players
         if ((xMove > 0 && !facingRight) || (xMove < 0 && facingRight))
             Flip();
-        if (Input.GetButtonDown("Attack") && !attacking && Time.time > nextFire)
+        if (Input.GetButtonDown("Attack") && Time.time > nextFire)
         {
+            Debug.Log("Im firing my balls");
             //attacking = true;
             animator.SetTrigger("attack");
             nextFire = Time.time + fireRate;
-            fire();
+            CmdFireArrow();
         }
     }
 
@@ -154,6 +155,7 @@ public class MageController : PlayerController
     }
 
     // Flips the sprite
+
     void Flip()
     {
         facingRight = !facingRight;
@@ -199,19 +201,23 @@ public class MageController : PlayerController
     {
         setBackground();
     }
-
-    void fire()
+    [Command]
+    void CmdFireArrow()
     {
         projectilePOS = transform.position;
         if (facingRight)
         {
             projectilePOS += new Vector2(+.1f, 0.05f);
-            Instantiate(RightFire, projectilePOS, Quaternion.identity);
+            GameObject obj = Instantiate(RightFire, projectilePOS, Quaternion.identity);
+            NetworkServer.Spawn(obj);
+            Destroy(obj,5f);
         }
         else
         {
             projectilePOS += new Vector2(-.1f, 0.05f);
-            Instantiate(LeftFire, projectilePOS, Quaternion.identity);
+            GameObject obj = Instantiate(RightFire, projectilePOS, Quaternion.identity);
+            NetworkServer.Spawn(obj);
+            Destroy(obj,5f);
         }
     }
 }
