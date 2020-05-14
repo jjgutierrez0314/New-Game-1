@@ -49,14 +49,10 @@ public class MageAbilities : MonoBehaviour
     void Start()
     {
         animator = GetComponentInParent<Animator>();
-        ability1 = false;
-
-       
-        animator = GetComponentInParent<Animator>();
+        ability1 = ability2 = ability3 = false;
+         
         animatorMin = GetComponentInParent<Animator>();
-
-        //Wallanimator = GetComponent<Animator>();
-        ability3 = false;
+        
     }
 
     // Update is called once per frame
@@ -64,14 +60,14 @@ public class MageAbilities : MonoBehaviour
     { 
             if (Input.GetButtonDown("Ability1") && !ability1 && Time.time > nextFire1)
         {
-            count1 = 0;//resets count
-            Timer1 = 2f;//doesn't work if not here?
+
             ability1 = true;
             animator.SetTrigger("ability1");
             nextFire1 = Time.time + fireRate;
             showerPOS = transform.position;
             showerPOS += new Vector2(+0.4f, 0.5f);
-            active1 = true;
+            fire1(showerPOS);
+            
         }
             else if (Input.GetButtonDown("Ability2"))
             {
@@ -80,46 +76,18 @@ public class MageAbilities : MonoBehaviour
         }
             else if (Input.GetButtonDown("Ability3") && Time.time > nextFire)
             {
-            count = 0;//resets count
-            Timer = 2f;//doesn't work if not here?
+           
             ability3 = true;
             animator.SetTrigger("ability3");
             nextFire = Time.time + fireRate;
             wallPOS = transform.position;
-            wallPOS += new Vector2(0.1f, -0.075f);
-            active = true;
+            Instantiate(Fire, wallPOS, Quaternion.identity);
 
         }
 
-        Timer1 -= Time.deltaTime;
-        if (active1)
-        {
-            if (count1 < 12)
-            {
-                if (Timer1 <= 0f)
-                {
-
-                    fire1(showerPOS += new Vector2(FirePosX[count], FirePosY[count]));
-                    Timer1 = 0.5f;
-                }
-            }
-        }
 
 
-
-        Timer -= Time.deltaTime;
-        if (active)
-        {
-            if (count < 3)
-            {
-                if (Timer <= 0f)
-                {
-
-                    fire(wallPOS += new Vector2(0.2f, 0f));
-                    Timer = 0.5f;
-                }
-            }
-        }
+      
 
     }
        
@@ -140,10 +108,10 @@ public class MageAbilities : MonoBehaviour
     }
     void fire1(Vector2 adjustPos)
     {
-        count += 1;
+        //count += 1;
         Instantiate(fireshower, adjustPos, Quaternion.identity);
 
-        if (count == 0) { active = false; }
+       // if (count == 0) { active = false; }
     }
 
 
@@ -159,12 +127,7 @@ public class MageAbilities : MonoBehaviour
 
     }
 
-    void fire(Vector2 adjustPos)
-    {
-        count += 1;
-        Instantiate(Fire, adjustPos, Quaternion.identity);
-        if (count == 0) { active = false; }
-    }
+    
 
 
 

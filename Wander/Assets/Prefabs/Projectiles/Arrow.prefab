@@ -116,5 +116,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b7d23897871c3944ad59cdbb4508cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velX: -2
+  velX: 2
   velY: 0

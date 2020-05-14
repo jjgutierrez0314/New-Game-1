@@ -6,7 +6,7 @@ public class Wall : MonoBehaviour
 {
     public float velX = 0.0f;
     public float velY = -0.5f;
-    CircleCollider2D hitbox;
+
     Animator animator;
     Rigidbody2D rb;// Start is called before the first frame update
     void Start()
@@ -18,6 +18,6 @@ public class Wall : MonoBehaviour
     void Update()
     {
        
-        Destroy(gameObject, 3f);
+        ///Destroy(gameObject, 3f);
     }
 }
