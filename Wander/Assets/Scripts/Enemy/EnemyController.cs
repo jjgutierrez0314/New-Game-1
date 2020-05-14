@@ -25,14 +25,14 @@ public class EnemyController : NetworkBehaviour
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         enemy = GetComponent<Enemy>();
-        if (GameObject.FindGameObjectWithTag("Bat") != null)
+        if (transform.Find("Tag").tag == "Bat")
         {
             moveSpeed = 1f;
             jumpVelocity = fallMultiplier = lowJumpMultiplier = 0f;
         }
-        else if (GameObject.FindGameObjectWithTag("Goblin") != null)
+        else if (transform.Find("Tag").tag == "Goblin")
         {
-            moveSpeed = 2f;
+            moveSpeed = 3f;
             jumpVelocity = fallMultiplier = lowJumpMultiplier = 2f;
         }
         /*
