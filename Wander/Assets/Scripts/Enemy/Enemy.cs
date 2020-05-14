@@ -118,6 +118,7 @@ public class Enemy : NetworkBehaviour
         isHit = true;
         animator.SetBool("isHit", isHit);
         animator.SetTrigger("hit");
+            Debug.Log("player hit boss");
 
         if (health <= 0)
         {

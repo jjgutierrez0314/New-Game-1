@@ -67,6 +67,7 @@ public class EnemyController : NetworkBehaviour
 
     void FixedUpdate()
     {
+        animator.SetFloat("speed", Mathf.Abs(xMove));
     }
 
     // Flips the sprite
