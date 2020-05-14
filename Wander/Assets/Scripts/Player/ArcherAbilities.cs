@@ -79,10 +79,13 @@ public class ArcherAbilities : NetworkBehaviour
 
         if (Input.GetButtonDown("Ability2"))
         {
-
             animator.SetTrigger("ability2");
-
-            CmdFire2();
+            right = GetComponentInParent<MageController>().facingRight;
+            if(right){
+                CmdFirePierceRight();
+            } else {
+                CmdFirePierceLeft();
+            }
         }
 
         if (Input.GetButtonDown("Ability3"))
@@ -124,24 +127,22 @@ public class ArcherAbilities : NetworkBehaviour
         if (count1 == 0) { active1 = false; }
     }
     [Command]
-    void CmdFire2()
+    void CmdFirePierceRight()
     {
-        right = GetComponentInParent<MageController>().facingRight;
         projectilePOS = transform.position;
-        if (right)
-        {
-            projectilePOS += new Vector2(+.1f, 0.05f);
-            GameObject obj = Instantiate(RightFire, projectilePOS, Quaternion.identity);
-            NetworkServer.Spawn(obj);
-            Destroy(obj, 5f);
-        }
-        else
-        {
-            projectilePOS += new Vector2(-.1f, 0.05f);
-            GameObject obj = Instantiate(LeftFire, projectilePOS, Quaternion.identity);
-            NetworkServer.Spawn(obj);
-            Destroy(obj, 5f);
-        }
+        projectilePOS += new Vector2(+.1f, 0.05f);
+        GameObject obj = Instantiate(RightFire, projectilePOS, Quaternion.identity);
+        NetworkServer.Spawn(obj);
+        Destroy(obj, 5f);
+    }
+    
+    [Command]
+    void CmdFirePierceLeft(){
+        projectilePOS = transform.position;
+        projectilePOS += new Vector2(-.1f, 0.05f);
+        GameObject obj = Instantiate(LeftFire, projectilePOS, Quaternion.identity);
+        NetworkServer.Spawn(obj);
+        Destroy(obj, 5f);
     }
     [Command]
     void CmdFire3()

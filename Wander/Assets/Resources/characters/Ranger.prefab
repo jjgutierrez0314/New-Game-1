@@ -478,6 +478,7 @@ MonoBehaviour:
   fallMultiplier: 2
   lowJumpMultiplier: 2
   isGrounded: 0
+  facingRight: 1
   RightFire: {fileID: 7479298518420579672, guid: 884ec41fc38f00342b0d82dc826ddcc0,
     type: 3}
   LeftFire: {fileID: 2185180462948210822, guid: 331b127fd04f49f4594ffd130c7be240,
@@ -507,7 +508,7 @@ MonoBehaviour:
   Timer1: 0
   RightFire: {fileID: 7161897824905593605, guid: 9d0f58cc5e864094c86f5218ce36c017,
     type: 3}
-  LeftFire: {fileID: 7161897824905593605, guid: 9d0f58cc5e864094c86f5218ce36c017,
+  LeftFire: {fileID: 8355284662362476735, guid: 919e29c6370feed49a5b06a9bd03cf63,
     type: 3}
   A1: {fileID: 6389169430872929277, guid: 4366b970e78076449b8a953fdb10598b, type: 3}
   A2: {fileID: 5087849097889343158, guid: af69b90c6d57608459d24e44afb44dff, type: 3}
