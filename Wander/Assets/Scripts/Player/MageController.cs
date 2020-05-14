@@ -5,11 +5,7 @@ using UnityEngine.Events;
 using UnityEngine.Networking;
 using Mirror;
 [System.Serializable]
-
-public class MageController : PlayerController
-{
-
-
+public class MageController : PlayerController{  
     public Camera myCam;
 
     public AudioListener myAud;
@@ -69,7 +65,7 @@ public class MageController : PlayerController
                 myAud.enabled = true;
             }
         }//(!player.dying && ((!basicAttack.attacking) || !isGrounded))
-        if (!player.dying && isGrounded)
+        if (!player.dying || isGrounded)
         {
             // Set horizontal movement
             if (Input.GetButton("Shift") && !isTired)
