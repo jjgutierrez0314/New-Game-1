@@ -451,7 +451,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   clientAuthority: 1
-  animator: {fileID: 0}
+  animator: {fileID: 2961823227756529568}
 --- !u!114 &430735296788727882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,6 +496,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 539a226d809375e4bb0ee76ca21e8881, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
   Arrowshower: {fileID: 673114637030960924, guid: ce8424e362c0e044eb5ffb5ed1278605,
     type: 3}
   FirstArrow: {fileID: 8546241071624370202, guid: cbb383f1eb68d2b49b5b5091af90dbb9,
@@ -583,7 +585,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2124680770368856667}
-  - component: {fileID: 750380543011532205}
   m_Layer: 0
   m_Name: GroundCheck
   m_TagString: Untagged
@@ -605,31 +606,6 @@ Transform:
   m_Father: {fileID: 2365186610625165376}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &750380543011532205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6352697502625228864}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 117f1a22db5322b4a9ce987b5e6dc4cf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  attack: 0
-  defense: 0
-  maxHealth: 100
-  currentHealth: 0
-  healthBar: {fileID: 0}
-  maxStamina: 100
-  currentStamina: 0
-  staminaBar: {fileID: 0}
-  dying: 0
-  player: {fileID: 0}
-  levelChanger: {fileID: 0}
 --- !u!1 &9060817242980185389
 GameObject:
   m_ObjectHideFlags: 0
