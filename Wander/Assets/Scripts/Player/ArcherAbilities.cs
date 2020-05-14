@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Networking;
 using Mirror;
-public class ArcherAbilities : MonoBehaviour
+public class ArcherAbilities : NetworkBehaviour
 {
     Animator animator;
 
@@ -52,6 +52,9 @@ public class ArcherAbilities : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!isLocalPlayer){
+            return;
+        }
         if (Input.GetButtonDown("Ability1") && !ability1 && Time.time > nextFire1)
         {
             count1 = 0;//resets count
@@ -64,7 +67,9 @@ public class ArcherAbilities : MonoBehaviour
             showerPOS = transform.position;
             showerPOS += new Vector2(+0.4f, 0.5f);
             active1 = true;
-            Instantiate(FirstArrow, arrowPos, Quaternion.identity);
+            // Needs to ba a function to call on the server... using Cmd
+            GameObject obj = Instantiate(FirstArrow, arrowPos, Quaternion.identity);
+            // NetworkServer.Spawn(obj);
         }
 
         if (Input.GetButtonDown("Ability2"))
@@ -72,7 +77,7 @@ public class ArcherAbilities : MonoBehaviour
 
             animator.SetTrigger("ability2");
 
-            fire2();
+            CmdFire2();
         }
 
         if (Input.GetButtonDown("Ability3"))
@@ -80,7 +85,7 @@ public class ArcherAbilities : MonoBehaviour
 
             animator.SetTrigger("ability3");
 
-            fire3();
+            CmdFire3();
         }
 
 
@@ -96,44 +101,50 @@ public class ArcherAbilities : MonoBehaviour
             {
                 if (Timer1 <= 0f)
                 {
-
-                    fire(showerPOS += new Vector2(FirePosX[count1], FirePosY[count1]));
+                    // Shower is bugged for the client...
+                    CmdFire(showerPOS += new Vector2(FirePosX[count1], FirePosY[count1]));
                     Timer1 = 0.5f;
                 }
             }
         }
     }
 
-
-    void fire(Vector2 adjustPos)
+    [Command]
+    void CmdFire(Vector2 adjustPos)
     {
 
         count1 += 1;
-        Instantiate(Arrowshower, adjustPos, Quaternion.identity);
+        GameObject arrowShower = Instantiate(Arrowshower, adjustPos, Quaternion.identity);
+        NetworkServer.Spawn(arrowShower);
         if (count1 == 0) { active1 = false; }
     }
-
-    void fire2()
+    [Command]
+    void CmdFire2()
     {
         projectilePOS = transform.position;
         projectilePOS += new Vector2(+.1f, 0.05f);
-        Instantiate(RightFire, projectilePOS, Quaternion.identity);
-
+        GameObject obj = Instantiate(RightFire, projectilePOS, Quaternion.identity);
+        NetworkServer.Spawn(obj);
     }
-
-    void fire3()
+    [Command]
+    void CmdFire3()
     {
         showerPOS3 = transform.position;
         showerPOS3 += new Vector2(0.3f, 0f);
-        Instantiate(A1, showerPOS3, Quaternion.identity);
+        GameObject obj1 = Instantiate(A1, showerPOS3, Quaternion.identity);
+        NetworkServer.Spawn(obj1);
         showerPOS3 += new Vector2(-0.3f, 0f);
-        Instantiate(A2, showerPOS3, Quaternion.identity);
+        GameObject obj2 =Instantiate(A2, showerPOS3, Quaternion.identity);
+        NetworkServer.Spawn(obj2);
         showerPOS3 += new Vector2(0f, 0.3f);
-        Instantiate(A3, showerPOS3, Quaternion.identity);
+        GameObject obj3 =Instantiate(A3, showerPOS3, Quaternion.identity);
+        NetworkServer.Spawn(obj3);
         showerPOS3 += new Vector2(0f, -0.3f);
-        Instantiate(A4, showerPOS3, Quaternion.identity);
+        GameObject obj4 =Instantiate(A4, showerPOS3, Quaternion.identity);
+        NetworkServer.Spawn(obj4);
         showerPOS3 += new Vector2(-0.3f, 0f);
-        Instantiate(A5, showerPOS3, Quaternion.identity);
+        GameObject obj5 =Instantiate(A5, showerPOS3, Quaternion.identity);
+        NetworkServer.Spawn(obj5);
         /*
         float xMove = 5;
         Vector3 targetVelocity = new Vector2(xMove * 25f * Time.fixedDeltaTime, rb2D.velocity.x);
@@ -143,6 +154,9 @@ public class ArcherAbilities : MonoBehaviour
     }
     void FixedUpdate()
     {
+        if(!isLocalPlayer){
+            return;
+        }
         // Wait for attacking animation to finish
         if (ability1 && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
             ability1 = false;

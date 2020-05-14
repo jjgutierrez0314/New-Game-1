@@ -231,7 +231,6 @@ MonoBehaviour:
   jumpVelocity: 7
   fallMultiplier: 2
   lowJumpMultiplier: 2
-  isGrounded: 0
   facingRight: 0
 --- !u!114 &4493395623154493526
 MonoBehaviour:
