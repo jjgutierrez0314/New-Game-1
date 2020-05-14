@@ -32,7 +32,7 @@ public class EnemyController : NetworkBehaviour
         }
         else if (transform.Find("Tag").tag == "Goblin")
         {
-            moveSpeed = 3f;
+            moveSpeed = 2f;
             jumpVelocity = fallMultiplier = lowJumpMultiplier = 2f;
         }
         /*
