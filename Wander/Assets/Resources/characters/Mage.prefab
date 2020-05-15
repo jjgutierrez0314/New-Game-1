@@ -302,7 +302,7 @@ MonoBehaviour:
     m_Bits: 256
   moveSpeed: 3
   sprintSpeed: 4
-  jumpVelocity: 2
+  jumpVelocity: 4
   fallMultiplier: 2
   lowJumpMultiplier: 2
   isGrounded: 0

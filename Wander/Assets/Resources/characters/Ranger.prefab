@@ -471,9 +471,9 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 256
-  moveSpeed: 16
-  sprintSpeed: 24
-  jumpVelocity: 7
+  moveSpeed: 3
+  sprintSpeed: 4
+  jumpVelocity: 4
   fallMultiplier: 2
   lowJumpMultiplier: 2
   isGrounded: 0
