@@ -15,20 +15,9 @@ public class MageAbilities : NetworkBehaviour
     public float fireRate1 = 0.5f;
     float nextFire1 = 0.0f;
     public bool ability1;
-    public float Timer1;
-    int count1 = 0;
-    bool active1 = false;
-    float[] FirePosX =
-             {0.0f,0.1f,-0.175f,
-             0.0f,0.1f,-0.175f,
-             0.0f,0.1f,-0.175f,
-             0.0f,0.1f,-0.175f};
-    float[] FirePosY =
-             {0.0f,0.1f,-0.1f,
-             0.0f,0.1f,-0.1f,
-             0.0f,0.1f,-0.1f,
-             0.0f,0.1f,-0.1f};
 
+
+  
 
     public bool ability2;
     public Animator animatorMin;
@@ -37,28 +26,24 @@ public class MageAbilities : NetworkBehaviour
     Vector2 minionPOS;
 
     public GameObject Fire;
-    Vector2 wallPOS;
     public float fireRate = 0.5f;
     float nextFire = 0.0f;
-    //public Animator Wallanimator;
     public bool ability3;
-    public float Timer;
-    int count = 0;
-    bool active = false;
+ 
 
     void Start()
     {
         animator = GetComponentInParent<Animator>();
         ability1 = ability2 = ability3 = false;
-         
+
         animatorMin = GetComponentInParent<Animator>();
-        
+
     }
 
     // Update is called once per frame
     void Update()
-    {   
-        if(!isLocalPlayer){
+    {
+        if (!isLocalPlayer) {
             return;
         }
         if (Input.GetButtonDown("Ability1") && !ability1 && Time.time > nextFire1)
@@ -70,28 +55,31 @@ public class MageAbilities : NetworkBehaviour
             showerPOS = transform.position;
             showerPOS += new Vector2(+0.4f, 0.5f);
             CmdFire1(showerPOS);
-            
-        } else if (Input.GetButtonDown("Ability2")){
+
+        } else if (Input.GetButtonDown("Ability2")) {
+
+            minionPOS = transform.position;
+            minionPOS += new Vector2(+0.3f, -0.043f);
             animator.SetTrigger("ability2");
-            Summoner();
+
+            CmdSummon(minionPOS);
         }
-        else if (Input.GetButtonDown("Ability3") && Time.time > nextFire){
+        else if (Input.GetButtonDown("Ability3") && Time.time > nextFire) {
             ability3 = true;
             animator.SetTrigger("ability3");
             nextFire = Time.time + fireRate;
-            wallPOS = transform.position;
-            Instantiate(Fire, wallPOS, Quaternion.identity);
+            CmdFireWall();
         }
-        wallPOS = transform.position;
+        
 
 
 
     }
-       
-     
+
+
     void FixedUpdate()
     {
-        if(!isLocalPlayer){
+        if (!isLocalPlayer) {
             return;
         }
         if (ability1 && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
@@ -103,27 +91,29 @@ public class MageAbilities : NetworkBehaviour
             ability3 = false;
     }
     [Command]
-    void CmdFire1(Vector2 adjustPos)
+   void CmdFire1(Vector2 adjustPos)
     {
-        //count += 1;
-
         GameObject obj = Instantiate(fireshower, adjustPos, Quaternion.identity);
         NetworkServer.Spawn(obj);
-       // if (count == 0) { active = false; }
     }
 
+    [Command]
+ void CmdSummon(Vector2 minPOS)
 
-    void Summoner()
     {
-        projectilePOS = transform.position;
-        projectilePOS += new Vector2(+0.3f, -0.043f);
-        Instantiate(portal, projectilePOS, Quaternion.identity);
-        minionPOS = transform.position;
-        minionPOS += new Vector2(+0.3f, -0.043f);
-        Instantiate(minion, minionPOS, Quaternion.identity);
+        GameObject Port = Instantiate(portal, minPOS, Quaternion.identity);
+        NetworkServer.Spawn(Port);
+        GameObject min = Instantiate(minion, minPOS, Quaternion.identity);
+        NetworkServer.Spawn(min);
+
     }
 
-    
+    [Command]
+    void CmdFireWall()
+    {
+        GameObject Wall= Instantiate(Fire, transform.position, Quaternion.identity);
+        NetworkServer.Spawn(Wall);
+    }
 
 
 
