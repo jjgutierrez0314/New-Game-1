@@ -35,23 +35,7 @@ public class EnemyController : NetworkBehaviour
             moveSpeed = 2f;
             jumpVelocity = fallMultiplier = lowJumpMultiplier = 2f;
         }
-        /*
-        else if (GameObject.FindGameObjectWithTag("Mushroom") != null)//
-        {
-            moveSpeed = 1f;
-            jumpVelocity = fallMultiplier = lowJumpMultiplier = 1f;
-        }
-        else if (GameObject.FindGameObjectWithTag("Goblin") != null)//
-        {
-            moveSpeed = 2f;
-            jumpVelocity = fallMultiplier = lowJumpMultiplier = 2f;
-        }
-        else if (GameObject.FindGameObjectWithTag("Skeleton") != null)//
-        {
-            moveSpeed = 1f;
-            jumpVelocity = fallMultiplier = lowJumpMultiplier = 1f;
-        }
-        */
+        
     }
 
     // Update is called once per frame

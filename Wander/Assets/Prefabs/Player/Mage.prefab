@@ -307,6 +307,7 @@ MonoBehaviour:
   fallMultiplier: 2
   lowJumpMultiplier: 2
   isGrounded: 0
+  facingRight: 1
   RightFire: {fileID: 5785041440604217753, guid: 49d248fbe70edc042bc289a70055af43,
     type: 3}
   LeftFire: {fileID: 5726334893860619939, guid: 4d54d006f4ef8334f92ffeb00745a3ab,

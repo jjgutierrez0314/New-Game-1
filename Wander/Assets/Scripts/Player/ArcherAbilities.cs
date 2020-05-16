@@ -13,21 +13,7 @@ public class ArcherAbilities : NetworkBehaviour
     public float fireRate1 = 0.5f;
     float nextFire1 = 0.0f;
     public bool ability1;
-    public float Timer1;
-    int count1 = 0;
     bool active1 = false;
-    float[] FirePosX =
-             {0.0f,0.1f,-0.175f,
-             0.0f,0.1f,-0.175f,
-             0.0f,0.1f,-0.175f,
-             0.0f,0.1f,-0.175f};
-    float[] FirePosY =
-             {0.0f,0.1f,-0.1f,
-             0.0f,0.1f,-0.1f,
-             0.0f,0.1f,-0.1f,
-             0.0f,0.1f,-0.1f};
-
-
 
     public GameObject RightFire, LeftFire;
     Vector2 projectilePOS;
@@ -62,18 +48,19 @@ public class ArcherAbilities : NetworkBehaviour
         }
         if (Input.GetButtonDown("Ability1") && !ability1 && Time.time > nextFire1)
         {
-            count1 = 0;//resets count
-            Timer1 = 2f;//doesn't work if not here?
+
+
             ability1 = true;
             animator.SetTrigger("ability1");
-            arrowPos = transform.position;
-
             nextFire1 = Time.time + fireRate1;
             showerPOS = transform.position;
             showerPOS += new Vector2(+0.4f, 0.5f);
-            active1 = true;
+            CmdFire(showerPOS);
+
+
+
             // Needs to ba a function to call on the server... using Cmd
-            GameObject obj = Instantiate(FirstArrow, arrowPos, Quaternion.identity);
+
             // NetworkServer.Spawn(obj);
         }
 
@@ -98,30 +85,18 @@ public class ArcherAbilities : NetworkBehaviour
 
 
 
-        Timer1 -= Time.deltaTime;
-        if (active1)
-        {
-
-            if (count1 < 12)
-            {
-                if (Timer1 <= 0f)
-                {
-                    // Shower is bugged for the client...
-                    CmdFire(showerPOS += new Vector2(FirePosX[count1], FirePosY[count1]));
-                    Timer1 = 0.5f;
-                }
-            }
-        }
     }
 
     [Command]
     void CmdFire(Vector2 adjustPos)
     {
-
-        count1 += 1;
+        arrowPos = transform.position;
+        GameObject obj = Instantiate(FirstArrow, arrowPos, Quaternion.identity);
+        NetworkServer.Spawn(obj);
         GameObject arrowShower = Instantiate(Arrowshower, adjustPos, Quaternion.identity);
         NetworkServer.Spawn(arrowShower);
-        if (count1 == 0) { active1 = false; }
+
+
     }
     [Command]
     void CmdFire2()
