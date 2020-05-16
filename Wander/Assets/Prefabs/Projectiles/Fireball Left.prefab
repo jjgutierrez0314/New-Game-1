@@ -11,7 +11,12 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 066880e069751d544a630b1d2a2e909d, type: 2}
+      objectReference: {fileID: 0}
+    - target: {fileID: 4448759987052900358, guid: 49d248fbe70edc042bc289a70055af43,
+        type: 3}
+      propertyPath: m_AssetId
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4500806698146477344, guid: 49d248fbe70edc042bc289a70055af43,
         type: 3}
       propertyPath: m_Offset.x
