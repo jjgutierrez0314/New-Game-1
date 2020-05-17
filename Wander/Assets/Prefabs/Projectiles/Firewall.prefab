@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 933594500467059144}
   - component: {fileID: -6140939448996603185}
   - component: {fileID: 3315852875846846707}
+  - component: {fileID: 960733898064219283}
+  - component: {fileID: 348002852609125017}
   m_Layer: 0
   m_Name: Firewall
   m_TagString: Untagged
@@ -32,7 +34,7 @@ Transform:
   m_GameObject: {fileID: 6957403169615693867}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5, y: 4, z: 0.1}
+  m_LocalScale: {x: 7, y: 6, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -141,6 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velX: 0
   velY: -0.5
+  damage: 0
 --- !u!114 &933594500467059144
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -190,3 +193,35 @@ MonoBehaviour:
   syncInterval: 0.1
   clientAuthority: 0
   animator: {fileID: 8511145542776869606}
+--- !u!70 &960733898064219283
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6957403169615693867}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.025, y: 0}
+  m_Size: {x: 0.01, y: 0.1}
+  m_Direction: 0
+--- !u!70 &348002852609125017
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6957403169615693867}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.015, y: 0}
+  m_Size: {x: 0.01, y: 0.1}
+  m_Direction: 0

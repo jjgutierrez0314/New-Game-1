@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Shower : MonoBehaviour
 {
+    public int damage;
     public float velX = 0.0f;
     Animator animator;
     CircleCollider2D hitbox;
@@ -30,7 +31,7 @@ public class Shower : MonoBehaviour
             velX =velY= 0f;
           
             Destroy(gameObject, 1f);
-            enemy.Hit(1); // Hit for 5 damage
+            enemy.Hit(damage); // Hit for 5 damage
             Debug.Log("Enemy Hit");
 
         }
@@ -38,7 +39,6 @@ public class Shower : MonoBehaviour
         {
             animator.SetTrigger("hits");
             velX = velY = 0f;
-       
             Destroy(gameObject, 1f);
         }//add enviroment wall interaction
     }

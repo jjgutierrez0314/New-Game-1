@@ -6,7 +6,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2247471814657467281}
+  m_GameObject: {fileID: 5726334893860619939}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7f6f3bf89aa97405989c802ba270f815, type: 3}
@@ -15,7 +15,7 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0.1
   clientAuthority: 0
-  animator: {fileID: 2247471814657466924}
+  animator: {fileID: 3672960029252120448}
 --- !u!1001 &2247471814657468218
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -117,17 +117,17 @@ PrefabInstance:
     - target: {fileID: 9007513977897445094, guid: 49d248fbe70edc042bc289a70055af43,
         type: 3}
       propertyPath: velX
-      value: -1
+      value: -2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49d248fbe70edc042bc289a70055af43, type: 3}
---- !u!1 &2247471814657467281 stripped
+--- !u!1 &5726334893860619939 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5785041440604217753, guid: 49d248fbe70edc042bc289a70055af43,
     type: 3}
   m_PrefabInstance: {fileID: 2247471814657468218}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &2247471814657466924 stripped
+--- !u!95 &3672960029252120448 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3298998991229520058, guid: 49d248fbe70edc042bc289a70055af43,
     type: 3}
