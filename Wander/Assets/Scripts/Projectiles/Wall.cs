@@ -18,6 +18,6 @@ public class Wall : MonoBehaviour
     void Update()
     {
         //transform.position;
-        ///Destroy(gameObject, 3f);
+        Destroy(gameObject, 3f);
     }
 }

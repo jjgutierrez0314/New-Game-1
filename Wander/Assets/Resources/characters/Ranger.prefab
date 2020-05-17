@@ -504,7 +504,6 @@ MonoBehaviour:
     type: 3}
   fireRate1: 0.5
   ability1: 0
-  Timer1: 0
   RightFire: {fileID: 7161897824905593605, guid: 9d0f58cc5e864094c86f5218ce36c017,
     type: 3}
   LeftFire: {fileID: 8355284662362476735, guid: 919e29c6370feed49a5b06a9bd03cf63,
