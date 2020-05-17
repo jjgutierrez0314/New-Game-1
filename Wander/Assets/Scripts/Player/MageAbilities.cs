@@ -91,21 +91,20 @@ public class MageAbilities : NetworkBehaviour
             ability3 = false;
     }
     [Command]
-   void CmdFire1(Vector2 adjustPos)
+    void CmdFire1(Vector2 adjustPos)
     {
         GameObject obj = Instantiate(fireshower, adjustPos, Quaternion.identity);
         NetworkServer.Spawn(obj);
     }
 
     [Command]
- void CmdSummon(Vector2 minPOS)
+    void CmdSummon(Vector2 minPOS)
 
     {
         GameObject Port = Instantiate(portal, minPOS, Quaternion.identity);
         NetworkServer.Spawn(Port);
         GameObject min = Instantiate(minion, minPOS, Quaternion.identity);
         NetworkServer.Spawn(min);
-
     }
 
     [Command]
