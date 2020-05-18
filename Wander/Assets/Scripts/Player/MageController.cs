@@ -5,11 +5,7 @@ using UnityEngine.Events;
 using UnityEngine.Networking;
 using Mirror;
 [System.Serializable]
-
-public class MageController : PlayerController
-{
-
-
+public class MageController : PlayerController{  
     public Camera myCam;
 
     public AudioListener myAud;
@@ -32,7 +28,7 @@ public class MageController : PlayerController
     Vector3 velocity = Vector3.zero;
 
     public bool isGrounded;
-    bool facingRight = true;
+    public bool facingRight = true;
 
     public GameObject RightFire, LeftFire;
     Vector2 projectilePOS;
@@ -69,7 +65,7 @@ public class MageController : PlayerController
                 myAud.enabled = true;
             }
         }//(!player.dying && ((!basicAttack.attacking) || !isGrounded))
-        if (!player.dying && isGrounded)
+        if (!player.dying || isGrounded)
         {
             // Set horizontal movement
             if (Input.GetButton("Shift") && !isTired)
@@ -89,15 +85,23 @@ public class MageController : PlayerController
             xMove = 0;
 
         // Flip the players
-        if ((xMove > 0 && !facingRight) || (xMove < 0 && facingRight))
-            Flip();
+        if ((xMove > 0 && !facingRight) || (xMove < 0 && facingRight)){
+            facingRight = !facingRight;
+            Vector3 scale = transform.localScale;
+            scale.x *= -1;
+            transform.localScale = scale;
+        }
         if (Input.GetButtonDown("Attack") && Time.time > nextFire)
         {
             Debug.Log("Im firing my balls");
             //attacking = true;
             animator.SetTrigger("attack");
             nextFire = Time.time + fireRate;
-            CmdFireArrow();
+            if(facingRight){
+                CmdFireArrow();
+            } else {
+                CmdFireArrowLeft();
+            }
         }
     }
 
@@ -155,14 +159,14 @@ public class MageController : PlayerController
     }
 
     // Flips the sprite
-
-    void Flip()
-    {
-        facingRight = !facingRight;
-        Vector3 scale = transform.localScale;
-        scale.x *= -1;
-        transform.localScale = scale;
-    }
+    
+    // void Flip()
+    // {
+    //     facingRight = !facingRight;
+    //     Vector3 scale = transform.localScale;
+    //     scale.x *= -1;
+    //     transform.localScale = scale;
+    // }
     /*
     void EnableHitbox()
     {
@@ -205,19 +209,17 @@ public class MageController : PlayerController
     void CmdFireArrow()
     {
         projectilePOS = transform.position;
-        if (facingRight)
-        {
-            projectilePOS += new Vector2(+.1f, 0.05f);
-            GameObject obj = Instantiate(RightFire, projectilePOS, Quaternion.identity);
-            NetworkServer.Spawn(obj);
-            Destroy(obj,5f);
-        }
-        else
-        {
-            projectilePOS += new Vector2(-.1f, 0.05f);
-            GameObject obj = Instantiate(RightFire, projectilePOS, Quaternion.identity);
-            NetworkServer.Spawn(obj);
-            Destroy(obj,5f);
-        }
+        projectilePOS += new Vector2(+.1f, 0.05f);
+        GameObject obj = Instantiate(RightFire, projectilePOS, Quaternion.identity);
+        NetworkServer.Spawn(obj);
+        Destroy(obj,5f);
+    }
+    [Command]
+    void CmdFireArrowLeft(){
+        projectilePOS = transform.position;
+        projectilePOS += new Vector2(-.1f, 0.05f);
+        GameObject obj = Instantiate(LeftFire, projectilePOS, Quaternion.identity);
+        NetworkServer.Spawn(obj);
+        Destroy(obj,5f);
     }
 }

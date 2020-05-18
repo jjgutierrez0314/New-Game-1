@@ -6,6 +6,7 @@ public class BasicAttackScript : MonoBehaviour
 {
     public float velX ;
     public float velY;
+    public int damage;
     CircleCollider2D hitbox;
     Animator animator;
     Rigidbody2D rb;// Start is called before the first frame update
@@ -20,7 +21,6 @@ public class BasicAttackScript : MonoBehaviour
     void Update()
     {
         rb.velocity = new Vector2(velX, velY);
-       
     }
 
 
@@ -32,8 +32,8 @@ public class BasicAttackScript : MonoBehaviour
             velX = 0f;
             animator.SetTrigger("hits");
             Destroy(gameObject, 1f);
-            enemy.Hit(2); // Hit for 5 damage
-            Debug.Log("Enemy Hit");
+            enemy.Hit(damage); 
+            //Debug.Log("Enemy Hit");
 
         }
         else if (collision.gameObject.CompareTag("Player")) {
@@ -42,4 +42,5 @@ public class BasicAttackScript : MonoBehaviour
             Destroy(gameObject, 1f);
         }//add enviroment wall interaction
     }
+
 }

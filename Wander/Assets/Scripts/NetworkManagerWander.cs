@@ -4,8 +4,6 @@ using UnityEngine;
 using Mirror;
 public class NetworkManagerWander : NetworkManager {
 
-    public string messageGlobal;
- 
     public class ClassMessage : MessageBase {
         public string chosenClass;
     }
@@ -26,19 +24,19 @@ public class NetworkManagerWander : NetworkManager {
     }
 
     void OnCreateCharacter(NetworkConnection conn, ClassMessage message){
-        messageGlobal = message.chosenClass;
+        if(message.chosenClass == "Mage"){
+            GameObject player = Instantiate(Resources.Load("characters/Mage", typeof(GameObject))) as GameObject;
+            NetworkServer.AddPlayerForConnection(conn, player);
+        } else if (message.chosenClass == "Warrior"){
+            GameObject player = Instantiate(Resources.Load("characters/Warrior", typeof(GameObject))) as GameObject;
+            NetworkServer.AddPlayerForConnection(conn, player);
+        } else {
+            GameObject player = Instantiate(Resources.Load("characters/Ranger", typeof(GameObject))) as GameObject;
+            NetworkServer.AddPlayerForConnection(conn, player);
+        }
     }
 
     public override void OnServerAddPlayer(NetworkConnection conn){
-        if(messageGlobal == "Mage"){
-            GameObject player = Instantiate(Resources.Load("characters/Mage", typeof(GameObject))) as GameObject;
-            NetworkServer.AddPlayerForConnection(conn, player);
-        } else if (messageGlobal == "Warrior"){
-            GameObject player = Instantiate(Resources.Load("characters/Mage", typeof(GameObject))) as GameObject;
-            NetworkServer.AddPlayerForConnection(conn, player);
-        } else {
-            GameObject player = Instantiate(Resources.Load("characters/Warrior", typeof(GameObject))) as GameObject;
-            NetworkServer.AddPlayerForConnection(conn, player);
-        }
+        // On ServerAddPlayer do nothing
     }
 }

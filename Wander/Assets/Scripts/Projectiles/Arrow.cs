@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Arrow : MonoBehaviour
 {
+    public int damage;
     public float velX;
     public float velY;
+   // Animator animator;
     Rigidbody2D rb;// Start is called before the first frame update
     void Start()
     {
@@ -17,8 +19,31 @@ public class Arrow : MonoBehaviour
     void Update()
     {
         rb.velocity = new Vector2(velX, velY);
-
+        Destroy(gameObject, 3f);
     }
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
+            velX = 0f;
+            //animator.SetTrigger("hits");
+            Destroy(gameObject, 1f);
+            enemy.Hit(damage);
+            //Debug.Log("Enemy Hit");
 
-
+        }
+        else if (collision.gameObject.CompareTag("Player"))
+        {
+            velX = 0f;
+            //animator.SetTrigger("hits");
+            Destroy(gameObject, 1f);
+        }//add enviroment wall interaction
+        else if (collision.gameObject) {
+            Destroy(gameObject);
+        }
+    }
 }
+
+
+

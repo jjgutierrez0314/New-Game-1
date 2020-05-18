@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 3298998991229520058}
   - component: {fileID: 9007513977897445094}
   - component: {fileID: 4500806698146477344}
+  - component: {fileID: 4448759987052900358}
+  - component: {fileID: 7617311329846132655}
+  - component: {fileID: 7644542571763312798}
   m_Layer: 0
   m_Name: Fireball
   m_TagString: projectile
@@ -134,10 +137,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5785041440604217753}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ab968b69e8cb3548bcdc2436cd91076, type: 3}
+  m_Script: {fileID: 11500000, guid: b58d960b88b65744f84fed17c0b5e246, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velX: 1
+  velX: 2
   velY: 0
 --- !u!58 &4500806698146477344
 CircleCollider2D:
@@ -155,3 +158,52 @@ CircleCollider2D:
   m_Offset: {x: 0.02, y: 0}
   serializedVersion: 2
   m_Radius: 0.025
+--- !u!114 &4448759987052900358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5785041440604217753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b91ecbcc199f4492b9a91e820070131, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneId: 0
+  serverOnly: 0
+  m_AssetId: 
+--- !u!114 &7617311329846132655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5785041440604217753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f74aedd71d9a4f55b3ce499326d45fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  clientAuthority: 0
+  localPositionSensitivity: 0.01
+  localRotationSensitivity: 0.01
+  localScaleSensitivity: 0.01
+--- !u!114 &7644542571763312798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5785041440604217753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f6f3bf89aa97405989c802ba270f815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  clientAuthority: 0
+  animator: {fileID: 3298998991229520058}
