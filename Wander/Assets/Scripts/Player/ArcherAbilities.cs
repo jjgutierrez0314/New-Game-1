@@ -139,15 +139,23 @@ public class ArcherAbilities : NetworkBehaviour
         showerPOS3 += new Vector2(0.3f, 0f);
         GameObject obj1 = Instantiate(A1, showerPOS3, Quaternion.identity);
         NetworkServer.Spawn(obj1);
-        showerPOS3 += new Vector2(-0.3f, 0f);
+
+        showerPOS3 = transform.position;
+        showerPOS3 += new Vector2(0.15f, 0.15f);
         GameObject obj2 =Instantiate(A2, showerPOS3, Quaternion.identity);
         NetworkServer.Spawn(obj2);
+
+        showerPOS3 = transform.position;
         showerPOS3 += new Vector2(0f, 0.3f);
         GameObject obj3 =Instantiate(A3, showerPOS3, Quaternion.identity);
         NetworkServer.Spawn(obj3);
-        showerPOS3 += new Vector2(0f, -0.3f);
+
+        showerPOS3 = transform.position;
+        showerPOS3 += new Vector2(-0.15f, 0.15f);
         GameObject obj4 =Instantiate(A4, showerPOS3, Quaternion.identity);
         NetworkServer.Spawn(obj4);
+
+        showerPOS3 = transform.position;
         showerPOS3 += new Vector2(-0.3f, 0f);
         GameObject obj5 =Instantiate(A5, showerPOS3, Quaternion.identity);
         NetworkServer.Spawn(obj5);
