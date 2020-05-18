@@ -35,7 +35,11 @@ public class EnemyController : NetworkBehaviour
             moveSpeed = 2f;
             jumpVelocity = fallMultiplier = lowJumpMultiplier = 2f;
         }
-        
+        else if (GameObject.FindGameObjectWithTag("Boss") != null)
+        {
+            moveSpeed = 2f;
+            jumpVelocity = fallMultiplier = lowJumpMultiplier = 2f;
+        }
     }
 
     // Update is called once per frame

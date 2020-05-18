@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 2e8bc5401d112cf449f865bda8efd10b
+guid: bde743d660b50c64db6e9c516e2b8c3c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6370249077962160038
-    second: Elemental_attack4_0
+      213: 6909578904585030034
+    second: Elemental_attack2(new)_0
   - first:
-      213: -4444640111484805276
-    second: Elemental_attack4_1
+      213: 8053580283553258351
+    second: Elemental_attack2(new)_1
   - first:
-      213: -3986812921463100900
-    second: Elemental_attack4_2
+      213: -925791749662522540
+    second: Elemental_attack2(new)_2
   - first:
-      213: 6030842789103058890
-    second: Elemental_attack4_3
+      213: -3216705182794962784
+    second: Elemental_attack2(new)_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -146,13 +146,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Elemental_attack4_0
+      name: Elemental_attack2(new)_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 0
-        width: 68
-        height: 65
+        x: 23
+        y: 2
+        width: 49
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,71 +160,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a584e41f6345897a0800000000000000
-      internalID: -6370249077962160038
+      spriteID: 299c25bb761c3ef50800000000000000
+      internalID: 6909578904585030034
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Elemental_attack4_1
+      name: Elemental_attack2(new)_1
       rect:
         serializedVersion: 2
-        x: 97
+        x: 96
         y: 1
-        width: 45
-        height: 65
-      alignment: 9
-      pivot: {x: 0.2870653, y: 0.5030709}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46fde780e577152c0800000000000000
-      internalID: -4444640111484805276
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Elemental_attack4_2
-      rect:
-        serializedVersion: 2
-        x: 144
-        y: 0
-        width: 70
+        width: 47
         height: 69
-      alignment: 9
-      pivot: {x: 0.53992504, y: 0.51446563}
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1a214e55cefba8c0800000000000000
-      internalID: -3986812921463100900
+      spriteID: f6b1843299014cf60800000000000000
+      internalID: 8053580283553258351
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Elemental_attack4_3
+      name: Elemental_attack2(new)_2
       rect:
         serializedVersion: 2
-        x: 219
-        y: 0
-        width: 68
-        height: 67
+        x: 154
+        y: 7
+        width: 60
+        height: 60
       alignment: 9
-      pivot: {x: 0.5117423, y: 0.49999994}
+      pivot: {x: 0.6397377, y: 0.47005615}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acfb6bc509bd1b350800000000000000
-      internalID: 6030842789103058890
+      spriteID: 453c0690f4de623f0800000000000000
+      internalID: -925791749662522540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elemental_attack2(new)_3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 4
+        width: 63
+        height: 62
+      alignment: 9
+      pivot: {x: 0.6425893, y: 0.48068133}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a82958dda7fb53d0800000000000000
+      internalID: -3216705182794962784
       vertices: []
       indices: 
       edges: []

@@ -32,6 +32,14 @@ public class Enemy : NetworkBehaviour
             defense = 3;
             attackCoolDown = 2f;
 
+        }
+        else if (GameObject.FindGameObjectWithTag("Boss") != null)
+        {
+            health = maxHealth = 125;
+            attack = 70;
+            defense = 6;
+            attackCoolDown = 5f;
+
         }/*
         else if (GameObject.FindGameObjectWithTag("Mushroom") != null) {
             health = maxHealth = 75;
@@ -112,6 +120,7 @@ public class Enemy : NetworkBehaviour
         isHit = true;
         animator.SetBool("isHit", isHit);
         animator.SetTrigger("hit");
+            Debug.Log("player hit boss");
 
         if (health <= 0)
         {

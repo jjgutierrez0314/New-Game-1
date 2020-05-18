@@ -60,7 +60,7 @@ public class BasicAttack : NetworkBehaviour
         hitbox.enabled = false;
     }
 
-    void OnTriggerStay2D(Collider2D collision)
+    void OnTriggerEnter2D(Collider2D collision)
     {
         if (hitbox.enabled && collision.CompareTag("Enemy"))
         {
