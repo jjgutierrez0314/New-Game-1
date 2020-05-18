@@ -41,6 +41,10 @@ public class BasicAttackScript : MonoBehaviour
             animator.SetTrigger("hits");
             Destroy(gameObject);
         }//add enviroment wall interaction
+        else if (collision.gameObject && !collision.gameObject.CompareTag("Player") && !collision.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(gameObject);
+        }
     }
 
 }
