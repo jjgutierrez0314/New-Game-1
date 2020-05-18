@@ -35,10 +35,10 @@ public class Enemy : NetworkBehaviour
         }
         else if (GameObject.FindGameObjectWithTag("Boss") != null)
         {
-            health = maxHealth = 125;
+            health = maxHealth = 500;
             attack = 70;
             defense = 6;
-            attackCoolDown = 5f;
+            attackCoolDown = 3f;
 
         }/*
         else if (GameObject.FindGameObjectWithTag("Mushroom") != null) {
