@@ -8,7 +8,7 @@ public class ArcherAbilities : NetworkBehaviour
 {
     Animator animator;
 
-    public GameObject Arrowshower, FirstArrow;
+    public GameObject Arrowshower,ArrowshowerLeft, FirstArrow,FirstArrowLeft;
     Vector2 showerPOS, arrowPos;
     public float fireRate1 = 0.5f;
     float nextFire1 = 0.0f;
@@ -54,7 +54,10 @@ public class ArcherAbilities : NetworkBehaviour
             animator.SetTrigger("ability1");
             nextFire1 = Time.time + fireRate1;
             showerPOS = transform.position;
-            showerPOS += new Vector2(+0.4f, 0.5f);
+            if(right)
+                showerPOS += new Vector2(+0.4f, 0.5f);
+            else
+                showerPOS += new Vector2(-0.4f, 0.5f);
             CmdFire(showerPOS);
 
 
@@ -94,10 +97,20 @@ public class ArcherAbilities : NetworkBehaviour
     void CmdFire(Vector2 adjustPos)
     {
         arrowPos = transform.position;
-        GameObject obj = Instantiate(FirstArrow, arrowPos, Quaternion.identity);
-        NetworkServer.Spawn(obj);
-        GameObject arrowShower = Instantiate(Arrowshower, adjustPos, Quaternion.identity);
-        NetworkServer.Spawn(arrowShower);
+        if (right)
+        {
+            GameObject obj = Instantiate(FirstArrow, arrowPos, Quaternion.identity);
+            NetworkServer.Spawn(obj);
+            GameObject arrowShower = Instantiate(Arrowshower, adjustPos, Quaternion.identity);
+            NetworkServer.Spawn(arrowShower);
+        }
+        else {
+            GameObject objL = Instantiate(FirstArrowLeft, arrowPos, Quaternion.identity);
+            NetworkServer.Spawn(objL);
+            GameObject arrowShower = Instantiate(ArrowshowerLeft, adjustPos, Quaternion.identity);
+            NetworkServer.Spawn(arrowShower);
+        }
+       
 
 
     }

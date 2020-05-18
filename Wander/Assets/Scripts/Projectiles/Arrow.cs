@@ -28,7 +28,7 @@ public class Arrow : MonoBehaviour
             Enemy enemy = collision.gameObject.GetComponent<Enemy>();
             velX = 0f;
             //animator.SetTrigger("hits");
-            Destroy(gameObject, 1f);
+            Destroy(gameObject);
             enemy.Hit(damage);
             //Debug.Log("Enemy Hit");
 
@@ -37,10 +37,10 @@ public class Arrow : MonoBehaviour
         {
             velX = 0f;
             //animator.SetTrigger("hits");
-            Destroy(gameObject, 1f);
+            //Destroy(gameObject);
         }//add enviroment wall interaction
-        else if (collision.gameObject) {
-            Destroy(gameObject);
+        else if (collision.gameObject && !collision.gameObject.CompareTag("Player") && !collision.gameObject.CompareTag("Enemy")) {
+            //Destroy(gameObject);
         }
     }
 }
