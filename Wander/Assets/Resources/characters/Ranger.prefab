@@ -498,9 +498,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
-  Arrowshower: {fileID: 673114637030960924, guid: ce8424e362c0e044eb5ffb5ed1278605,
+  Arrowshower: {fileID: 4807759583437160422, guid: f4b4109bbe5ff6d4fa7f38d43c62c8a8,
+    type: 3}
+  ArrowshowerLeft: {fileID: 755153003958101204, guid: d5ed136a17c2612498c61bf18880962b,
     type: 3}
   FirstArrow: {fileID: 8546241071624370202, guid: cbb383f1eb68d2b49b5b5091af90dbb9,
+    type: 3}
+  FirstArrowLeft: {fileID: 4216630854300468419, guid: 76dac007829449648a1e0035c55cf78d,
     type: 3}
   fireRate1: 0.5
   ability1: 0
