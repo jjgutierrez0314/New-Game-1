@@ -49,7 +49,7 @@ public class ArcherAbilities : NetworkBehaviour
         if (Input.GetButtonDown("Ability1") && !ability1 && Time.time > nextFire1)
         {
 
-
+            right = GetComponentInParent<MageController>().facingRight;
             ability1 = true;
             animator.SetTrigger("ability1");
             nextFire1 = Time.time + fireRate1;
