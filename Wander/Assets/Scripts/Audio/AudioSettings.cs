@@ -10,15 +10,15 @@ public class AudioSettings : MonoBehaviour {
      FMOD.Studio.Bus SFX;
      FMOD.Studio.Bus Master;
      [Range(0.0f, 1f)]
-     public float MusicVolume = 0.5f;
+     public float MusicVolume = 1f;
      [Range(0.0f, 1f)]
-     public float SFXVolume = 0.5f;
+     public float SFXVolume = 1f;
      [Range(0.0f, 1f)]
      public float MasterVolume = 1f;
-     
 
      void Awake ()
      {
+          DontDestroyOnLoad(this.gameObject);
           Music = FMODUnity.RuntimeManager.GetBus ("bus:/Master/Music");
           SFX = FMODUnity.RuntimeManager.GetBus ("bus:/Master/SFX");
           Master = FMODUnity.RuntimeManager.GetBus ("bus:/Master");

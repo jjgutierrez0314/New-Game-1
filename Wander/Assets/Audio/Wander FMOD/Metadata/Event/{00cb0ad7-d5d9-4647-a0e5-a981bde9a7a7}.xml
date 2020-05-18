@@ -229,6 +229,12 @@
 		<property name="maximumDistance">
 			<value>6.80000019</value>
 		</property>
+		<property name="extentMode">
+			<value>1</value>
+		</property>
+		<property name="soundSize">
+			<value>1.70000005</value>
+		</property>
 	</object>
 	<object class="AutomationPoint" id="{968a4494-ea21-4498-84fe-2b2e83e7b47c}">
 		<property name="position">
