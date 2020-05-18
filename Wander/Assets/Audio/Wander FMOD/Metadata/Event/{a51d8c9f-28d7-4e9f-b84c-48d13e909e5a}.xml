@@ -5,7 +5,7 @@
 			<value>Move1</value>
 		</property>
 		<property name="outputFormat">
-			<value>0</value>
+			<value>1</value>
 		</property>
 		<relationship name="folder">
 			<destination>{a15279da-2b45-4f0a-a832-3b9e34c20a2a}</destination>
@@ -31,6 +31,9 @@
 		<relationship name="timeline">
 			<destination>{fc8f902b-8512-4914-9767-ec9b5d1222ae}</destination>
 		</relationship>
+		<relationship name="banks">
+			<destination>{c7d7803b-dff8-48c3-b273-76d1e3cf661d}</destination>
+		</relationship>
 	</object>
 	<object class="EventMixer" id="{dde8d063-6d0d-4914-8505-9045757dfa04}">
 		<relationship name="masterBus">
@@ -50,17 +53,24 @@
 			<destination>{db221a06-5df3-4dc6-929c-81b44ba4fb58}</destination>
 		</relationship>
 		<relationship name="output">
-			<destination>{608dacff-7c48-452d-a7b8-878c4fca227a}</destination>
+			<destination>{041ed052-46ff-4405-934d-03a8741be6d0}</destination>
 		</relationship>
 	</object>
 	<object class="EventAutomatableProperties" id="{7cd004f9-375a-48e8-ab75-1f7fcfdcad4d}" />
 	<object class="MarkerTrack" id="{7142a3f6-3372-4fd0-a0bd-69abbade4704}" />
 	<object class="GroupTrack" id="{314ad789-d1b2-4a6f-9f05-11cb69091104}">
+		<relationship name="modules">
+			<destination>{6458c618-66a2-4a04-9d04-2860ec92b438}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{8b3ca7b6-8636-4a65-bdcb-bd777be8d1fe}</destination>
 		</relationship>
 	</object>
-	<object class="Timeline" id="{fc8f902b-8512-4914-9767-ec9b5d1222ae}" />
+	<object class="Timeline" id="{fc8f902b-8512-4914-9767-ec9b5d1222ae}">
+		<relationship name="modules">
+			<destination>{6458c618-66a2-4a04-9d04-2860ec92b438}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerMaster" id="{17a988de-0f8a-4604-9244-7b5273dce17d}">
 		<relationship name="effectChain">
 			<destination>{370ae392-9ba6-4974-845c-5d1673b78062}</destination>
@@ -78,6 +88,14 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{db221a06-5df3-4dc6-929c-81b44ba4fb58}" />
+	<object class="SingleSound" id="{6458c618-66a2-4a04-9d04-2860ec92b438}">
+		<property name="length">
+			<value>0.59999999999999998</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{3d82ddbb-775c-463f-877a-131a6c76fadc}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{8b3ca7b6-8636-4a65-bdcb-bd777be8d1fe}">
 		<property name="name">
 			<value>Audio 1</value>

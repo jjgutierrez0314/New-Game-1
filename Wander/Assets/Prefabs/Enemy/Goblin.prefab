@@ -16,10 +16,10 @@ GameObject:
   - component: {fileID: 4488462283670681230}
   - component: {fileID: 1838605071972837835}
   - component: {fileID: 4886840040982409943}
-  - component: {fileID: 6090614177684300760}
   - component: {fileID: 7649379318355099024}
   - component: {fileID: 7649379318355099026}
   - component: {fileID: 7649379318355099027}
+  - component: {fileID: 2292507435812027451}
   m_Layer: 0
   m_Name: Goblin
   m_TagString: Enemy
@@ -1251,23 +1251,6 @@ MonoBehaviour:
     handleAnimatorIK: 0
   fsmTemplate: {fileID: 0}
   eventHandlerComponentsAdded: 1
---- !u!114 &6090614177684300760
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3737403400354132560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28685521495070c48b5776d73413c9ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackEvent: event:/Character/Monster/Eye/Attack
-  damageEvent: event:/Character/Monster/Eye/Damage
-  deathEvent: event:/Character/Monster/Eye/Death
-  emoteEvent: event:/Character/Monster/Eye/Emote
-  gameobject: {fileID: 3737403400354132560}
 --- !u!114 &7649379318355099024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1317,6 +1300,18 @@ MonoBehaviour:
   localPositionSensitivity: 0.01
   localRotationSensitivity: 0.01
   localScaleSensitivity: 0.01
+--- !u!114 &2292507435812027451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3737403400354132560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98c6ad00dd79cac49a0f783878143de6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4453088067848279370
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,6 +14,18 @@ TextureImporter:
   - first:
       213: 8066572455351999984
     second: Elemental_walk_3
+  - first:
+      213: -3166385953241586668
+    second: Elemental_walk_0
+  - first:
+      213: -4989552527682482371
+    second: Elemental_walk_1
+  - first:
+      213: 1559194837075284218
+    second: Elemental_walk_2
+  - first:
+      213: -8186603657576081541
+    second: Elemental_walk_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -149,10 +161,10 @@ TextureImporter:
       name: Elemental_walk_0
       rect:
         serializedVersion: 2
-        x: 21
-        y: 3
-        width: 51
-        height: 62
+        x: 0
+        y: 0
+        width: 72
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,8 +172,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8150443ea8dde60d0800000000000000
-      internalID: -3427558677794257640
+      spriteID: 414af3370ccbe04d0800000000000000
+      internalID: -3166385953241586668
       vertices: []
       indices: 
       edges: []
@@ -170,19 +182,19 @@ TextureImporter:
       name: Elemental_walk_1
       rect:
         serializedVersion: 2
-        x: 93
-        y: 2
-        width: 51
-        height: 64
-      alignment: 9
-      pivot: {x: 0.48042837, y: 0.51247656}
+        x: 72
+        y: 0
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b702e06d1c564d1a0800000000000000
-      internalID: -6785686855346151301
+      spriteID: d3f455f696c81cab0800000000000000
+      internalID: -4989552527682482371
       vertices: []
       indices: 
       edges: []
@@ -191,19 +203,19 @@ TextureImporter:
       name: Elemental_walk_2
       rect:
         serializedVersion: 2
-        x: 165
-        y: 7
-        width: 50
-        height: 60
-      alignment: 9
-      pivot: {x: 0.4972989, y: 0.466729}
+        x: 144
+        y: 0
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76b4ed1e3178ef460800000000000000
-      internalID: 7277402567340870503
+      spriteID: af0de7f717f53a510800000000000000
+      internalID: 1559194837075284218
       vertices: []
       indices: 
       edges: []
@@ -212,10 +224,10 @@ TextureImporter:
       name: Elemental_walk_3
       rect:
         serializedVersion: 2
-        x: 237
-        y: 5
-        width: 50
-        height: 61
+        x: 216
+        y: 0
+        width: 72
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,8 +235,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0fdd43cd8e832ff60800000000000000
-      internalID: 8066572455351999984
+      spriteID: b7793411957536e80800000000000000
+      internalID: -8186603657576081541
       vertices: []
       indices: 
       edges: []
