@@ -39,6 +39,8 @@ public class BasicAttackScript : MonoBehaviour
         else if (collision.gameObject.CompareTag("Player")) {
             velX = 0f;
             animator.SetTrigger("hits");
+            Player player= collision.gameObject.GetComponent<Player>();
+            player.playerHit(damage);
             Destroy(gameObject);
         }//add enviroment wall interaction
         else if (collision.gameObject && !collision.gameObject.CompareTag("Player") && !collision.gameObject.CompareTag("Enemy"))
