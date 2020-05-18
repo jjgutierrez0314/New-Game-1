@@ -14,6 +14,18 @@ TextureImporter:
   - first:
       213: -1643101083099667368
     second: Elemental_idle_3
+  - first:
+      213: -4109803600098597896
+    second: Elemental_idle_0
+  - first:
+      213: -1814320792773386541
+    second: Elemental_idle_1
+  - first:
+      213: 2576994449499694193
+    second: Elemental_idle_2
+  - first:
+      213: -8033295345737739349
+    second: Elemental_idle_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -149,10 +161,10 @@ TextureImporter:
       name: Elemental_idle_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 2
-        width: 49
-        height: 63
+        x: 0
+        y: 0
+        width: 72
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,8 +172,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40bee080852d5a410800000000000000
-      internalID: 1487826527449967364
+      spriteID: 8f3608f766b07f6c0800000000000000
+      internalID: -4109803600098597896
       vertices: []
       indices: 
       edges: []
@@ -170,10 +182,10 @@ TextureImporter:
       name: Elemental_idle_1
       rect:
         serializedVersion: 2
-        x: 96
-        y: 1
-        width: 47
-        height: 65
+        x: 72
+        y: 0
+        width: 72
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,8 +193,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19eeb540c1b0104e0800000000000000
-      internalID: -2017318943125148015
+      spriteID: 3de13260adc32d6e0800000000000000
+      internalID: -1814320792773386541
       vertices: []
       indices: 
       edges: []
@@ -191,10 +203,10 @@ TextureImporter:
       name: Elemental_idle_2
       rect:
         serializedVersion: 2
-        x: 169
-        y: 7
-        width: 45
-        height: 60
+        x: 144
+        y: 0
+        width: 72
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,8 +214,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1efe06dc63732bfb0800000000000000
-      internalID: -4633580358097375263
+      spriteID: 174259e5cc253c320800000000000000
+      internalID: 2576994449499694193
       vertices: []
       indices: 
       edges: []
@@ -212,10 +224,10 @@ TextureImporter:
       name: Elemental_idle_3
       rect:
         serializedVersion: 2
-        x: 240
-        y: 4
-        width: 47
-        height: 62
+        x: 216
+        y: 0
+        width: 72
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,8 +235,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 854e8cb35488239e0800000000000000
-      internalID: -1643101083099667368
+      spriteID: ba3d08df170048090800000000000000
+      internalID: -8033295345737739349
       vertices: []
       indices: 
       edges: []
