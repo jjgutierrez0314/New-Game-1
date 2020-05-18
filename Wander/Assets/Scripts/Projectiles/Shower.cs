@@ -30,7 +30,7 @@ public class Shower : MonoBehaviour
             Enemy enemy = collision.gameObject.GetComponent<Enemy>();
             velX =velY= 0f;
           
-            Destroy(gameObject, 1f);
+            Destroy(gameObject);
             enemy.Hit(damage); // Hit for 5 damage
             Debug.Log("Enemy Hit");
 
@@ -39,7 +39,7 @@ public class Shower : MonoBehaviour
         {
             animator.SetTrigger("hits");
             velX = velY = 0f;
-            Destroy(gameObject, 1f);
+            Destroy(gameObject);
         }//add enviroment wall interaction
     }
 }
