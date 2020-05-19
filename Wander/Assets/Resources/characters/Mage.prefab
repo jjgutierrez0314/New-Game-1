@@ -19,9 +19,9 @@ GameObject:
   - component: {fileID: 2373036783874631654}
   - component: {fileID: 4340195298137186666}
   - component: {fileID: 8532982165356768769}
-  - component: {fileID: 244250369550355513}
   - component: {fileID: 1138058864212455298}
   - component: {fileID: 7721462689488944753}
+  - component: {fileID: 1783821975311192868}
   m_Layer: 0
   m_Name: Mage
   m_TagString: Player
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 492fdc5e84fea5f4ea465dcbe9d96977, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -250,20 +250,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ListenerNumber: -1
---- !u!114 &244250369550355513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1546363441769914248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef8214bb361aa7f4c9576010c07c0d9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  printFootstep: 0
-  move1Event: 
 --- !u!114 &1138058864212455298
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,6 +309,19 @@ MonoBehaviour:
   Fire: {fileID: 6957403169615693867, guid: ed5627dfb32606f4a96757b88b3ea196, type: 3}
   fireRate: 0.5
   ability3: 0
+--- !u!114 &1783821975311192868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546363441769914248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ead86a7ea20f0c43abeb2cce742abfe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  printFootstep: 0
 --- !u!1 &6217840501948006246
 GameObject:
   m_ObjectHideFlags: 0

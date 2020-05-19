@@ -10,6 +10,9 @@ TagManager:
   - CaveAudio
   - Bat
   - Goblin
+  - projectile
+  - 'Material: Cave'
+  - 'Material: Grass'
   layers:
   - Default
   - TransparentFX

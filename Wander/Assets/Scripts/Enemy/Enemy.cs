@@ -6,12 +6,13 @@ public class Enemy : NetworkBehaviour
 {
     private Animator animator;
 
-    private int health, maxHealth;
+    public int health, maxHealth;
     private int attack, defense;
     public bool isHit, death, attacking;
     private float attackCoolDownTime, attackCoolDown;
     private BoxCollider2D hitbox;
     public Player player;
+    
 
     void Awake()
     {
@@ -35,10 +36,10 @@ public class Enemy : NetworkBehaviour
         }
         else if (GameObject.FindGameObjectWithTag("Boss") != null)
         {
-            health = maxHealth = 125;
+            health = maxHealth = 500;
             attack = 70;
             defense = 6;
-            attackCoolDown = 5f;
+            attackCoolDown = 3f;
 
         }/*
         else if (GameObject.FindGameObjectWithTag("Mushroom") != null) {
@@ -72,9 +73,7 @@ public class Enemy : NetworkBehaviour
     }
 
     // Update is called once per frame
-    void Update()
-    {
-    }
+
 
     void FixedUpdate()
     {
@@ -139,5 +138,8 @@ public class Enemy : NetworkBehaviour
             player.playerHit(attack);
             Debug.Log("Player hit!");
         }
+    }
+    public int getHealth(){
+        return health;
     }
 }

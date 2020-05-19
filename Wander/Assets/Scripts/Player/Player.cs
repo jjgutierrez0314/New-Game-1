@@ -65,7 +65,8 @@ public class Player : NetworkBehaviour
                 regen = StartCoroutine(RegenStamina());
 
                 if (currentStamina <= 0)
-                {
+                {   
+                    currentStamina = 0;
                     player.setTired(true);
                     Debug.Log("Out of stamina");
                 }

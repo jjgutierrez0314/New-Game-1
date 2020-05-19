@@ -18,12 +18,12 @@ GameObject:
   - component: {fileID: 7897193780135867698}
   - component: {fileID: 8571713328265814346}
   - component: {fileID: 7954092931675081510}
-  - component: {fileID: 4015680514933877509}
   - component: {fileID: 8001683646351976944}
   - component: {fileID: 8122042825300265848}
   - component: {fileID: 2265883731909395011}
   - component: {fileID: 8468802718944120629}
   - component: {fileID: 1505036854461709356}
+  - component: {fileID: -749748661115058100}
   m_Layer: 0
   m_Name: Ranger
   m_TagString: Player
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: fcff72b2217a1584d9fbce3775627e5f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -388,20 +388,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ListenerNumber: -1
---- !u!114 &4015680514933877509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 418582126320028377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef8214bb361aa7f4c9576010c07c0d9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  printFootstep: 0
-  move1Event: 
 --- !u!114 &8001683646351976944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -517,6 +503,19 @@ MonoBehaviour:
   A3: {fileID: 6666350230050830566, guid: 634ebc3f7aaa9e3498c295dea09d2cf1, type: 3}
   A4: {fileID: 1246761331571305397, guid: a5b827c0017aa2941b44bb6d4257d03f, type: 3}
   A5: {fileID: 1419349843399185789, guid: 0bfec2e175ef72e459271d9f78d7cf71, type: 3}
+--- !u!114 &-749748661115058100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 418582126320028377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca1c19d5ab9d8f4dbf60a46b045fcd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  printFootstep: 0
 --- !u!1 &6352697502625228864
 GameObject:
   m_ObjectHideFlags: 0
