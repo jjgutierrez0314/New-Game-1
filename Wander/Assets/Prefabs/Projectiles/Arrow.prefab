@@ -121,7 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 7
   velX: 2
-  velY: 0
+  velY: 10
 --- !u!114 &5179005766437688523
 MonoBehaviour:
   m_ObjectHideFlags: 0

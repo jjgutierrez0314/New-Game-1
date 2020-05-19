@@ -171,7 +171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velX: -2
   velY: 0
-  damage: 0
+  damage: 17
 --- !u!95 &6932800634494017830
 Animator:
   serializedVersion: 3
