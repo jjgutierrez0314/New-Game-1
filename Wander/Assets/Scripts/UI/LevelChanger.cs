@@ -8,13 +8,15 @@ public class LevelChanger : MonoBehaviour
     public Animator animator;
     private int levelToLoad;
 
-    public void FadeToLevel ()
+    public void FadeToLevel (int code)
     {
+        levelToLoad = code;
         animator.SetTrigger("FadeOut");
     }
 
     public void OnFadeComplete ()
     {
-        SceneManager.LoadScene("GameOver");
+        if (levelToLoad == 0) { SceneManager.LoadScene("GameOver"); }
+        else { SceneManager.LoadScene("Credits"); }
     }
 }
