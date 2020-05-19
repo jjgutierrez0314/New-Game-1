@@ -1222,7 +1222,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5645218375954955761}
-  - component: {fileID: 5645218375954955760}
+  - component: {fileID: 3199388588117641218}
   - component: {fileID: 5645218375954955763}
   - component: {fileID: 5645218375954955762}
   - component: {fileID: 2879782618735810458}
@@ -1248,8 +1248,8 @@ Transform:
   m_Father: {fileID: 4493395623154493532}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &5645218375954955760
-CircleCollider2D:
+--- !u!61 &3199388588117641218
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1261,9 +1261,19 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.019766808, y: -0.088697314}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
   serializedVersion: 2
-  m_Radius: 1.8
+  m_Size: {x: 5.0061274, y: 0.6885731}
+  m_EdgeRadius: 0
 --- !u!50 &5645218375954955763
 Rigidbody2D:
   serializedVersion: 4
