@@ -29,8 +29,9 @@ public class MageAbilities : NetworkBehaviour
     public float fireRate = 0.5f;
     float nextFire = 0.0f;
     public bool ability3;
- 
 
+    //public float fireRate = 0.5f;
+   // float nextFire = 0.0f;
     void Start()
     {
         animator = GetComponentInParent<Animator>();

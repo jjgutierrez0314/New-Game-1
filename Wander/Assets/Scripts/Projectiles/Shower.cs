@@ -42,5 +42,6 @@ public class Shower : MonoBehaviour
             Destroy(gameObject);
         }//add enviroment wall interaction
     }
+
 }
 

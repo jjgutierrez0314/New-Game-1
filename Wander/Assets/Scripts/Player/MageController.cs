@@ -94,7 +94,6 @@ public class MageController : PlayerController{
         if (Input.GetButtonDown("Attack") && !player.dying && Time.time > nextFire)
         {
             Debug.Log("Im firing my balls");
-            //attacking = true;
             animator.SetTrigger("attack");
             nextFire = Time.time + fireRate;
             if(facingRight){
