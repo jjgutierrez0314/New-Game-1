@@ -114,4 +114,8 @@ public class Player : NetworkBehaviour
         score += 1;
         if (score >= 1) { levelChanger.FadeToLevel(); }
     }
+
+    public override void OnStartLocalPlayer(){
+        transform.Find("MusicTag").tag = "LocalPlayer";
+    }
 }

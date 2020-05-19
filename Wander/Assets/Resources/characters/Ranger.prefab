@@ -44,6 +44,7 @@ Transform:
   m_Children:
   - {fileID: 2124680770368856667}
   - {fileID: 2173782661361446047}
+  - {fileID: 6831324558091583555}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -503,6 +504,7 @@ MonoBehaviour:
   A3: {fileID: 6666350230050830566, guid: 634ebc3f7aaa9e3498c295dea09d2cf1, type: 3}
   A4: {fileID: 1246761331571305397, guid: a5b827c0017aa2941b44bb6d4257d03f, type: 3}
   A5: {fileID: 1419349843399185789, guid: 0bfec2e175ef72e459271d9f78d7cf71, type: 3}
+  fireRate: 0.5
 --- !u!114 &-749748661115058100
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -545,6 +547,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2365186610625165376}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7104839550620785298
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6831324558091583555}
+  m_Layer: 0
+  m_Name: MusicTag
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6831324558091583555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7104839550620785298}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.7192456, y: -0.5618048, z: 0}
+  m_LocalScale: {x: 1.1326703, y: 1.1326703, z: 1.1326703}
+  m_Children: []
+  m_Father: {fileID: 2365186610625165376}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &9060817242980185389
 GameObject:
