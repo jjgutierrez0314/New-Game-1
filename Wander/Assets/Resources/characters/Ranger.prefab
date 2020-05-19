@@ -493,18 +493,19 @@ MonoBehaviour:
     type: 3}
   FirstArrowLeft: {fileID: 4216630854300468419, guid: 76dac007829449648a1e0035c55cf78d,
     type: 3}
-  fireRate1: 0.5
+  fireRate1: 7
   ability1: 0
   RightFire: {fileID: 7161897824905593605, guid: 9d0f58cc5e864094c86f5218ce36c017,
     type: 3}
   LeftFire: {fileID: 8355284662362476735, guid: 919e29c6370feed49a5b06a9bd03cf63,
     type: 3}
+  fireRate2: 7
   A1: {fileID: 6389169430872929277, guid: 4366b970e78076449b8a953fdb10598b, type: 3}
   A2: {fileID: 5087849097889343158, guid: af69b90c6d57608459d24e44afb44dff, type: 3}
   A3: {fileID: 6666350230050830566, guid: 634ebc3f7aaa9e3498c295dea09d2cf1, type: 3}
   A4: {fileID: 1246761331571305397, guid: a5b827c0017aa2941b44bb6d4257d03f, type: 3}
   A5: {fileID: 1419349843399185789, guid: 0bfec2e175ef72e459271d9f78d7cf71, type: 3}
-  fireRate: 0.5
+  fireRate3: 7
 --- !u!114 &-749748661115058100
 MonoBehaviour:
   m_ObjectHideFlags: 0

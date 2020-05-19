@@ -123,7 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 50
-  velX: 0.5
+  velX: -0.5
   velY: -0.5
 --- !u!95 &2027078073274557620
 Animator:

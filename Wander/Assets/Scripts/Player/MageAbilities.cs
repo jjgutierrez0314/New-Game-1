@@ -31,7 +31,7 @@ public class MageAbilities : NetworkBehaviour
     public float fireRate3 = 0.5f;
     float nextFire3 = 0.0f;
     public bool ability3;
-
+    bool right;
     //public float fireRate = 0.5f;
    // float nextFire = 0.0f;
     void Start()
