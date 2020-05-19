@@ -5,17 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class CharacterSelect : MonoBehaviour
 {
-    public void selectArcher(){
+    public void selectArcher()
+    {
         DBManager.choosen = "Archer";
     }
-    public void selectMage(){
+
+    public void selectMage()
+    {
         DBManager.choosen = "Mage";
     }
-    public void selectWarrior(){
+
+    public void selectWarrior()
+    {
         DBManager.choosen = "Warrior";
     }
 
-    public void changeSceneToNext(){
+    public void changeSceneToNext()
+    {
         SceneManager.LoadScene("Wander(Prototype1)");
     }
 }
