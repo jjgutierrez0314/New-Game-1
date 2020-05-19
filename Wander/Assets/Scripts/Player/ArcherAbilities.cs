@@ -7,6 +7,7 @@ using Mirror;
 public class ArcherAbilities : NetworkBehaviour
 {
     Animator animator;
+    Player player;
 
     public GameObject Arrowshower,ArrowshowerLeft, FirstArrow,FirstArrowLeft;
     Vector2 showerPOS, arrowPos;
@@ -35,6 +36,7 @@ public class ArcherAbilities : NetworkBehaviour
     {
         
         animator = GetComponentInParent<Animator>();
+        player = GetComponent<Player>();
         ability1 = false;
 
         
@@ -46,44 +48,50 @@ public class ArcherAbilities : NetworkBehaviour
         if(!isLocalPlayer){
             return;
         }
-        if (Input.GetButtonDown("Ability1") && !ability1 && Time.time > nextFire1)
+        if (!player.dying)
         {
+            if (Input.GetButtonDown("Ability1") && !ability1 && Time.time > nextFire1)
+            {
 
-            right = GetComponentInParent<MageController>().facingRight;
-            ability1 = true;
-            animator.SetTrigger("ability1");
-            nextFire1 = Time.time + fireRate1;
-            showerPOS = transform.position;
-            if(right)
-                showerPOS += new Vector2(+0.4f, 0.5f);
-            else
-                showerPOS += new Vector2(-0.4f, 0.5f);
-            CmdFire(showerPOS);
+                right = GetComponentInParent<MageController>().facingRight;
+                ability1 = true;
+                animator.SetTrigger("ability1");
+                nextFire1 = Time.time + fireRate1;
+                showerPOS = transform.position;
+                if (right)
+                    showerPOS += new Vector2(+0.4f, 0.5f);
+                else
+                    showerPOS += new Vector2(-0.4f, 0.5f);
+                CmdFire(showerPOS);
 
 
 
-            // Needs to ba a function to call on the server... using Cmd
+                // Needs to ba a function to call on the server... using Cmd
 
-            // NetworkServer.Spawn(obj);
-        }
-
-        if (Input.GetButtonDown("Ability2"))
-        {
-            animator.SetTrigger("ability2");
-            right = GetComponentInParent<MageController>().facingRight;
-            if(right){
-                CmdFirePierceRight();
-            } else {
-                CmdFirePierceLeft();
+                // NetworkServer.Spawn(obj);
             }
-        }
 
-        if (Input.GetButtonDown("Ability3"))
-        {
+            if (Input.GetButtonDown("Ability2"))
+            {
+                animator.SetTrigger("ability2");
+                right = GetComponentInParent<MageController>().facingRight;
+                if (right)
+                {
+                    CmdFirePierceRight();
+                }
+                else
+                {
+                    CmdFirePierceLeft();
+                }
+            }
 
-            animator.SetTrigger("ability3");
+            if (Input.GetButtonDown("Ability3"))
+            {
 
-            CmdFire3();
+                animator.SetTrigger("ability3");
+
+                CmdFire3();
+            }
         }
 
 

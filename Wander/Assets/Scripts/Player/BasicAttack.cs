@@ -31,7 +31,7 @@ public class BasicAttack : NetworkBehaviour
             hitbox = GameObject.Find("BasicAttack").GetComponent<BoxCollider2D>();
         if (!attacking && hitbox.enabled)
             hitbox.enabled = false;
-        if (Input.GetButtonDown("Attack") && !attacking)
+        if (Input.GetButtonDown("Attack") && !player.dying && !attacking)
         {
             attacking = true;
             animator.SetTrigger("attack");

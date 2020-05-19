@@ -13,6 +13,7 @@ TagManager:
   - projectile
   - 'Material: Cave'
   - 'Material: Grass'
+  - Boss
   layers:
   - Default
   - TransparentFX
