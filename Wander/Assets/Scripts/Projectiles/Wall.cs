@@ -18,9 +18,9 @@ public class Wall : MonoBehaviour
     void Update()
     {
         //transform.position;
-        Destroy(gameObject, 10f);
+        Destroy(gameObject, 5f);
     }
-
+   
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.tag == "Enemy")

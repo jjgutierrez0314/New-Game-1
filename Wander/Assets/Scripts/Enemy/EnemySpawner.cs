@@ -8,6 +8,8 @@ public class EnemySpawner : NetworkBehaviour
     public GameObject goblinPrefab;
     public GameObject bossPrefab;
 
+    // public int numOfEnemies;
+
     public override void OnStartServer(){
         Vector2 spawnPosition = new Vector2(6.18f, -6.421f);
         Quaternion spawnRotation = Quaternion.Euler(0.0f, 0, 0);
@@ -39,7 +41,7 @@ public class EnemySpawner : NetworkBehaviour
         GameObject bat7 = (GameObject)Instantiate(batPrefab, spawnPosition, spawnRotation);
         NetworkServer.Spawn(bat7);
 
-        //-------------------------------------------------------------------------------------
+        //------------------------------------------------------------------------------
 
         spawnPosition = new Vector2(5.64f, -1.261f);
         GameObject goblin1 = (GameObject)Instantiate(goblinPrefab, spawnPosition, spawnRotation);

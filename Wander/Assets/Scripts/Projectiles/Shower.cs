@@ -20,21 +20,19 @@ public class Shower : MonoBehaviour
     void Update()
     {
         rb.velocity = new Vector2(velX,velY);
-        Destroy(gameObject, 5f);
+        Destroy(gameObject, 3f);
     }
+
     void OnTriggerEnter2D(Collider2D other)
     {
-       
-            if (other.gameObject.tag == "Enemy")
-            {
-                animator.SetTrigger("hits");
-                velX =velY= 0.0f;
-                Enemy enemy = other.gameObject.GetComponent<Enemy>();
-                enemy.Hit(damage);
-                Debug.Log("Its a hit!");
-                Destroy(gameObject,2);
-            }
-        
+        if (other.gameObject.tag == "Enemy")
+        {
+            animator.SetTrigger("hits");
+            Enemy enemy = other.gameObject.GetComponent<Enemy>();
+            enemy.Hit(damage);
+            Debug.Log("Its a hit!");
+            Destroy(gameObject,1f);
+        }
     }
 
 }

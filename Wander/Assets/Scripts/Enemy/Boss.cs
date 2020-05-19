@@ -9,36 +9,22 @@ public class Boss : Enemy
     bool heatUp = false;
 
     BoxCollider2D laser1, laser2;
-    public LevelChanger levelChanger;
 
-    void Start()
-    {
+    void Start(){
         GameObject GO = GameObject.Find("Music");
         music = (MusicManager) GO.GetComponent<MusicManager>();
         laser1 = transform.Find("Laser1").GetComponent<BoxCollider2D>();
         laser2 = transform.Find("Laser2").GetComponent<BoxCollider2D>();
-        levelChanger = GameObject.Find("LevelChanger").GetComponent<LevelChanger>();
         laser1.enabled = laser2.enabled = false;
     }
 
     void FixedUpdate()
     {
         if (death && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
-        {
-            music.bossMusic(2);
-            levelChanger.FadeToLevel(1);
             Destroy(gameObject);
-        }
 
         if (isHit && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
         {
-            if((getHealth() <= heatUpPoint) && (!heatUp))
-            {
-                FMODUnity.RuntimeManager.PlayOneShotAttached("event:/Character/Monster/Boss/Charge Up", gameObject);
-                music.bossMusic(1);
-                heatUp = true;
-            }
-
             isHit = false;
             animator.SetBool("isHit", isHit);
         }
@@ -53,19 +39,17 @@ public class Boss : Enemy
         }
     }
 
-    void Update()
-    {
-        // if((getHealth() <= heatUpPoint) && (!heatUp)){
-        //     FMODUnity.RuntimeManager.PlayOneShotAttached("event:/Character/Monster/Boss/Charge Up", gameObject);
-        //     music.bossMusic(1);
-        //     heatUp = true;
-        // }
+    void Update(){
+        if((getHealth() <= heatUpPoint) && (!heatUp)){
+            FMODUnity.RuntimeManager.PlayOneShotAttached("event:/Character/Monster/Boss/Charge Up", gameObject);
+            music.bossMusic(1);
+            heatUp = true;
+        }
 
-        // if (getHealth() <= 0)
-        // {
-        //     music.bossMusic(2);
-        //     levelChanger.FadeToLevel(1);
-        // }
+        if (getHealth() <= 0)
+        {
+            music.bossMusic(2);
+        }
     }
 
     public new void Attack()

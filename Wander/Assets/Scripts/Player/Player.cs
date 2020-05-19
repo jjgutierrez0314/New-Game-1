@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Mirror;
-
 public class Player : NetworkBehaviour
 {
     private Animator animator;
@@ -87,7 +86,7 @@ public class Player : NetworkBehaviour
         {
             dying = true;
             animator.SetTrigger("death");
-            levelChanger.FadeToLevel(0);
+            levelChanger.FadeToLevel();
         }
     }
 
@@ -108,5 +107,15 @@ public class Player : NetworkBehaviour
             yield return regenTick;
         }
         regen = null;
+    }
+
+    public void addScore()
+    {
+        score += 1;
+        if (score >= 1) { levelChanger.FadeToLevel(); }
+    }
+
+    public override void OnStartLocalPlayer(){
+        transform.Find("MusicTag").tag = "LocalPlayer";
     }
 }
