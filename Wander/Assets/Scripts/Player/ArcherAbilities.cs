@@ -10,8 +10,8 @@ public class ArcherAbilities : NetworkBehaviour
 
     public GameObject Arrowshower,ArrowshowerLeft, FirstArrow,FirstArrowLeft;
     Vector2 showerPOS, arrowPos;
-    public float fireRate1 = 0.5f;
-    float nextFire1 = 0.0f;
+    public float fireRate1 = 10.0f;
+    float nextFire1 = 0f;
     public bool ability1;
     bool active1 = false;
 
@@ -28,7 +28,8 @@ public class ArcherAbilities : NetworkBehaviour
 
     //ability1Hitbox = GameObject.Find("Ability1").GetComponent<BoxCollider2D>();
     bool right;
-    
+    public float fireRate = 0.5f;
+    float nextFire = 0.0f;
     //playerScript.facingRight
     // Start is called before the first frame update
     void Awake()
