@@ -15,11 +15,11 @@ GameObject:
   - component: {fileID: 3737403400354132564}
   - component: {fileID: 3737403400354132565}
   - component: {fileID: 3737403400354132562}
-  - component: {fileID: 3737403400354132563}
   - component: {fileID: 4886840040982409943}
   - component: {fileID: 7649379318355099024}
   - component: {fileID: 7649379318355099026}
   - component: {fileID: 7649379318355099027}
+  - component: {fileID: 7023802150115538679}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Enemy
@@ -187,24 +187,6 @@ MonoBehaviour:
   fallMultiplier: 2
   lowJumpMultiplier: 2
   facingRight: 0
---- !u!114 &3737403400354132563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3737403400354132560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1350a7141139c2f439ae11706f0ce441, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  syncMode: 0
-  syncInterval: 0.1
-  isHit: 0
-  death: 0
-  attacking: 0
-  player: {fileID: 1608401443960460185, guid: 72234e5d2e8241c42a5d65d5684d6138, type: 3}
 --- !u!114 &4886840040982409943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -401,7 +383,7 @@ MonoBehaviour:
             showInInspector: 0
             networkSync: 0
             typeName: UnityEngine.Object
-            value: {fileID: 3737403400354132563}
+            value: {fileID: 0}
           TargetTypeName: Enemy
           PropertyName: death
           BoolParameter:
@@ -1312,6 +1294,27 @@ MonoBehaviour:
   localPositionSensitivity: 0.01
   localRotationSensitivity: 0.01
   localScaleSensitivity: 0.01
+--- !u!114 &7023802150115538679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3737403400354132560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7628e67f4d3209543bf054e7bb6879c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0.1
+  health: 0
+  maxHealth: 0
+  isHit: 0
+  death: 0
+  attacking: 0
+  player: {fileID: 0}
+  heatUpPoint: 25
 --- !u!1 &4453088067848279370
 GameObject:
   m_ObjectHideFlags: 0
@@ -1681,7 +1684,7 @@ MonoBehaviour:
           showInInspector: 0
           networkSync: 0
           typeName: Enemy
-          value: {fileID: 3737403400354132563}
+          value: {fileID: 0}
         fsmVarParams:
         - variableName: 
           objectType: 
