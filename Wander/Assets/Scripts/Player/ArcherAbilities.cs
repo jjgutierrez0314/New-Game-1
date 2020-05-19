@@ -31,7 +31,9 @@ public class ArcherAbilities : NetworkBehaviour
 
     //ability1Hitbox = GameObject.Find("Ability1").GetComponent<BoxCollider2D>();
     bool right;
-   
+    
+    //playerScript.facingRight
+    // Start is called before the first frame update
     void Awake()
     {
         

@@ -122,8 +122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08e5ea4ed212dc642869148e5e346b1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 20
-  velX: 0.5
+  damage: 50
+  velX: -0.5
   velY: -0.5
 --- !u!95 &2027078073274557620
 Animator:
@@ -135,7 +135,7 @@ Animator:
   m_GameObject: {fileID: 755153003958101204}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a336af325d6e7414599bfe436d9c741a, type: 2}
+  m_Controller: {fileID: 9100000, guid: 68ebd3ac698c9a54b98bbd35f35c3869, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -208,7 +208,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.05
+  m_Radius: 0.025
 --- !u!114 &-9057519630851140344
 MonoBehaviour:
   m_ObjectHideFlags: 0

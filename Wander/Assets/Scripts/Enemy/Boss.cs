@@ -6,14 +6,12 @@ public class Boss : Enemy
 {
     private int heatUpPoint;
     bool heatUp = false;
-
     protected MusicManager music;
     public LevelChanger levelChanger;
 
     BoxCollider2D laser1, laser2;
 
-    void Start()
-    {
+    void Start() {
         GameObject GO = GameObject.Find("Music");
         music = (MusicManager)GO.GetComponent<MusicManager>();
         levelChanger = GameObject.Find("LevelChanger").GetComponent<LevelChanger>();
@@ -35,13 +33,11 @@ public class Boss : Enemy
 
         if (isHit && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
         {
-            if((getHealth() <= heatUpPoint) && (!heatUp))
-            {
+            if ((getHealth() <= heatUpPoint) && (!heatUp)){
                 FMODUnity.RuntimeManager.PlayOneShotAttached("event:/Character/Monster/Boss/Charge Up", gameObject);
                 music.bossMusic(1);
                 heatUp = true;
             }
-
             isHit = false;
             animator.SetBool("isHit", isHit);
         }
@@ -54,21 +50,6 @@ public class Boss : Enemy
             animator.SetBool("laser2", attacking);
             animator.SetBool("attacking", attacking);
         }
-    }
-
-    void Update()
-    {
-        // if((getHealth() <= heatUpPoint) && (!heatUp)){
-        //     FMODUnity.RuntimeManager.PlayOneShotAttached("event:/Character/Monster/Boss/Charge Up", gameObject);
-        //     music.bossMusic(1);
-        //     heatUp = true;
-        // }
-
-        //if (getHealth() <= 0)
-        //{
-        //    music.bossMusic(2);
-        //    levelChanger.FadeToLevel(1);
-        //}
     }
 
     public new void Attack()

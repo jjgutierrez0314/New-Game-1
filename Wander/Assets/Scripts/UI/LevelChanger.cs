@@ -6,17 +6,15 @@ using UnityEngine.SceneManagement;
 public class LevelChanger : MonoBehaviour
 {
     public Animator animator;
-    private int levelToLoad = 0;
+    private int levelToLoad;
 
-    public void FadeToLevel (int code)
+    public void FadeToLevel ()
     {
-        levelToLoad = code;
         animator.SetTrigger("FadeOut");
     }
 
     public void OnFadeComplete ()
     {
-        if (levelToLoad == 0) { SceneManager.LoadScene("GameOver"); }
-        else { SceneManager.LoadScene("Credits"); }
+        SceneManager.LoadScene("GameOver");
     }
 }
