@@ -246,6 +246,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncMode: 0
   syncInterval: 0.1
+  health: 0
+  maxHealth: 0
   isHit: 0
   death: 0
   attacking: 0
@@ -1162,11 +1164,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28685521495070c48b5776d73413c9ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackEvent: event:/Character/Monster/Eye/Attack
-  damageEvent: event:/Character/Monster/Eye/Damage
-  deathEvent: event:/Character/Monster/Eye/Death
-  emoteEvent: event:/Character/Monster/Eye/Emote
-  gameobject: {fileID: 4493395623154493525}
 --- !u!114 &7471013158016821141
 MonoBehaviour:
   m_ObjectHideFlags: 0
