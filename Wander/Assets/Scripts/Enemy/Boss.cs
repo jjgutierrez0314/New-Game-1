@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Boss : Enemy
 {
-    MusicManager music;
-    public int heatUpPoint = 25;
+    private int heatUpPoint;
     bool heatUp = false;
+    protected MusicManager music;
+    public LevelChanger levelChanger;
 
     BoxCollider2D laser1, laser2;
 
-    void Start(){
+    void Start() {
         GameObject GO = GameObject.Find("Music");
-        music = (MusicManager) GO.GetComponent<MusicManager>();
+        music = (MusicManager)GO.GetComponent<MusicManager>();
+        levelChanger = GameObject.Find("LevelChanger").GetComponent<LevelChanger>();
+
+        heatUpPoint = getHealth() / 2;
         laser1 = transform.Find("Laser1").GetComponent<BoxCollider2D>();
         laser2 = transform.Find("Laser2").GetComponent<BoxCollider2D>();
         laser1.enabled = laser2.enabled = false;
@@ -21,10 +25,19 @@ public class Boss : Enemy
     void FixedUpdate()
     {
         if (death && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
+        {
+            music.bossMusic(2);
+            levelChanger.FadeToLevel(1);
             Destroy(gameObject);
+        }
 
         if (isHit && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.9f)
         {
+            if ((getHealth() <= heatUpPoint) && (!heatUp)){
+                FMODUnity.RuntimeManager.PlayOneShotAttached("event:/Character/Monster/Boss/Charge Up", gameObject);
+                music.bossMusic(1);
+                heatUp = true;
+            }
             isHit = false;
             animator.SetBool("isHit", isHit);
         }
@@ -36,19 +49,6 @@ public class Boss : Enemy
             animator.SetBool("laser1", attacking);
             animator.SetBool("laser2", attacking);
             animator.SetBool("attacking", attacking);
-        }
-    }
-
-    void Update(){
-        if((getHealth() <= heatUpPoint) && (!heatUp)){
-            FMODUnity.RuntimeManager.PlayOneShotAttached("event:/Character/Monster/Boss/Charge Up", gameObject);
-            music.bossMusic(1);
-            heatUp = true;
-        }
-
-        if (getHealth() <= 0)
-        {
-            music.bossMusic(2);
         }
     }
 
