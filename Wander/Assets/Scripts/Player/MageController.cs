@@ -65,7 +65,7 @@ public class MageController : PlayerController{
                 myAud.enabled = true;
             }
         }//(!player.dying && ((!basicAttack.attacking) || !isGrounded))
-        if (!player.dying || isGrounded)
+        if (!player.dying)
         {
             // Set horizontal movement
             if (Input.GetButton("Shift") && !isTired)
@@ -91,10 +91,9 @@ public class MageController : PlayerController{
             scale.x *= -1;
             transform.localScale = scale;
         }
-        if (Input.GetButtonDown("Attack") && Time.time > nextFire)
+        if (Input.GetButtonDown("Attack") && !player.dying && Time.time > nextFire)
         {
             Debug.Log("Im firing my balls");
-            //attacking = true;
             animator.SetTrigger("attack");
             nextFire = Time.time + fireRate;
             if(facingRight){

@@ -14,6 +14,18 @@ TextureImporter:
   - first:
       213: 5111881739408235172
     second: Elemental_attack2(second part)_3
+  - first:
+      213: 7891903854414990680
+    second: Elemental_attack2(second part)_0
+  - first:
+      213: 2746409732674059136
+    second: Elemental_attack2(second part)_1
+  - first:
+      213: -3975053450230438580
+    second: Elemental_attack2(second part)_2
+  - first:
+      213: -120596524398275902
+    second: Elemental_attack2(second part)_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -149,10 +161,10 @@ TextureImporter:
       name: Elemental_attack2(second part)_0
       rect:
         serializedVersion: 2
-        x: 23
-        y: 2
-        width: 49
-        height: 63
+        x: 0
+        y: 0
+        width: 72
+        height: 72
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,8 +172,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2aeb26ff7378e0510800000000000000
-      internalID: 1517298799048048290
+      spriteID: 85d01f31ebca58d60800000000000000
+      internalID: 7891903854414990680
       vertices: []
       indices: 
       edges: []
@@ -170,19 +182,19 @@ TextureImporter:
       name: Elemental_attack2(second part)_1
       rect:
         serializedVersion: 2
-        x: 75
-        y: 1
-        width: 68
-        height: 65
-      alignment: 9
-      pivot: {x: 0.6643974, y: 0.5092133}
+        x: 72
+        y: 0
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 59496b2b42b9a06c0800000000000000
-      internalID: -4176355122513275755
+      spriteID: 08b76bbc9153d1620800000000000000
+      internalID: 2746409732674059136
       vertices: []
       indices: 
       edges: []
@@ -191,19 +203,19 @@ TextureImporter:
       name: Elemental_attack2(second part)_2
       rect:
         serializedVersion: 2
-        x: 169
-        y: 7
-        width: 45
-        height: 60
-      alignment: 9
-      pivot: {x: 0.5213247, y: 0.4677597}
+        x: 144
+        y: 0
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2185b814ceff1ade0800000000000000
-      internalID: -1323495425293199342
+      spriteID: c45e2df92f5c5d8c0800000000000000
+      internalID: -3975053450230438580
       vertices: []
       indices: 
       edges: []
@@ -212,19 +224,19 @@ TextureImporter:
       name: Elemental_attack2(second part)_3
       rect:
         serializedVersion: 2
-        x: 223
-        y: 4
-        width: 65
-        height: 62
-      alignment: 9
-      pivot: {x: 0.6443444, y: 0.48068133}
+        x: 216
+        y: 0
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4aadb3bab5d01f640800000000000000
-      internalID: 5111881739408235172
+      spriteID: 2c2181a991e835ef0800000000000000
+      internalID: -120596524398275902
       vertices: []
       indices: 
       edges: []

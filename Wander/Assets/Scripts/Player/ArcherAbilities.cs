@@ -7,11 +7,12 @@ using Mirror;
 public class ArcherAbilities : NetworkBehaviour
 {
     Animator animator;
+    Player player;
 
     public GameObject Arrowshower,ArrowshowerLeft, FirstArrow,FirstArrowLeft;
     Vector2 showerPOS, arrowPos;
-    public float fireRate1 = 0.5f;
-    float nextFire1 = 0.0f;
+    public float fireRate1 = 10.0f;
+    float nextFire1 = 0f;
     public bool ability1;
     bool active1 = false;
 
@@ -28,13 +29,15 @@ public class ArcherAbilities : NetworkBehaviour
 
     //ability1Hitbox = GameObject.Find("Ability1").GetComponent<BoxCollider2D>();
     bool right;
-    
+    public float fireRate = 0.5f;
+    float nextFire = 0.0f;
     //playerScript.facingRight
     // Start is called before the first frame update
     void Awake()
     {
         
         animator = GetComponentInParent<Animator>();
+        player = GetComponent<Player>();
         ability1 = false;
 
         
@@ -46,44 +49,50 @@ public class ArcherAbilities : NetworkBehaviour
         if(!isLocalPlayer){
             return;
         }
-        if (Input.GetButtonDown("Ability1") && !ability1 && Time.time > nextFire1)
+        if (!player.dying)
         {
+            if (Input.GetButtonDown("Ability1") && !ability1 && Time.time > nextFire1)
+            {
 
-            right = GetComponentInParent<MageController>().facingRight;
-            ability1 = true;
-            animator.SetTrigger("ability1");
-            nextFire1 = Time.time + fireRate1;
-            showerPOS = transform.position;
-            if(right)
-                showerPOS += new Vector2(+0.4f, 0.5f);
-            else
-                showerPOS += new Vector2(-0.4f, 0.5f);
-            CmdFire(showerPOS);
+                right = GetComponentInParent<MageController>().facingRight;
+                ability1 = true;
+                animator.SetTrigger("ability1");
+                nextFire1 = Time.time + fireRate1;
+                showerPOS = transform.position;
+                if (right)
+                    showerPOS += new Vector2(+0.4f, 0.5f);
+                else
+                    showerPOS += new Vector2(-0.4f, 0.5f);
+                CmdFire(showerPOS);
 
 
 
-            // Needs to ba a function to call on the server... using Cmd
+                // Needs to ba a function to call on the server... using Cmd
 
-            // NetworkServer.Spawn(obj);
-        }
-
-        if (Input.GetButtonDown("Ability2"))
-        {
-            animator.SetTrigger("ability2");
-            right = GetComponentInParent<MageController>().facingRight;
-            if(right){
-                CmdFirePierceRight();
-            } else {
-                CmdFirePierceLeft();
+                // NetworkServer.Spawn(obj);
             }
-        }
 
-        if (Input.GetButtonDown("Ability3"))
-        {
+            if (Input.GetButtonDown("Ability2"))
+            {
+                animator.SetTrigger("ability2");
+                right = GetComponentInParent<MageController>().facingRight;
+                if (right)
+                {
+                    CmdFirePierceRight();
+                }
+                else
+                {
+                    CmdFirePierceLeft();
+                }
+            }
 
-            animator.SetTrigger("ability3");
+            if (Input.GetButtonDown("Ability3"))
+            {
 
-            CmdFire3();
+                animator.SetTrigger("ability3");
+
+                CmdFire3();
+            }
         }
 
 

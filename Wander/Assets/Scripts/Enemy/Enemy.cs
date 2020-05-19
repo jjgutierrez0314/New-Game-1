@@ -4,13 +4,14 @@ using UnityEngine;
 using Mirror;
 public class Enemy : NetworkBehaviour
 {
-    private Animator animator;
+    protected Animator animator;
 
     public int health, maxHealth;
     private int attack, defense;
+    string tag;
     public bool isHit, death, attacking;
-    private float attackCoolDownTime, attackCoolDown;
-    private BoxCollider2D hitbox;
+    protected float attackCoolDownTime, attackCoolDown;
+    protected BoxCollider2D hitbox;
     public Player player;
     
 
@@ -19,14 +20,15 @@ public class Enemy : NetworkBehaviour
         animator = gameObject.GetComponent<Animator>();
         player = gameObject.GetComponent<Player>();
 
-        if (transform.Find("Tag").tag == "Bat")
+        tag = transform.Find("Tag").tag;
+        if (tag == "Bat")
         {
             health = maxHealth = 50;
             attack = 20;
             defense = 3;
             attackCoolDown = 2f;
         }
-        else if (transform.Find("Tag").tag == "Goblin")
+        else if (tag == "Goblin")
         {
             health = maxHealth = 50;
             attack = 25;
@@ -34,7 +36,7 @@ public class Enemy : NetworkBehaviour
             attackCoolDown = 2f;
 
         }
-        else if (GameObject.FindGameObjectWithTag("Boss") != null)
+        else if (tag == "Boss")
         {
             health = maxHealth = 500;
             attack = 70;
@@ -119,7 +121,6 @@ public class Enemy : NetworkBehaviour
         isHit = true;
         animator.SetBool("isHit", isHit);
         animator.SetTrigger("hit");
-            Debug.Log("player hit boss");
 
         if (health <= 0)
         {
@@ -139,6 +140,7 @@ public class Enemy : NetworkBehaviour
             Debug.Log("Player hit!");
         }
     }
+
     public int getHealth(){
         return health;
     }

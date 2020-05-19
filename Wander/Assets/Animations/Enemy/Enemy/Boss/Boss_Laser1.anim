@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Boss_Idle
+  m_Name: Boss_Laser1
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,22 +20,25 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 1487826527449967364, guid: da70aa71d946bcd4f80956ad51170ecd,
+      value: {fileID: 6909578904585030034, guid: bde743d660b50c64db6e9c516e2b8c3c,
         type: 3}
-    - time: 0.125
-      value: {fileID: -2017318943125148015, guid: da70aa71d946bcd4f80956ad51170ecd,
+    - time: 0.1
+      value: {fileID: 8053580283553258351, guid: bde743d660b50c64db6e9c516e2b8c3c,
         type: 3}
-    - time: 0.25
-      value: {fileID: -4633580358097375263, guid: da70aa71d946bcd4f80956ad51170ecd,
+    - time: 0.2
+      value: {fileID: -925791749662522540, guid: bde743d660b50c64db6e9c516e2b8c3c,
         type: 3}
-    - time: 0.375
-      value: {fileID: -1643101083099667368, guid: da70aa71d946bcd4f80956ad51170ecd,
+    - time: 0.3
+      value: {fileID: -3216705182794962784, guid: bde743d660b50c64db6e9c516e2b8c3c,
+        type: 3}
+    - time: 0.4
+      value: {fileID: 8085194124722054200, guid: 3ccb8897f5cbe334db15557152f1acdb,
         type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 8
+  m_SampleRate: 10
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -50,10 +53,11 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 1487826527449967364, guid: da70aa71d946bcd4f80956ad51170ecd, type: 3}
-    - {fileID: -2017318943125148015, guid: da70aa71d946bcd4f80956ad51170ecd, type: 3}
-    - {fileID: -4633580358097375263, guid: da70aa71d946bcd4f80956ad51170ecd, type: 3}
-    - {fileID: -1643101083099667368, guid: da70aa71d946bcd4f80956ad51170ecd, type: 3}
+    - {fileID: 6909578904585030034, guid: bde743d660b50c64db6e9c516e2b8c3c, type: 3}
+    - {fileID: 8053580283553258351, guid: bde743d660b50c64db6e9c516e2b8c3c, type: 3}
+    - {fileID: -925791749662522540, guid: bde743d660b50c64db6e9c516e2b8c3c, type: 3}
+    - {fileID: -3216705182794962784, guid: bde743d660b50c64db6e9c516e2b8c3c, type: 3}
+    - {fileID: 8085194124722054200, guid: 3ccb8897f5cbe334db15557152f1acdb, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -78,4 +82,18 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.3
+    functionName: EnableLaser1Hitbox
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.4
+    functionName: DisableLaser1Hitbox
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

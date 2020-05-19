@@ -35,7 +35,7 @@ public class Abilities : NetworkBehaviour
             player.defense -= 5;
             ability2BuffActive = false;
         }
-        if (!actionActive)
+        if (!player.dying && !actionActive)
         {
             actionActive = true;
             if (Input.GetButtonDown("Ability1"))
