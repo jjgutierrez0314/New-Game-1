@@ -18,21 +18,20 @@ public class ArcherAbilities : NetworkBehaviour
 
     public GameObject RightFire, LeftFire;
     Vector2 projectilePOS;
-
+    public float fireRate2 = 0.5f;
+    float nextFire2 = 0.0f;
 
     Rigidbody2D rb2D;
     public GameObject A1, A2, A3, A4, A5;
     Vector2 projectilePOS3;
     Vector3 velocity = Vector3.zero;
     Vector2 showerPOS3;
-
+    public float fireRate3 = 0.5f;
+    float nextFire3 = 0.0f;
 
     //ability1Hitbox = GameObject.Find("Ability1").GetComponent<BoxCollider2D>();
     bool right;
-    public float fireRate = 0.5f;
-    float nextFire = 0.0f;
-    //playerScript.facingRight
-    // Start is called before the first frame update
+   
     void Awake()
     {
         
@@ -72,8 +71,9 @@ public class ArcherAbilities : NetworkBehaviour
                 // NetworkServer.Spawn(obj);
             }
 
-            if (Input.GetButtonDown("Ability2"))
+            if (Input.GetButtonDown("Ability2") && Time.time > nextFire2)
             {
+                nextFire2 = Time.time + fireRate2;
                 animator.SetTrigger("ability2");
                 right = GetComponentInParent<MageController>().facingRight;
                 if (right)
@@ -86,9 +86,9 @@ public class ArcherAbilities : NetworkBehaviour
                 }
             }
 
-            if (Input.GetButtonDown("Ability3"))
+            if (Input.GetButtonDown("Ability3") && Time.time > nextFire3)
             {
-
+                nextFire3 = Time.time + fireRate3;
                 animator.SetTrigger("ability3");
 
                 CmdFire3();

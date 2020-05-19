@@ -20,27 +20,21 @@ public class Shower : MonoBehaviour
     void Update()
     {
         rb.velocity = new Vector2(velX,velY);
-        Destroy(gameObject, 3f);
+        Destroy(gameObject, 5f);
     }
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
-            animator.SetTrigger("hits");
-            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
-            velX =velY= 0f;
-          
-            Destroy(gameObject);
-            enemy.Hit(damage); // Hit for 5 damage
-            Debug.Log("Enemy Hit");
-
-        }
-        else if (collision.gameObject.CompareTag("Player"))
-        {
-            animator.SetTrigger("hits");
-            velX = velY = 0f;
-            Destroy(gameObject);
-        }//add enviroment wall interaction
+       
+            if (other.gameObject.tag == "Enemy")
+            {
+                animator.SetTrigger("hits");
+                velX =velY= 0.0f;
+                Enemy enemy = other.gameObject.GetComponent<Enemy>();
+                enemy.Hit(damage);
+                Debug.Log("Its a hit!");
+                Destroy(gameObject,2);
+            }
+        
     }
 
 }
