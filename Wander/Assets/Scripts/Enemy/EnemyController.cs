@@ -7,7 +7,7 @@ public class EnemyController : NetworkBehaviour
     Rigidbody2D rb2D;
     private Animator animator;
     Enemy enemy;
-    string tag;
+    string type;
 
     public LayerMask ground;
 
@@ -26,18 +26,18 @@ public class EnemyController : NetworkBehaviour
         rb2D = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         enemy = GetComponent<Enemy>();
-        tag = transform.Find("Tag").tag;
-        if (tag == "Bat")
+        type = transform.Find("Tag").tag;
+        if (type == "Bat")
         {
             moveSpeed = 1f;
             jumpVelocity = fallMultiplier = lowJumpMultiplier = 0f;
         }
-        else if (tag == "Goblin")
+        else if (type == "Goblin")
         {
             moveSpeed = 2f;
             jumpVelocity = fallMultiplier = lowJumpMultiplier = 2f;
         }
-        else if (tag == "Boss")
+        else if (type == "Boss")
         {
             moveSpeed = 1.5f;
             jumpVelocity = fallMultiplier = lowJumpMultiplier = 2f;

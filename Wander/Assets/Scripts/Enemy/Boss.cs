@@ -4,20 +4,23 @@ using UnityEngine;
 
 public class Boss : Enemy
 {
-    MusicManager music;
-    public int heatUpPoint = 25;
+    private int heatUpPoint;
     bool heatUp = false;
 
-    BoxCollider2D laser1, laser2;
+    protected MusicManager music;
     public LevelChanger levelChanger;
+
+    BoxCollider2D laser1, laser2;
 
     void Start()
     {
         GameObject GO = GameObject.Find("Music");
-        music = (MusicManager) GO.GetComponent<MusicManager>();
+        music = (MusicManager)GO.GetComponent<MusicManager>();
+        levelChanger = GameObject.Find("LevelChanger").GetComponent<LevelChanger>();
+
+        heatUpPoint = getHealth() / 2;
         laser1 = transform.Find("Laser1").GetComponent<BoxCollider2D>();
         laser2 = transform.Find("Laser2").GetComponent<BoxCollider2D>();
-        levelChanger = GameObject.Find("LevelChanger").GetComponent<LevelChanger>();
         laser1.enabled = laser2.enabled = false;
     }
 
@@ -61,11 +64,11 @@ public class Boss : Enemy
         //     heatUp = true;
         // }
 
-        // if (getHealth() <= 0)
-        // {
-        //     music.bossMusic(2);
-        //     levelChanger.FadeToLevel(1);
-        // }
+        //if (getHealth() <= 0)
+        //{
+        //    music.bossMusic(2);
+        //    levelChanger.FadeToLevel(1);
+        //}
     }
 
     public new void Attack()

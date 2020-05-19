@@ -8,27 +8,27 @@ public class Enemy : NetworkBehaviour
 
     public int health, maxHealth;
     private int attack, defense;
-    string tag;
+    string type;
     public bool isHit, death, attacking;
     protected float attackCoolDownTime, attackCoolDown;
     protected BoxCollider2D hitbox;
     public Player player;
-    
+
 
     void Awake()
     {
         animator = gameObject.GetComponent<Animator>();
         player = gameObject.GetComponent<Player>();
 
-        tag = transform.Find("Tag").tag;
-        if (tag == "Bat")
+        type = transform.Find("Tag").tag;
+        if (type == "Bat")
         {
             health = maxHealth = 50;
             attack = 20;
             defense = 3;
             attackCoolDown = 2f;
         }
-        else if (tag == "Goblin")
+        else if (type == "Goblin")
         {
             health = maxHealth = 50;
             attack = 25;
@@ -36,10 +36,10 @@ public class Enemy : NetworkBehaviour
             attackCoolDown = 2f;
 
         }
-        else if (tag == "Boss")
+        else if (type == "Boss")
         {
-            health = maxHealth = 500;
-            attack = 70;
+            health = maxHealth = 300;
+            attack = 40;
             defense = 6;
             attackCoolDown = 3f;
 
