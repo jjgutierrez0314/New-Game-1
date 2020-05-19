@@ -18,29 +18,18 @@ public class Wall : MonoBehaviour
     void Update()
     {
         //transform.position;
-        Destroy(gameObject, 3f);
+        Destroy(gameObject, 10f);
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.tag == "Enemy")
         {
-            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
-            velX = 0f;
-            animator.SetTrigger("hits");
-            Destroy(gameObject, 1f);
+            Enemy enemy = other.gameObject.GetComponent<Enemy>();
             enemy.Hit(damage);
-            //Debug.Log("Enemy Hit");
-
+            Debug.Log("Its a hit!");
         }
-        else if (collision.gameObject.CompareTag("Player"))
-        {
-            velX = 0f;
-            animator.SetTrigger("hits");
-            Destroy(gameObject, 1f);
-        }//add enviroment wall interaction
     }
-
 
 }
 
